@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.roguestarfightervr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Games\\Dev\\Rogue-Starfighter-VR\\Rogue Starfighter VR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Rogue Starfighter VR [Testing]"
+        }
+      }
+    }
+  ]
+}
