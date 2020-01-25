@@ -159,27 +159,36 @@ MonoBehaviour:
       data2: 4539628424926265344
     lodBias: 1
     lodBiasMode: 0
+    lodBiasQualityLevel: 0
     maximumLODLevel: 0
     maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
       data1: 64942043591453
       data2: 4539628424389459968
     lodBias: 1
     lodBiasMode: 0
+    lodBiasQualityLevel: 0
     maximumLODLevel: 0
     maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    materialQuality: 0
   m_RenderingPathDefaultRealtimeReflectionFrameSettings:
     bitDatas:
       data1: 69692120112925
       data2: 4539628424389459968
     lodBias: 1
     lodBiasMode: 0
+    lodBiasQualityLevel: 0
     maximumLODLevel: 0
     maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    materialQuality: 0
   m_RenderPipelineSettings:
     supportShadowMask: 1
-    supportSSR: 0
+    supportSSR: 1
     supportSSAO: 1
     supportSubsurfaceScattering: 1
     increaseSssSampleCount: 0
@@ -233,21 +242,12 @@ MonoBehaviour:
         shadowAtlasResolution: 4096
         shadowAtlasDepthBits: 32
         useDynamicViewportRescale: 1
-      directionalLightsResolutionTiers:
-        lowQualityResolution: 256
-        mediumQualityResolution: 512
-        highQualityResolution: 1024
-        veryHighQualityResolution: 2048
-      punctualLightsResolutionTiers:
-        lowQualityResolution: 256
-        mediumQualityResolution: 512
-        highQualityResolution: 1024
-        veryHighQualityResolution: 2048
-      areaLightsResolutionTiers:
-        lowQualityResolution: 256
-        mediumQualityResolution: 512
-        highQualityResolution: 1024
-        veryHighQualityResolution: 2048
+      shadowResolutionDirectional:
+        m_Values: 00010000000200000004000000080000
+      shadowResolutionPunctual:
+        m_Values: 00010000000200000004000000080000
+      shadowResolutionArea:
+        m_Values: 00010000000200000004000000080000
       maxDirectionalShadowMapResolution: 2048
       maxPunctualShadowMapResolution: 2048
       maxAreaShadowMapResolution: 2048
@@ -292,6 +292,19 @@ MonoBehaviour:
       BloomRes: 040000000200000002000000
       BloomHighQualityFiltering: 000101
       ChromaticAberrationMaxSamples: 03000000060000000c000000
+    lightSettings:
+      useContactShadow:
+        m_Low: 0
+        m_Medium: 0
+        m_High: 0
+    maximumLODLevel:
+      m_Low: 0
+      m_Medium: 0
+      m_High: 0
+    lodBias:
+      m_Low: 1
+      m_Medium: 1
+      m_High: 1
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   shaderVariantLogLevel: 0
@@ -299,3 +312,6 @@ MonoBehaviour:
   m_CurrentMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   diffusionProfileSettingsList: []
+  beforeTransparentCustomPostProcesses: []
+  beforePostProcessCustomPostProcesses: []
+  afterPostProcessCustomPostProcesses: []
