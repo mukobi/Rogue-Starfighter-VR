@@ -5,17 +5,13 @@ using Valve.VR;
 
 public class ResetPlayAreaTransform : MonoBehaviour
 {
-    [SerializeField]
-    Transform hmd = default;
+    [SerializeField] Transform hmd = default;
 
-    [SerializeField]
-    Transform playArea = default;
+    [SerializeField] Transform playArea = default;
 
-    [SerializeField]
-    Transform targetHeadsetTransform = default;
+    [SerializeField] Transform targetHeadsetTransform = default;
 
-    [SerializeField]
-    SteamVR_Action_Boolean resetPositionAction = default;
+    [SerializeField] SteamVR_Action_Boolean resetPositionAction = default;
 
     // Update is called once per frame
     void Update()
@@ -29,13 +25,11 @@ public class ResetPlayAreaTransform : MonoBehaviour
 
     void ResetRotation()
     {
-        // TODO: clean this up with quaternion math
-        //Quaternion globalDelta = Quaternion.LookRotation(targetHeadsetPosition.position-hmd.position, targetHeadsetPosition.up);
-        Vector3 globalDeltaEuler = -(hmd.rotation.eulerAngles - targetHeadsetTransform.rotation.eulerAngles);
-        globalDeltaEuler.z = 0;
-        globalDeltaEuler.x = 0;
-        //Debug.Log($"hmd.rot: {hmd.rotation.eulerAngles}, target.rot: {targetHeadsetTransform.rotation.eulerAngles}, globalDelta: {globalDeltaEuler}");
-        playArea.rotation *= Quaternion.Euler(globalDeltaEuler);
+        // Assumes you want the headset forwad to be the local z-forward
+        // Rotates playArea so that the headset points forward
+        float globalDeltaEulerY = -(hmd.localRotation.eulerAngles.y + playArea.localRotation.eulerAngles.y);
+        //Debug.Log($"hmd.rot: {hmd.localRotation.eulerAngles}, playArea.rot: {playArea.localRotation.eulerAngles}, globalDelta: {globalDeltaEulerY}");
+        playArea.rotation *= Quaternion.Euler(0, globalDeltaEulerY, 0);
     }
 
     void ResetPosition()
@@ -44,6 +38,5 @@ public class ResetPlayAreaTransform : MonoBehaviour
         Vector3 globalDelta = targetHeadsetTransform.position - hmd.position;
         //Debug.Log($"hmd.pos: {hmd.position}, target.position: {targetHeadsetTransform.position}, globalDelta: {globalDelta}, playArea.pos: {playArea.position}");
         playArea.position += globalDelta;
-        //Debug.Log($"playArea.pos: {playArea.position}");
     }
 }
