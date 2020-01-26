@@ -211,7 +211,7 @@ MonoBehaviour:
     colorBufferFormat: 74
     supportCustomPass: 1
     customBufferFormat: 12
-    supportedLitShaderMode: 2
+    supportedLitShaderMode: 1
     supportDecals: 1
     msaaSampleCount: 1
     supportMotionVectors: 1
@@ -341,8 +341,8 @@ MonoBehaviour:
   m_DefaultMaterialQualityLevel: 4
   diffusionProfileSettings: {fileID: 0}
   diffusionProfileSettingsList:
-  - {fileID: 11400000, guid: 2b60d0dd79703184d939cedd9848b5dd, type: 2}
-  - {fileID: 11400000, guid: 53116f33832dbfa4fb38ecd3326ef6ab, type: 2}
+  - {fileID: 11400000, guid: 35ae30a8cc1f3e94485241f22d2dc1a2, type: 2}
+  - {fileID: 11400000, guid: 4d7cca38b74d1f14990cdf7c0991d67e, type: 2}
   beforeTransparentCustomPostProcesses: []
   beforePostProcessCustomPostProcesses: []
   afterPostProcessCustomPostProcesses: []
