@@ -164,8 +164,8 @@ GameObject:
   - component: {fileID: 52762323}
   - component: {fileID: 52762326}
   - component: {fileID: 52762325}
-  - component: {fileID: 52762324}
   - component: {fileID: 52762327}
+  - component: {fileID: 52762324}
   - component: {fileID: 52762328}
   m_Layer: 0
   m_Name: Joystick
@@ -183,7 +183,7 @@ Transform:
   m_GameObject: {fileID: 52762322}
   m_LocalRotation: {x: 0, y: 0, z: 0.003926977, w: 0.9999923}
   m_LocalPosition: {x: 0, y: 0.5297, z: 0.1359}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1217576774}
   m_RootOrder: 0
@@ -199,8 +199,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.02, y: 0.1, z: 0.02}
+  m_Center: {x: 0, y: 0.045, z: 0}
 --- !u!23 &52762325
 MeshRenderer:
   m_ObjectHideFlags: 0
