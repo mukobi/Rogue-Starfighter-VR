@@ -10,6 +10,11 @@ public class TripleRotationalDrive : MonoBehaviour
 
     public Hand.AttachmentFlags attachmentFlags = Hand.AttachmentFlags.DetachFromOtherHand;
 
+    [SerializeField] bool changeSlerpWhenGrabbed = false;
+    [SerializeField] [Range(0, 1)] float slerpFactorGripped;
+    [SerializeField] [Range(0, 1)] float slerpFactorReleased;
+
+    
     private Quaternion initialHandRotationOnGrab;  // store initial rotation to use as difference // TODO: implement
     private LocalRotateTowardsSlerp LocalRotateTowardsSlerp;
 
@@ -17,6 +22,8 @@ public class TripleRotationalDrive : MonoBehaviour
     {
         interactable = GetComponent<Interactable>();
         LocalRotateTowardsSlerp = GetComponent<LocalRotateTowardsSlerp>();
+        if(changeSlerpWhenGrabbed)
+            LocalRotateTowardsSlerp.slerpFactor = slerpFactorReleased;
     }
     protected virtual void OnHandHoverBegin(Hand hand)
     {
@@ -36,6 +43,8 @@ public class TripleRotationalDrive : MonoBehaviour
             // was just grabbed
             hand.AttachObject(gameObject, startingGrabType, attachmentFlags);
             initialHandRotationOnGrab = hand.transform.localRotation;
+            if (changeSlerpWhenGrabbed)
+                LocalRotateTowardsSlerp.slerpFactor = slerpFactorGripped;
         }
     }
 
@@ -48,6 +57,8 @@ public class TripleRotationalDrive : MonoBehaviour
             // just let go
             hand.DetachObject(gameObject);
             LocalRotateTowardsSlerp.TargetRotation = Quaternion.identity;
+            if (changeSlerpWhenGrabbed)
+                LocalRotateTowardsSlerp.slerpFactor = slerpFactorReleased;
         }
         else
         {
