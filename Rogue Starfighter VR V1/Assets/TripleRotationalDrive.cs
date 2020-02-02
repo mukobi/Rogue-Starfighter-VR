@@ -35,6 +35,7 @@ public class TripleRotationalDrive : MonoBehaviour
         {
             // was just grabbed
             hand.AttachObject(gameObject, startingGrabType, attachmentFlags);
+            initialHandRotationOnGrab = hand.transform.localRotation;
         }
     }
 
@@ -52,10 +53,10 @@ public class TripleRotationalDrive : MonoBehaviour
         {
             // still holding on
             // set target rotation
-            // TODO: set based on difference from initial grab rotation
             // TODO: incorporate RestrictRotation inline here instead
             // TODO: scale rotation
-            LocalRotateTowardsSlerp.TargetRotation = hand.transform.localRotation;
+            Quaternion relativeRotation = Quaternion.Inverse(initialHandRotationOnGrab) * hand.transform.localRotation;
+            LocalRotateTowardsSlerp.TargetRotation = relativeRotation;
         }
     }
 }
