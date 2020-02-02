@@ -556,7 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f68ecde5b27f983409dffd71c6629c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slerpFactor: 0.5
+  slerpFactor: 0.125
+  TargetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &97255032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,6 +2081,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 5cc92bf86dfff724e8374d9ac5755201,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4176865445023182437, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2113,7 +2119,7 @@ PrefabInstance:
     - target: {fileID: -2815962506885377311, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -2083487742067205821, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
@@ -2148,7 +2154,7 @@ PrefabInstance:
     - target: {fileID: 141256326760053722, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 674623645055026249, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
@@ -2188,7 +2194,7 @@ PrefabInstance:
     - target: {fileID: 3693612077015831963, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3981741133648859298, guid: 5cc92bf86dfff724e8374d9ac5755201,
         type: 3}
@@ -2250,7 +2256,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh52726
+  m_Name: pb_Mesh25432
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
