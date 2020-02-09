@@ -21,8 +21,8 @@ public class SnapSmallLocalRotationToZerp : MonoBehaviour
         if (localRotationEuler.z > 180)  localRotationEuler.z -= 360;
         if (localRotationEuler.z < -180) localRotationEuler.z += 360;
 
-        Debug.Log(localRotationEuler);
-        Debug.Log(localRotationEuler.sqrMagnitude);
+        //Debug.Log(localRotationEuler);
+        //Debug.Log(localRotationEuler.sqrMagnitude);
         if (transform.localRotation != Quaternion.identity
             && localRotationEuler.sqrMagnitude < limitSqrMagnitide)
         {
