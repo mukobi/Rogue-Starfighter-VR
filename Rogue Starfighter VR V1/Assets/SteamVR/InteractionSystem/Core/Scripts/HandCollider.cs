@@ -167,8 +167,10 @@ namespace Valve.VR.InteractionSystem
         private Vector3 targetPosition = Vector3.zero;
         private Quaternion targetRotation = Quaternion.identity;
 
-        protected const float MaxVelocityChange = 10f;
-        protected const float VelocityMagic = 6000f;
+        //protected const float MaxVelocityChange = 10f;
+        protected const float MaxVelocityChange = 100f;
+        //protected const float VelocityMagic = 6000f;
+        protected const float VelocityMagic = 10000f;
         protected const float AngularVelocityMagic = 50f;
         protected const float MaxAngularVelocityChange = 20f;
 
@@ -190,6 +192,7 @@ namespace Valve.VR.InteractionSystem
 
                 rigidbody.MovePosition(targetPosition);
                 rigidbody.MoveRotation(targetRotation);
+                //TeleportTo(targetPosition, targetRotation);
             }
             else
             {
@@ -202,6 +205,13 @@ namespace Valve.VR.InteractionSystem
 
                     rigidbody.velocity = Vector3.MoveTowards(rigidbody.velocity, velocityTarget, maxVelocityChange);
                     rigidbody.angularVelocity = Vector3.MoveTowards(rigidbody.angularVelocity, angularTarget, maxAngularVelocityChange);
+
+                    //rigidbody.MovePosition(targetPosition);
+                    //rigidbody.MoveRotation(targetRotation);
+                }
+                else
+                {
+                    Debug.Log("HandCollider velocity calculation failure.");
                 }
             }
         }
@@ -265,7 +275,7 @@ namespace Valve.VR.InteractionSystem
             // low friction if touching static object, high friction if touching dynamic
             SetPhysicMaterial(touchingDynamic ? physicMaterial_highfriction : physicMaterial_lowfriction);
 
-
+            Debug.Log(collision.collider);
 
             float energy = collision.relativeVelocity.magnitude;
 
@@ -276,7 +286,7 @@ namespace Valve.VR.InteractionSystem
                 float intensity = Util.RemapNumber(energy, minCollisionEnergy, maxCollisionEnergy, 0.3f, 1.0f);
                 float length = Util.RemapNumber(energy, minCollisionEnergy, maxCollisionEnergy, 0.0f, 0.06f);
 
-                hand.hand.TriggerHapticPulse(length, 100, intensity);
+                //hand.hand.TriggerHapticPulse(length, 100, intensity);
             }
         }
 

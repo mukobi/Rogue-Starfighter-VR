@@ -16,14 +16,13 @@ public class ForwardEngine : MonoBehaviour
     private void Start()
     {
         desiredSpeed = topSpeed;
-        currentSpeed = desiredSpeed;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         Vector3 globalVelocity = targetForwardRotation.forward * currentSpeed * Time.deltaTime;
-        Vector3 targetPosition = targetRigidbody.transform.position + globalVelocity;
-        //targetRigidbody.transform.Translate(globalVelocity);
+        Vector3 targetPosition = targetRigidbody.position + globalVelocity;
+        //targetTransform.Translate(globalVelocity);
         targetRigidbody.MovePosition(targetPosition);
         //target.velocity = target.transform.TransformDirection(localVelocity);  // for kinematic bodies
     }
