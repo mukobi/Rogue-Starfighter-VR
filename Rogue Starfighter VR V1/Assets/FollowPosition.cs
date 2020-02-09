@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPosition : MonoBehaviour
 {
-    [SerializeField] private Transform target;
+    [SerializeField] private Transform target = default;
 
     private Rigidbody rb;
 

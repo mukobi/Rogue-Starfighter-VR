@@ -5,9 +5,9 @@ using UnityEngine;
 public class ForwardEngine : MonoBehaviour
 {
     [Tooltip("The target to move forward")]
-    [SerializeField] private Rigidbody targetRigidbody;
-    [SerializeField] private Transform targetForwardRotation;
-    [SerializeField] private float topSpeed;
+    [SerializeField] private Rigidbody targetRigidbody = default;
+    [SerializeField] private Transform targetForwardRotation = default;
+    [SerializeField] private float topSpeed = default;
     //[SerializeField] private float maxAcceleration;
 
     private float desiredSpeed;
@@ -16,6 +16,7 @@ public class ForwardEngine : MonoBehaviour
     private void Start()
     {
         desiredSpeed = topSpeed;
+        currentSpeed = desiredSpeed;
     }
 
     private void LateUpdate()
