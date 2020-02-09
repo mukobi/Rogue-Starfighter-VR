@@ -5,12 +5,13 @@ using UnityEngine;
 public class ForwardEngine : MonoBehaviour
 {
     [Tooltip("The target to move forward")]
-    [SerializeField] private Rigidbody target;
+    [SerializeField] private Rigidbody targetRigidbody;
+    [SerializeField] private Transform targetForwardRotation;
     [SerializeField] private float topSpeed;
-    [SerializeField] private float maxAcceleration;
+    //[SerializeField] private float maxAcceleration;
 
     private float desiredSpeed;
-    private float currentSpeed;
+    public float currentSpeed;
 
     private void Start()
     {
@@ -18,11 +19,12 @@ public class ForwardEngine : MonoBehaviour
         currentSpeed = desiredSpeed;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        Vector3 globalVelocity = target.transform.forward * currentSpeed * Time.fixedDeltaTime;
-        Vector3 targetPosition = target.transform.position + globalVelocity;
-        target.MovePosition(targetPosition);
+        Vector3 globalVelocity = targetForwardRotation.forward * currentSpeed * Time.fixedDeltaTime;
+        Vector3 targetPosition = targetRigidbody.transform.position + globalVelocity;
+        //targetRigidbody.transform.Translate(globalVelocity);
+        targetRigidbody.MovePosition(targetPosition);
         //target.velocity = target.transform.TransformDirection(localVelocity);  // for kinematic bodies
     }
 }

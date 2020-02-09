@@ -9,7 +9,7 @@ public class PositionFollowSmooth : MonoBehaviour
 
     private Vector3 velocity;
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         transform.position = Vector3.SmoothDamp(transform.position, target.position, ref velocity, smoothTime);
     }
