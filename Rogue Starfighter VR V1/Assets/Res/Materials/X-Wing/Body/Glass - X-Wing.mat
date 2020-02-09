@@ -126,7 +126,7 @@ Material:
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
     - _BlendMode: 0
-    - _CoatMask: 0.02
+    - _CoatMask: 0.01
     - _CullMode: 0
     - _CullModeForward: 0
     - _Cutoff: 0.571
@@ -176,7 +176,7 @@ Material:
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1
     - _Ior: 1.5
-    - _IridescenceMask: 0.197
+    - _IridescenceMask: 0.1
     - _IridescenceThickness: 0.879
     - _LinkDetailsWithBase: 1
     - _MaterialID: 3
@@ -248,7 +248,6 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
 --- !u!114 &8183406749565602760
 MonoBehaviour:
   m_ObjectHideFlags: 11
