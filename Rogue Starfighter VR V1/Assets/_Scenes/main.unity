@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1.2482466, g: 1.2617393, b: 1.2482466, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -855,75 +855,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8684395497053977978}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &226974673
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 372
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 12.067302
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.2777219
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 963439549718274344, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4252958197592347451, guid: 95a0dee430d9ae1428567bc63623efc5,
-        type: 3}
-      propertyPath: m_Name
-      value: star destroyer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 95a0dee430d9ae1428567bc63623efc5, type: 3}
 --- !u!1 &301534243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: adbf39948178a8a4ea19c198754567c1, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1748749994}
+  m_SkySettings: {fileID: 1669149106}
   m_SkySettingsFromProfile: {fileID: 7488742677745068149, guid: adbf39948178a8a4ea19c198754567c1,
     type: 2}
 --- !u!4 &313761475
@@ -1273,7 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331bdfde334051f439c6a512763a102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topSpeed: 200
+  topSpeed: 160
   currentSpeed: 0
 --- !u!1 &480566184
 GameObject:
@@ -3094,7 +3025,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1748749994
+--- !u!114 &1669149106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
