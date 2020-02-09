@@ -13,6 +13,7 @@ public class TriggerISDSpawn : MonoBehaviour
     public void SpawnISD()
     {
         Debug.Log("Spawning an ISD");
-        iSDSpawner.SpawnISD(playerShip.position + spawnPosOffset, Quaternion.Euler(spawnPosOffset) * playerShip.localRotation);
+        Vector3 spawnPosWorld = playerShip.TransformPoint(spawnPosOffset);
+        iSDSpawner.SpawnISD(spawnPosWorld, playerShip.position);
     } 
 }
