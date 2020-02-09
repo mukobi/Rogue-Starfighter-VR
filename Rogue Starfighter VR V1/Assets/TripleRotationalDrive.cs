@@ -27,12 +27,14 @@ public class TripleRotationalDrive : MonoBehaviour
     }
     protected virtual void OnHandHoverBegin(Hand hand)
     {
-        hand.ShowGrabHint();
+        //hand.ShowGrabHint();
+        Debug.Log("OnHandHoverBegin");
     }
 
     protected virtual void OnHandHoverEnd(Hand hand)
     {
-        hand.HideGrabHint();
+        //hand.HideGrabHint();
+        Debug.Log("OnHandHoverEnd");
     }
     protected virtual void HandHoverUpdate(Hand hand)
     {
