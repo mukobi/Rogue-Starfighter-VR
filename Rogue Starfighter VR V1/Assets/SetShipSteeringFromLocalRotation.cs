@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SetShipSteeringFromLocalRotation : MonoBehaviour
 {
-    [SerializeField]
-    SteeringSystem steeringSystem;
+    [SerializeField] SteeringSystem steeringSystem = default;
 
     private void FixedUpdate()
     {

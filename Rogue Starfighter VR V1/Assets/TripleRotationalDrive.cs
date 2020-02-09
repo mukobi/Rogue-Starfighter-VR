@@ -11,8 +11,8 @@ public class TripleRotationalDrive : MonoBehaviour
     public Hand.AttachmentFlags attachmentFlags = Hand.AttachmentFlags.DetachFromOtherHand;
 
     [SerializeField] bool changeSlerpWhenGrabbed = false;
-    [SerializeField] [Range(0, 1)] float slerpFactorGripped;
-    [SerializeField] [Range(0, 1)] float slerpFactorReleased;
+    [SerializeField] [Range(0, 1)] float slerpFactorGripped = default;
+    [SerializeField] [Range(0, 1)] float slerpFactorReleased = default;
 
     
     private Quaternion initialHandRotationOnGrab;  // store initial rotation to use as difference // TODO: implement

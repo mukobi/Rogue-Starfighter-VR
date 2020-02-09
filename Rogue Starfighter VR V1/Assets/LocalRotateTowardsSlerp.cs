@@ -8,8 +8,7 @@ public class LocalRotateTowardsSlerp : MonoBehaviour
     public float slerpFactor = 1;
 
     [Tooltip("If None, will use the public Quaternion TargetRotation as target")]
-    [SerializeField] 
-    Transform TargetTransform;
+    [SerializeField] Transform TargetTransform = default;
 
     [HideInInspector]
     public Quaternion TargetRotation;

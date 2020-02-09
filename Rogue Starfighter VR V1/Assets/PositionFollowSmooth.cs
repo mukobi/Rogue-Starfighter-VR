@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PositionFollowSmooth : MonoBehaviour
 {
-    [SerializeField] private Transform target;
+    [SerializeField] private Transform target = default;
     [SerializeField] private float smoothTime = 0.1f;
 
     private Vector3 velocity;

@@ -6,8 +6,8 @@ using Valve.VR;
 public class ResetPlayAreaTransform : MonoBehaviour
 {
     [SerializeField] Transform hmd = default;
-    [SerializeField] GameObject leftHand;
-    [SerializeField] GameObject rightHand;
+    [SerializeField] GameObject leftHand = default;
+    [SerializeField] GameObject rightHand = default;
     [SerializeField] Transform playArea = default;
 
     [SerializeField] Transform targetHeadsetTransform = default;

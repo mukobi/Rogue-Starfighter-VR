@@ -5,7 +5,7 @@ using UnityEngine;
 public class SnapSmallLocalRotationToZerp : MonoBehaviour
 {
     [Tooltip("The Euler sqr magnitude below which rotations will go to 0.")]
-    [SerializeField] float limitSqrMagnitide;
+    [SerializeField] float limitSqrMagnitide = default;
 
     private Vector3 localRotationEuler;
 
