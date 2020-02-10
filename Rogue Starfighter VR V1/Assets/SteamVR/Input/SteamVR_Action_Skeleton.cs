@@ -920,7 +920,8 @@ namespace Valve.VR
             EVRInputError error = OpenVR.Input.GetSkeletalActionData(handle, ref skeletonActionData, skeletonActionData_size);
             if (error != EVRInputError.None)
             {
-                Debug.LogError("<b>[SteamVR]</b> GetSkeletalActionData error (" + fullPath + "): " + error.ToString() + " handle: " + handle.ToString());
+                // commented out to not constantly log, slowing down play mode
+                //Debug.LogError("<b>[SteamVR]</b> GetSkeletalActionData error (" + fullPath + "): " + error.ToString() + " handle: " + handle.ToString());
                 return;
             }
 

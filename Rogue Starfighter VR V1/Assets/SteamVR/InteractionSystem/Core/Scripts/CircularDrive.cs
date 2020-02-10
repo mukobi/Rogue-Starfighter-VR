@@ -215,7 +215,7 @@ namespace Valve.VR.InteractionSystem
 			}
 		}
 
-
+		
 		//-------------------------------------------------
 		private void OnHandHoverBegin( Hand hand )
 		{
