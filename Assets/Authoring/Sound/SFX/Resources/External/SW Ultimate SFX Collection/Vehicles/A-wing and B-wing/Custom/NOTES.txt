@@ -1,0 +1,7 @@
+
+These custom stereo samples emulate the 'flutter' effect heard in the
+A-wing engine sample from Star Wars: X-wing vs. TIE Fighter (AW-BW ENG 1D)
+originally released in 1997. This effect is achieved by layering the
+sample over itself, offsetting one layer by approximately 0.49625 seconds,
+and inverting the offset layer. Just mix these down to 'mono' using Audacity
+to hear the result.
