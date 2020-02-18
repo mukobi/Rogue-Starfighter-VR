@@ -1,0 +1,24 @@
+// Front end sound effects.  Do not translate
+sfx\button1.wav buttonsound
+sfx\jewel.wav jewelsound
+sfx\danger-2.wav warningsound
+sfx\settings.wav settingsound
+sfx\alarm03.wav newpsound
+sfx\fly.wav flysound
+sfx\alarm00.wav exitpsound
+sfx\button2.wav slotsound
+sfx\button1.wav bootsound
+sfx\config.wav configsound
+sfx\logonc.wav logonsound
+sfx\target4.wav sfxTarget1
+sfx\target5.wav sfxTarget2
+sfx\text.wav sfxText
+sfx\door-1b.wav tourdooropen
+sfx\dr-cls-1.wav tourdoorclose
+sfx\h1.wav message4
+sfx\r2a.wav r2_1
+sfx\r2b.wav r2_2
+sfx\r2c.wav r2_3
+sfx\r2d.wav r2_4
+sfx\panelarm.wav panelarm
+sfx\podopen.wav podopen
