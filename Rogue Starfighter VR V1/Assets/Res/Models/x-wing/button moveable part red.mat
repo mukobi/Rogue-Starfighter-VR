@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 7531ef1c3a06f2840973cfba2d911cbb,
     type: 3}
   m_ShaderKeywords: _DOUBLESIDED_ON
-  m_LightmapFlags: 1
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -111,7 +111,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3645A19D: 5
+    - Vector1_3645A19D: 15
     - Vector1_45B828C0: 1
     - Vector1_4C753589: 89.88
     - Vector1_9CC07F4B: 1
@@ -239,8 +239,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     - __enable_flashing: 0
+    - __force_emission_on: 0
     m_Colors:
-    - Color_151757C8: {r: 766.9961, g: 0, b: 0, a: 1}
+    - Color_151757C8: {r: 1024, g: 0, b: 0, a: 1}
     - Color_266B65C: {r: 1, g: 1, b: 1, a: 0}
     - Color_637598D2: {r: 0.990566, g: 0, b: 0, a: 0.9137255}
     - Color_70E2E4F0: {r: 0.36862746, g: 0.0039215684, b: 0.062117767, a: 0.79607844}

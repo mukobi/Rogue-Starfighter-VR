@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 7531ef1c3a06f2840973cfba2d911cbb,
     type: 3}
   m_ShaderKeywords: _DOUBLESIDED_ON
-  m_LightmapFlags: 1
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -238,7 +238,8 @@ Material:
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - __enable_flashing: 1
+    - __enable_flashing: 0
+    - __force_emission_on: 0
     m_Colors:
     - Color_151757C8: {r: 0, g: 1024, b: 76.94556, a: 1}
     - Color_266B65C: {r: 1, g: 1, b: 1, a: 0}

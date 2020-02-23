@@ -16,15 +16,8 @@ public class ButtonFlashToggler : MonoBehaviour
         material.SetFloat("__enable_flashing", toFlash ? 1.0f : 0.0f);
     }
 
-    [ContextMenu("StartFlash")]
-    private void StartFlashing()
+    public void ToggleConstantEmission(bool toEmit)
     {
-        ToggleFlashing(true);
-    }
-
-    [ContextMenu("StopFlash")]
-    private void StopFlashing()
-    {
-        ToggleFlashing(false);
+        material.SetFloat("__force_emission_on", toEmit ? 1.0f : 0.0f);
     }
 }
