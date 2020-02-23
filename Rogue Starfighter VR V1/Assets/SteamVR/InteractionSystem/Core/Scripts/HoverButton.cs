@@ -101,7 +101,10 @@ namespace Valve.VR.InteractionSystem
             buttonUp = wasEngaged == true && isEngaged == false;
 
             if (buttonDown && onButtonDown != null)
+            {
+                lastHoveredHand.TriggerHapticPulse(1600);
                 onButtonDown.Invoke(lastHoveredHand);
+            }
             if (buttonUp && onButtonUp != null)
                 onButtonUp.Invoke(lastHoveredHand);
             if (isEngaged && onButtonIsPressed != null)

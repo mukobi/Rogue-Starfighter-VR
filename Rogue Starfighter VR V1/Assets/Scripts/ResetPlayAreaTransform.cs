@@ -19,9 +19,11 @@ public class ResetPlayAreaTransform : MonoBehaviour
     {
         if (resetPositionAction.GetStateDown(SteamVR_Input_Sources.Any))
         {
-            StartCoroutine(ResetPlayAreaTransformCoroutine());
+            ResetPlayAreaTransformFunction();
         }
     }
+
+    public void ResetPlayAreaTransformFunction() { StartCoroutine(ResetPlayAreaTransformCoroutine()); }
 
     private IEnumerator ResetPlayAreaTransformCoroutine()
     {
