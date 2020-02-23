@@ -238,7 +238,7 @@ Material:
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - __enable_flashing: 0
+    - __enable_flashing: 1
     - __force_emission_on: 0
     m_Colors:
     - Color_151757C8: {r: 1024, g: 0, b: 0, a: 1}
