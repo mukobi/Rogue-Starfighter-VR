@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: adbf39948178a8a4ea19c198754567c1, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1555611860}
+  m_SkySettings: {fileID: 1693031269}
   m_SkySettingsFromProfile: {fileID: 7488742677745068149, guid: adbf39948178a8a4ea19c198754567c1,
     type: 2}
 --- !u!4 &313761475
@@ -1116,6 +1116,134 @@ MonoScript:
   m_ExecutionOrder: 0
   m_ClassName: SceneObjectIDMapSceneAsset
   m_Namespace: UnityEngine.Rendering.HighDefinition
+--- !u!1 &352108532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352108533}
+  - component: {fileID: 352108534}
+  m_Layer: 0
+  m_Name: Computer Drone 2C
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &352108533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352108532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1929551176}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &352108534
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352108532}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1406020007422230679, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: df93227f89722434483217d55577b8eb, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.654
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &400662704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1334,134 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topSpeed: 160
   currentSpeed: 0
+--- !u!1 &466662899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466662900}
+  - component: {fileID: 466662901}
+  m_Layer: 0
+  m_Name: Computer Drone 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &466662900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466662899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.75, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1929551176}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &466662901
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466662899}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1406020007422230679, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 4f4174e3a5dffea46ab69e6005027362, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &480566184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,7 +1548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508597140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 1.7}
+  m_LocalPosition: {x: 0, y: 0.8, z: 1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 480566185}
@@ -1452,6 +1708,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1462317317}
+  - {fileID: 1929551176}
   - {fileID: 5006512736237521089}
   m_Father: {fileID: 2146114326}
   m_RootOrder: 0
@@ -2159,6 +2416,134 @@ Transform:
   m_Father: {fileID: 1362365057}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1323132358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323132359}
+  - component: {fileID: 1323132360}
+  m_Layer: 0
+  m_Name: Computer Drone 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323132359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323132358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.75, y: 0.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1929551176}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1323132360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323132358}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1406020007422230679, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 636a88a0da5436d4c93ab7fc85c7620d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.85
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1362365056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,107 +4996,6 @@ Transform:
   m_Father: {fileID: 1448113468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1555611860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 0
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1 &1557427233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4820,6 +5104,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1693031269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 10
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 0.004353666
+    min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0.49280256, y: 0.5, z: 0.49280256}
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: e40263a8b2ef57f41b423dbeb2173f65, type: 3}
+  enableBackplate:
+    m_OverrideState: 0
+    m_Value: 0
+  backplateType:
+    m_OverrideState: 0
+    m_Value: 0
+  groundLevel:
+    m_OverrideState: 0
+    m_Value: 0
+  scale:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32}
+  projectionDistance:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 0.0000001
+  plateRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+  blendAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
+  shadowTint:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  pointLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  dirLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  rectLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!1 &1752991324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,6 +5363,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1759395268}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1772403421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772403422}
+  - component: {fileID: 1772403423}
+  m_Layer: 0
+  m_Name: XW ENG 16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1772403422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772403421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1929551176}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1772403423
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772403421}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1406020007422230679, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: cbb184b61994c6641ba1c6b787ea6444, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.71
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1847340766
 GameObject:
   m_ObjectHideFlags: 19
@@ -5020,6 +5533,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1929551175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929551176}
+  m_Layer: 0
+  m_Name: Audio Sources
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1929551176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929551175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1323132359}
+  - {fileID: 352108533}
+  - {fileID: 466662900}
+  - {fileID: 1772403422}
+  m_Father: {fileID: 622654082}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1996563999 stripped
 GameObject:
@@ -5785,9 +6332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -5805,6 +6352,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6406149285211110400}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 50106395320936031}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5857,6 +6415,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &50106395320936031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50106395320936027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &153235239666870348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9070136798518457449, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -5928,9 +6499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -5948,6 +6519,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4440999668338793728}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 153235239666870352}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6000,6 +6582,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &153235239666870352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153235239666870348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &154829828368948016 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9068542207557797653, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -6071,9 +6666,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -6091,6 +6686,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3990684681344563163}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 154829828368948020}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6143,6 +6749,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &154829828368948020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154829828368948016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &161920002947040941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9061452032480516746, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -6214,9 +6833,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -6234,6 +6853,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3297006592553022688}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 161920002947040945}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6286,6 +6916,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &161920002947040945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161920002947040941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &179058566404467107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9044313471265093000, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -6465,9 +7108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -6485,6 +7128,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1893211868713526219}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 392770620148064979}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6537,6 +7191,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &392770620148064979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392770620148064975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &408093320354545303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8815278717799457460, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -6608,9 +7275,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -6628,6 +7295,17 @@ MonoBehaviour:
       - m_Target: {fileID: 7209088135116453136}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 408093320354545307}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6680,6 +7358,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &408093320354545307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408093320354545303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &408462776420259776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8814909259116547045, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -6823,9 +7514,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -6843,6 +7534,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1352300806494213108}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 539279713506846921}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6895,6 +7597,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &539279713506846921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539279713506846917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &573994477428857602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 573994478824552665, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7002,9 +7717,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7022,6 +7737,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2474030280304722978}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 744601359872957823}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7074,6 +7800,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &744601359872957823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744601359872957819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &802375688680758651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 802375690007117472, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7145,9 +7884,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7165,6 +7904,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3328666110987792249}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 802375688680758655}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7217,6 +7967,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &802375688680758655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802375688680758651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &811066977436316038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 811066976516805213, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7288,9 +8051,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7308,6 +8071,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5632666017340869497}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 811066977436316042}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7360,6 +8134,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &811066977436316042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811066977436316038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &864085034942959757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 864085033624810326, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7467,9 +8254,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7487,6 +8274,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4386104764766925324}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 890116271417492140}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7539,6 +8337,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &890116271417492140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890116271417492136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &976966626708320574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8246405408891219227, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7610,9 +8421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7630,6 +8441,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5776296456679706525}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 976966626708320578}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7682,6 +8504,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &976966626708320578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976966626708320574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &1032181487660663310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8191190547834199595, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7789,9 +8624,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -7809,6 +8644,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6225922860924150025}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1168422495509738156}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7861,6 +8707,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1168422495509738156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168422495509738152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &1324215124911410888 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1324215123492662547, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8010,9 +8869,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8030,6 +8889,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8966336708189864894}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1605906820638616910}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8082,6 +8952,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1605906820638616910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605906820638616906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &1630273439592886011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1630273438738386208, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8153,9 +9036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8173,6 +9056,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3696989290040104894}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1630273439592886015}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8225,6 +9119,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1630273439592886015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630273439592886011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &1757539259585475371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1757539260838482160, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8332,9 +9239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8352,6 +9259,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8150621281163687505}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1798867122577583100}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8404,6 +9322,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1798867122577583100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798867122577583096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &1801667353722399762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1801667354451185609, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8547,9 +9478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8567,6 +9498,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5487690527050851995}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1982996222513426365}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8619,6 +9561,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1982996222513426365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982996222513426361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &2056042888804087270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7167329146789226947, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8798,9 +9753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8818,6 +9773,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3884759637777875792}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2597655045581814752}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8870,6 +9836,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2597655045581814752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2597655045581814748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &2599633021235117901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6623739014725133162, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -8959,9 +9938,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -8979,6 +9958,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3282717730567888695}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2707571077311453757}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9031,6 +10021,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2707571077311453757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2707571077311453753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &2781633263760270757 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2781633264512059006, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -9156,9 +10159,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -9176,6 +10179,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1032181487660663311}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2888032716911546459}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9228,6 +10242,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2888032716911546459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2888032716911546455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3001927961144372880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3001927960285613387, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -9353,9 +10380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -9373,6 +10400,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1982614368647574334}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3172224170223154711}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9425,6 +10463,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3172224170223154711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3172224170223154707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3179492433563323371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3179492432746391600, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -9496,9 +10547,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -9516,6 +10567,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4725989354987569875}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3179492433563323375}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9568,6 +10630,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3179492433563323375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3179492433563323371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3183966837797433626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3183966838492730049, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -9639,9 +10714,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -9659,6 +10734,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4364221710809195153}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3183966837797433630}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9711,6 +10797,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3183966837797433630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3183966837797433626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3248431058263281159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5974940977162310180, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -9836,9 +10935,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -9856,6 +10955,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2318982589558612069}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3311826317483138934}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9908,6 +11018,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3311826317483138934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311826317483138930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3315374404060813283 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3315374402727982136, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -10015,9 +11138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10035,6 +11158,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1388554315303883459}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3331855559343358070}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10087,6 +11221,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3331855559343358070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331855559343358066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3364390023255714586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3364390023984564417, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -10176,9 +11323,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10196,6 +11343,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5156160005664491846}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3389462959822609623}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10248,6 +11406,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3389462959822609623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3389462959822609619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &3523474284880723323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3523474286179802784, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -10511,9 +11682,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10531,6 +11702,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6393140621606073131}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4052560310795794404}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10583,6 +11765,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4052560310795794404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052560310795794400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4105080445390317009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4105080444126873098, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -10672,9 +11867,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10692,6 +11887,17 @@ MonoBehaviour:
       - m_Target: {fileID: 307459372336271103}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4133341548436172200}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10744,6 +11950,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4133341548436172200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133341548436172196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4241242130157243646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4982129905446670555, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -10869,9 +12088,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -10889,6 +12108,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4048990880200230532}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4367707428389557437}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10941,6 +12171,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4367707428389557437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367707428389557433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4368919955205719292 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4368919955930261287, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11012,9 +12255,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11032,6 +12275,17 @@ MonoBehaviour:
       - m_Target: {fileID: 9001328021769668578}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4368919955205719296}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11084,6 +12338,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4368919955205719296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368919955205719292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4386104764766925323 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4386104766131147216, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11173,9 +12440,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11193,6 +12460,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3145435202400367561}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4412686088330687562}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11245,6 +12523,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4412686088330687562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412686088330687558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4426741172831749609 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4796630862797330894, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11316,9 +12607,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11336,6 +12627,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8379400285801584296}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4426741172831749613}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11388,6 +12690,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4426741172831749613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426741172831749609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4440999668338793727 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4782372367801794780, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11495,9 +12810,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11515,6 +12830,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6194266173322937737}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4580276028558985556}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11567,6 +12893,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4580276028558985556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580276028558985552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4617053489240059395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4606318546386940456, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11638,9 +12977,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11658,6 +12997,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8723393555560468541}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4617053489240059399}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11710,6 +13060,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4617053489240059399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617053489240059395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4678294836218697252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4678294835427128831, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11781,9 +13144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -11801,6 +13164,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4537153807410092020}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4678294836218697256}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11853,6 +13227,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4678294836218697256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678294836218697252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &4682212724851635104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4682212723531567227, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -11996,9 +13383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -12016,6 +13403,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6718073120436876750}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4897978689123622708}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12068,6 +13466,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4897978689123622708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4897978689123622704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!4 &5006512736237521089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -12145,9 +13556,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -12165,6 +13576,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5110330032008447443}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5010058347681091299}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12217,6 +13639,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5010058347681091299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5010058347681091295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &5036680063272355846 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4186691972186657827, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -12306,9 +13741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -12326,6 +13761,17 @@ MonoBehaviour:
       - m_Target: {fileID: 7693155503403132040}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5059321504892161438}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12378,6 +13824,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5059321504892161438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5059321504892161434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &5101204339449240606 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4122167698186813499, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -12449,9 +13908,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -12469,6 +13928,17 @@ MonoBehaviour:
       - m_Target: {fileID: 7387967440938131396}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5101204339449240610}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12521,6 +13991,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5101204339449240610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5101204339449240606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &5110330032008447442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5110330033397720585, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -12808,9 +14291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -12828,6 +14311,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2194702686223497634}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6047978285678081602}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12880,6 +14374,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6047978285678081602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047978285678081598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6077404431697880924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3145967604333738873, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -12987,9 +14494,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13007,6 +14514,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8591532162564401637}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6180469552278909511}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13059,6 +14577,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6180469552278909511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6180469552278909507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6194266173322937736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3029105862639589805, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13202,9 +14733,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13222,6 +14753,17 @@ MonoBehaviour:
       - m_Target: {fileID: 5923476727307643571}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6355429507147068607}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13274,6 +14816,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6355429507147068607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6355429507147068603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6393140621606073130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6393140620743053553, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13399,9 +14954,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13419,6 +14974,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1757539259585475372}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6480273727543145569}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13471,6 +15037,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6480273727543145569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480273727543145565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6545213191603955489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2678158845939776262, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13560,9 +15139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13580,6 +15159,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2781633263760270758}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6557681112024052619}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13632,6 +15222,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6557681112024052619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557681112024052615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6575929128110193095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2647442907449566692, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13721,9 +15324,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13741,6 +15344,17 @@ MonoBehaviour:
       - m_Target: {fileID: 408462776420259777}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6604613814855090780}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13793,6 +15407,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6604613814855090780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6604613814855090776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6682229902150206754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6682229903579522809, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13918,9 +15545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -13938,6 +15565,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8941660661635068008}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6800013562517870183}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13990,6 +15628,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6800013562517870183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800013562517870179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6843161312943443576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2380210723188822621, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14079,9 +15730,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14099,6 +15750,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2872831024502266169}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6863273104241455300}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14151,6 +15813,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6863273104241455300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6863273104241455296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6878456452777666510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6878456453498127381, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14222,9 +15897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14248,7 +15923,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6878456452777666514}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   onButtonUp:
     m_PersistentCalls:
@@ -14294,6 +15980,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6878456452777666514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878456452777666510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &6982127677229750217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6982127678656771090, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14425,9 +16124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14445,6 +16144,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4105080445390317010}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7221463546680036197}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14497,6 +16207,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7221463546680036197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7221463546680036193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7237691880287580675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7237691881544782296, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14568,9 +16291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14588,6 +16311,17 @@ MonoBehaviour:
       - m_Target: {fileID: 528218373277807310}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7237691880287580679}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14640,6 +16374,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7237691880287580679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7237691880287580675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7342079522391050645 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1881292515823818162, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14753,9 +16500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14773,6 +16520,17 @@ MonoBehaviour:
       - m_Target: {fileID: 573994477428857603}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7563167330244568360}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14825,6 +16583,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7563167330244568360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7563167330244568356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7632103631554230509 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1591268406761120970, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -14914,9 +16685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -14934,6 +16705,17 @@ MonoBehaviour:
       - m_Target: {fileID: 7386736229706974136}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7662659442428338469}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14986,6 +16768,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7662659442428338469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7662659442428338465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7669505738653001608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7669505740012962899, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -15093,9 +16888,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -15113,6 +16908,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2172868213855601360}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7885852204219577493}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15165,6 +16971,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7885852204219577493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885852204219577489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7919269703441299987 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1304102334702282296, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -15236,9 +17055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -15256,6 +17075,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8138828842235621871}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7919269703441299991}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15308,6 +17138,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7919269703441299991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919269703441299987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7941322419110919402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7941322418247835441, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -15379,9 +17222,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -15399,6 +17242,17 @@ MonoBehaviour:
       - m_Target: {fileID: 6682229902150206755}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7941322419110919406}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15451,6 +17305,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7941322419110919406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7941322419110919402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &7972293508361823955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7972293507043722504, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -15522,9 +17389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -15542,6 +17409,17 @@ MonoBehaviour:
       - m_Target: {fileID: 301247669116682399}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7972293508361823959}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15594,6 +17472,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7972293508361823959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972293508361823955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &8055298868306475397 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1168073169933510050, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -15863,9 +17754,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -15883,6 +17774,17 @@ MonoBehaviour:
       - m_Target: {fileID: 262165922944282720}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8615127702055935968}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15935,6 +17837,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8615127702055935968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615127702055935964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &8656459877057305930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -566912161027342703, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -16165,9 +18080,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -16185,6 +18100,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4682212724851635105}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8812782348612820247}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16237,6 +18163,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8812782348612820247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8812782348612820243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &8855271468909571457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -368100569364033958, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -16326,9 +18265,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -16346,6 +18285,17 @@ MonoBehaviour:
       - m_Target: {fileID: 864543913615768529}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8927503913509390657}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16398,6 +18348,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8927503913509390657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8927503913509390653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &8941660661635068007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -281711373964667972, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -16559,9 +18522,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -16579,6 +18542,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8656459877057305931}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 9197353730208987749}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16631,6 +18605,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9197353730208987749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197353730208987745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
 --- !u!1 &9213306229899091237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9213306230829154046, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -16702,9 +18689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingPart: {fileID: 754236756}
-  localMoveDistance: {x: 0, y: -0.02, z: 0}
-  engageAtPercent: 0.95
-  disengageAtPercent: 0.85
+  localMoveDistance: {x: 0, y: -0.1, z: 0}
+  engageAtPercent: 0.1
+  disengageAtPercent: 0.05
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
@@ -16722,6 +18709,17 @@ MonoBehaviour:
       - m_Target: {fileID: 3095797360076392835}
         m_MethodName: ToggleConstantEmission
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 9213306229899091241}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16774,3 +18772,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03, y: 0.03, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9213306229899091241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9213306229899091237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 59d3af81f35501b49acb9af35b4ab329, type: 2}
