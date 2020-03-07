@@ -18848,6 +18848,12 @@ PrefabInstance:
       propertyPath: hoverUpdateInterval
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8684395497191729871, guid: fd5dae475dcff384cacaa6c001ddc9f7,
+        type: 3}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 1000012617731570, guid: f98af6bd7644dea47ad960649c397f87,
+        type: 3}
     - target: {fileID: 8684395497191778897, guid: fd5dae475dcff384cacaa6c001ddc9f7,
         type: 3}
       propertyPath: hoverSphereRadius
@@ -18868,6 +18874,12 @@ PrefabInstance:
       propertyPath: hoverUpdateInterval
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 8684395497191778897, guid: fd5dae475dcff384cacaa6c001ddc9f7,
+        type: 3}
+      propertyPath: renderModelPrefab
+      value: 
+      objectReference: {fileID: 1000011547835092, guid: f261af92e64a79f46a55773bcfe5a203,
+        type: 3}
     - target: {fileID: 8684395497198067197, guid: fd5dae475dcff384cacaa6c001ddc9f7,
         type: 3}
       propertyPath: m_Enabled
