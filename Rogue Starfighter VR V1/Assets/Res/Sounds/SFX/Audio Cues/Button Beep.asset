@@ -105,5 +105,6 @@ MonoBehaviour:
     type: 2}
   minVolume: 1
   maxVolume: 1
-  minPitch: 0.95
-  maxPitch: 1.05
+  minPitch: 0.9
+  maxPitch: 1.1
+  rolloffMode: 0
