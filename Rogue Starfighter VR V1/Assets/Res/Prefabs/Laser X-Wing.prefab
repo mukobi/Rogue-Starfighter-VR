@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294439706563347089}
-  - component: {fileID: 1294439706563347095}
   - component: {fileID: 1294439706563347088}
+  - component: {fileID: 5404395597999612339}
   m_Layer: 0
   m_Name: Laser X-Wing
   m_TagString: Untagged
@@ -33,22 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &1294439706563347095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294439706563347091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd31ad0891973214286dad7063d7c349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetRigidbody: {fileID: 1294439706563347088}
-  targetForwardRotation: {fileID: 1294439706563347089}
-  topSpeed: 130
-  currentSpeed: 0
 --- !u!54 &1294439706563347088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65,6 +49,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5404395597999612339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294439706563347091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb0a2b9774dcf1409879925dec37e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 198
 --- !u!1 &1294439708279576512
 GameObject:
   m_ObjectHideFlags: 0
