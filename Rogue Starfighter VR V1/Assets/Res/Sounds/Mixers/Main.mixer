@@ -105,7 +105,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Weapons
+  m_Name: XW Weapons
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 938c032340df3d4429301be6c8ca8595
   m_Children: []

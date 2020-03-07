@@ -17,7 +17,7 @@ MonoBehaviour:
   audioMixerGroup: {fileID: 243078391499754788, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
   minVolume: 0.9
-  maxVolume: 1.1
+  maxVolume: 1
   minPitch: 0.95
   maxPitch: 1.05
   rolloffMode: 1

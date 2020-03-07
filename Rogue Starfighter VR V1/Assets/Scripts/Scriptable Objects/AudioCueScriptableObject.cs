@@ -8,8 +8,8 @@ public class AudioCueScriptableObject : ScriptableObject
 {
     public AudioClip[] clips;
     public AudioMixerGroup audioMixerGroup;
-    public float minVolume;
-    public float maxVolume;
+    [Range(0, 1)] public float minVolume;
+    [Range(0, 1)] public float maxVolume;
     public float minPitch;
     public float maxPitch;
     public AudioRolloffMode rolloffMode = AudioRolloffMode.Logarithmic;
