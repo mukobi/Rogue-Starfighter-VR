@@ -12,6 +12,7 @@ public class AudioCueScriptableObject : ScriptableObject
     public float maxVolume;
     public float minPitch;
     public float maxPitch;
+    public AudioRolloffMode rolloffMode = AudioRolloffMode.Logarithmic;
 
     public GameObject Play(Vector3 position)
     {
@@ -30,6 +31,8 @@ public class AudioCueScriptableObject : ScriptableObject
         audioSource.spatialBlend = 1.0f;
         audioSource.outputAudioMixerGroup = audioMixerGroup;
         audioSource.PlayOneShot(clip, volume);
+        audioSource.rolloffMode = rolloffMode;
+
         Destroy(obj, clip.length / pitch); // clean up created object after done playing
         return obj;
     }
