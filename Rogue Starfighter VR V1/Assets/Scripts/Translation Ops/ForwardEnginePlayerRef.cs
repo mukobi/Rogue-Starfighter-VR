@@ -13,9 +13,4 @@ public class ForwardEnginePlayerRef : MonoBehaviour
         desiredSpeed = topSpeed;
         currentSpeed = desiredSpeed;
     }
-
-    private void LateUpdate()
-    {
-        
-    }
 }
