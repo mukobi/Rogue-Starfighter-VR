@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnapSmallLocalRotationToZerp : MonoBehaviour
+public class SnapSmallLocalRotationToZero : MonoBehaviour
 {
     [Tooltip("The Euler sqr magnitude below which rotations will go to 0.")]
     [SerializeField] float limitSqrMagnitide = default;
