@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 1.295283, g: 1.3061557, b: 1.295283, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -444,7 +444,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 957893911}
+  m_Father: {fileID: 1448113468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &146626254
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: adbf39948178a8a4ea19c198754567c1, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1954284626}
+  m_SkySettings: {fileID: 1933797889}
   m_SkySettingsFromProfile: {fileID: 7488742677745068149, guid: adbf39948178a8a4ea19c198754567c1,
     type: 2}
 --- !u!4 &313761475
@@ -1008,7 +1008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401232377}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: Audio.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1041,12 +1041,12 @@ GameObject:
   - component: {fileID: 422353754}
   - component: {fileID: 422353755}
   m_Layer: 0
-  m_Name: ForwardEnginePlayerRef
+  m_Name: Engine.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &422353754
 Transform:
   m_ObjectHideFlags: 0
@@ -1059,7 +1059,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 957893911}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &422353755
 MonoBehaviour:
@@ -1817,7 +1817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957893911}
   m_Layer: 0
-  m_Name: Systems
+  m_Name: Static Systems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1834,7 +1834,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 146626253}
   - {fileID: 1557427234}
   - {fileID: 422353754}
   - {fileID: 1224458749}
@@ -2331,7 +2330,7 @@ GameObject:
   - component: {fileID: 1224458749}
   - component: {fileID: 1224458750}
   m_Layer: 0
-  m_Name: LaserFirer
+  m_Name: LaserFirer.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2349,7 +2348,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 957893911}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1224458750
 MonoBehaviour:
@@ -2666,6 +2665,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 146626253}
   - {fileID: 1505385797}
   - {fileID: 1752991325}
   m_Father: {fileID: 0}
@@ -5041,7 +5041,7 @@ Transform:
   - {fileID: 957893911}
   - {fileID: 480566185}
   m_Father: {fileID: 1448113468}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557427233
 GameObject:
@@ -5054,7 +5054,7 @@ GameObject:
   - component: {fileID: 1557427234}
   - component: {fileID: 1557427235}
   m_Layer: 0
-  m_Name: TriggerISDSpawn
+  m_Name: TriggerISDSpawn.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5072,7 +5072,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 957893911}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1557427235
 MonoBehaviour:
@@ -5180,7 +5180,7 @@ Transform:
   m_Children:
   - {fileID: 2124645902}
   m_Father: {fileID: 1448113468}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1759395268
 PrefabInstance:
@@ -5589,7 +5589,7 @@ Transform:
   m_Father: {fileID: 401232377}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1954284626
+--- !u!114 &1933797889
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
