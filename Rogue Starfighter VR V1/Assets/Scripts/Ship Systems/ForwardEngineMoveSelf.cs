@@ -11,8 +11,9 @@ public class ForwardEngineMoveSelf : ForwardEngineAbstract
         rb = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         Vector3 targetPosition = rb.position + internalCurrentVelocity;
         rb.MovePosition(targetPosition);
     }

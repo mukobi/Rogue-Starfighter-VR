@@ -19,7 +19,7 @@ public class MoveOppositePlayerMovement : MonoBehaviour
 
         Vector3 playerGlobalVelocity = playerRotationForward * playerSpeed * Time.fixedDeltaTime;
         Vector3 targetPosition = transform.position + -playerGlobalVelocity;
-        //targetTransform.Translate(globalVelocity);
+
         rb.MovePosition(targetPosition);
     }
 }

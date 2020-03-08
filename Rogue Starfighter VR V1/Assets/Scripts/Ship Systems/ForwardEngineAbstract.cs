@@ -4,8 +4,6 @@ using UnityEngine;
 
 public abstract class ForwardEngineAbstract : MonoBehaviour
 {
-    public Transform TargetForwardRotation { get; private set; }
-
     public float BaseCruiseSpeed;
     public float SpeedBoost { get; set; }
     public float TurnSpeedReduction { get; set; }
@@ -15,7 +13,7 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
     public float CurrentSpeed { get; private set; }
     protected Vector3 internalCurrentVelocity;
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // calculate internalTargetSpeed
         internalTargetSpeed = BaseCruiseSpeed + SpeedBoost - TurnSpeedReduction;
@@ -39,6 +37,6 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
         CurrentSpeed += currentAcceleration;
 
         // calculate internalCurrentVelocity so child classes can move based off of it
-        internalCurrentVelocity = TargetForwardRotation.forward * CurrentSpeed * Time.deltaTime;
+        internalCurrentVelocity = transform.forward * CurrentSpeed * Time.fixedDeltaTime;
     }
 }
