@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CollideableShipBounceOff : CollideableShipAbstract
 {
+    [Tooltip("Jump an object in reflected direction on impact to avoid multiple collisions.")]
+    [SerializeField] private Transform transformToJumpAheadOnCollision = default;
+    [Tooltip("How far to jump in reflected direction on impact.")]
+    [SerializeField] private float collisionJumpBias = default;
+
     protected override void HandleCollision(Collision collision)
     {
         if (collision.gameObject.GetComponent<CollideableShipAbstract>() != null)
@@ -33,5 +38,8 @@ public class CollideableShipBounceOff : CollideableShipAbstract
 
         // set my new reflected rotation
         transform.rotation = Quaternion.LookRotation(newForward, oldUp);
+
+        // to avoid multiple collisions, jump ahead in reflected direction a little
+        transformToJumpAheadOnCollision.position += collisionJumpBias * newForward.normalized;
     }
 }
