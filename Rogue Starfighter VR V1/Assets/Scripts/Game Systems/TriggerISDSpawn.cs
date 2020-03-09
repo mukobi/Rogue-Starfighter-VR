@@ -9,6 +9,7 @@ public class TriggerISDSpawn : MonoBehaviour
     [SerializeField] private Transform playerShip = default;
     [SerializeField] private Vector3 spawnPosOffset = default;
 
+    [ContextMenu("Spawn ISD in front of player")]
     public void SpawnISD()
     {
         Debug.Log("Spawning an ISD");
