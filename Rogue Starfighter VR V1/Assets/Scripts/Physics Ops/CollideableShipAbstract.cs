@@ -12,16 +12,6 @@ public abstract class CollideableShipAbstract : MonoBehaviour
 
     protected virtual void HandleCollision(Collision collision)
     {
-        UnityEditor.EditorApplication.Beep();
-        if (collision.gameObject.GetComponent<CollideableShipAbstract>() != null)
-        {
-            // collided with another ship
-            Debug.Log($"Ship collision! {collision.contactCount} contacts");
-            foreach (ContactPoint contact in collision.contacts)
-            {
-                Debug.DrawRay(contact.point, contact.normal * 10, Color.green, 1.0f);
-            }
-            //UnityEditor.EditorApplication.isPaused = true;
-        }
+        // do nothing for now, see override in CollideableShipBounceOff.cs
     }
 }
