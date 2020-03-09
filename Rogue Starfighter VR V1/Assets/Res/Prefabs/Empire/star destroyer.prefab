@@ -133,4 +133,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseCruiseSpeed: 60
+  SpeedAtInstantiation: 60
   maxPositiveAcceleration: 1

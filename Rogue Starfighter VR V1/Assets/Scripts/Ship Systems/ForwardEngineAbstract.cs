@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class ForwardEngineAbstract : MonoBehaviour
 {
     public float BaseCruiseSpeed;
+    public float SpeedAtInstantiation;
     public float SpeedBoost { get; set; }
     public float TurnSpeedReduction { get; set; }
     [SerializeField] private float maxPositiveAcceleration = 1;
@@ -12,6 +13,11 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
     private float internalTargetSpeed;
     public float CurrentSpeed { get; private set; }
     protected Vector3 internalCurrentVelocity;
+
+    private void Start()
+    {
+        CurrentSpeed = SpeedAtInstantiation;
+    }
 
     protected virtual void FixedUpdate()
     {
