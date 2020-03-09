@@ -26,6 +26,7 @@ public class CollideableShipBounceOff : CollideableShipAbstract
             Vector3 actualCollidedSurfaceNormal = CalculateCollisionNormal(contactPoint);
             Debug.DrawRay(contactPoint.point, actualCollidedSurfaceNormal * 16, Color.green, 0.66f);
             BounceMyselfOffCollision(actualCollidedSurfaceNormal);
+            //UnityEditor.EditorApplication.isPaused = true;
         }
     }
 
@@ -48,7 +49,6 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         if (contactPoint.otherCollider.Raycast(ray, out hitInfo, rayLength))
         {
             Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.yellow, 0.66f);
-            UnityEditor.EditorApplication.isPaused = true;
             // this is the actual collider surface normal
             return hitInfo.normal;
         }
@@ -62,7 +62,6 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         if (contactPoint.otherCollider.Raycast(ray, out hitInfo, rayLength))
         {
             Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.magenta, 0.66f);
-            UnityEditor.EditorApplication.isPaused = true;
             // this is the actual collider surface normal
             return hitInfo.normal;
         }
@@ -78,6 +77,7 @@ public class CollideableShipBounceOff : CollideableShipAbstract
     {
         // calculate reflection of vector across normal: r = d - 2(dot(d,n))n
         Vector3 newForward = transform.forward - 2 * Vector3.Dot(transform.forward, normal) * normal;
+        Debug.Log(newForward);
 
         // use same up vector as before to preserve rotation about forward axis
         Vector3 oldUp = transform.up;
@@ -85,7 +85,8 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         // set my new reflected rotation
         transform.rotation = Quaternion.LookRotation(newForward, oldUp);
 
-        // to avoid multiple collisions, jump ahead in reflected direction a little
+        // to avoid multiple collisions, jump ahead in reflected and normal directions a little
         transformToJumpAheadOnCollision.position += collisionJumpBias * newForward.normalized;
+        transformToJumpAheadOnCollision.position += collisionJumpBias * normal;
     }
 }
