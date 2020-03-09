@@ -275,7 +275,7 @@ namespace Valve.VR.InteractionSystem
             // low friction if touching static object, high friction if touching dynamic
             SetPhysicMaterial(touchingDynamic ? physicMaterial_highfriction : physicMaterial_lowfriction);
 
-            Debug.Log(collision.collider);
+            //Debug.Log(collision.collider);
 
             float energy = collision.relativeVelocity.magnitude;
 
