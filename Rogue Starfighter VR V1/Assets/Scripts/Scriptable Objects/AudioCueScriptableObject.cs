@@ -14,10 +14,8 @@ public class AudioCueScriptableObject : ScriptableObject
     public float maxPitch;
     public AudioRolloffMode rolloffMode = AudioRolloffMode.Logarithmic;
 
-    public GameObject Play(Vector3 position)
+    public GameObject PlayWithNewAudioSourceAtPosition(Vector3 position)
     {
-        Debug.Log("Playing a one shot-sound.");
-
         // choose random variables
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         float volume = Random.Range(minVolume, maxVolume);
