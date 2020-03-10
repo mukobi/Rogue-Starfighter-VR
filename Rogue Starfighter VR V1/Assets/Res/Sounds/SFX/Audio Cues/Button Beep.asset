@@ -103,8 +103,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1348da3351412a64eb9cbdade66afee7, type: 3}
   audioMixerGroup: {fileID: 243366450046692526, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
-  minVolume: 0.9
-  maxVolume: 1
+  minVolume: 0.6
+  maxVolume: 0.7
   minPitch: 0.9
   maxPitch: 1.1
   rolloffMode: 0
