@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CollideableShipBounceOff : CollideableShipAbstract
 {
-    [SerializeField] private Transform transformToRotateOnCollision = default;
-
     [Tooltip("Jump an object in reflected direction on impact to avoid multiple collisions.")]
     [SerializeField] private Transform transformToJumpAheadOnCollision = default;
     [Tooltip("How far to jump in reflected direction on impact.")]
@@ -17,8 +15,9 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         // collided with another ship
         if (debugMode)
         {
+            UnityEditor.EditorApplication.isPaused = true;
             Debug.Log($"Ship collision! {collision.contactCount} contacts");
-            UnityEditor.EditorApplication.Beep();
+            //UnityEditor.EditorApplication.Beep();
             foreach (ContactPoint contact in collision.contacts)
             {
                 Debug.DrawRay(contact.point, contact.normal * 5, Color.blue, 0.66f);
@@ -29,9 +28,23 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         ContactPoint contactPoint = collision.GetContact(0);
 
         Vector3 actualCollidedSurfaceNormal = CalculateCollisionNormal(contactPoint);
-        if (debugMode) Debug.DrawRay(contactPoint.point, actualCollidedSurfaceNormal * 16, Color.green, 0.66f);
-        BounceMyselfOffCollision(actualCollidedSurfaceNormal);
-        //UnityEditor.EditorApplication.isPaused = true;
+        if (debugMode)
+        {
+            // collision normal
+            Debug.DrawRay(contactPoint.point, actualCollidedSurfaceNormal * 16, Color.white, 0.66f);
+            // incoming forward
+            Debug.DrawRay(contactPoint.point, -16 * transform.forward, Color.blue, 0.66f);
+            // incoming up
+            Debug.DrawRay(contactPoint.point -16 * transform.forward, 8 * transform.up, Color.green, 0.66f);
+        }
+        BounceMyselfOffCollision(transform.forward, transform.up, actualCollidedSurfaceNormal);
+        if (debugMode)
+        {
+            // reflected forward
+            Debug.DrawRay(contactPoint.point, 16 * transform.forward, Color.blue, 0.66f);
+            // reflected up
+            Debug.DrawRay(contactPoint.point, 8 * transform.up, Color.green, 0.66f);
+        }
 
         onShipCollision.Invoke(contactPoint.point);
     }
@@ -82,17 +95,17 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         return contactNormal;
     }
 
-    private void BounceMyselfOffCollision(Vector3 normal)
+    private void BounceMyselfOffCollision(Vector3 oldForward, Vector3 oldUp, Vector3 normal)
     {
         // calculate reflection of vector across normal: r = d - 2(dot(d,n))n
-        Vector3 newForward = transform.forward - 2 * Vector3.Dot(transform.forward, normal) * normal;
-        if (debugMode) Debug.Log(newForward);
-
-        // use same up vector as before to preserve rotation about forward axis
-        Vector3 oldUp = transform.up;
+        Vector3 newForward = oldForward - 2 * Vector3.Dot(oldForward, normal) * normal;
+        if(debugMode)
+        {
+            Debug.DrawRay(transform.position, 33 * newForward, Color.magenta, 0.66f);
+        }
 
         // set my new reflected rotation
-        transformToRotateOnCollision.rotation = Quaternion.LookRotation(newForward, oldUp);
+        transform.rotation = Quaternion.LookRotation(newForward, oldUp);
 
         // to avoid multiple collisions, jump ahead in reflected and normal directions a little
         transformToJumpAheadOnCollision.position += collisionJumpBias * newForward.normalized;
