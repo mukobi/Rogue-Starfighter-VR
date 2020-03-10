@@ -13,7 +13,7 @@ public class MovePositionForwardConstant : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         Vector3 globalVelocity = transform.forward * speed * Time.deltaTime;
         Vector3 targetPosition = rb.position + globalVelocity;
