@@ -8,7 +8,7 @@ public abstract class CollideableShipAbstract : MonoBehaviour
 
     private bool hasCollisionEnteredThisFrame;
 
-    UnityEventVector3 onShipCollision;
+    public UnityEventVector3 onShipCollision;
 
     private void LateUpdate()
     {

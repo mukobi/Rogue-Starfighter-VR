@@ -13,6 +13,7 @@ public class CollideableShipBounceOff : CollideableShipAbstract
 
     protected override void HandleShipCollision(Collision collision)
     {
+        base.HandleShipCollision(collision);
         // collided with another ship
         if (debugMode)
         {
@@ -26,10 +27,13 @@ public class CollideableShipBounceOff : CollideableShipAbstract
 
         // assume first contact best (not sure if this works? ¯\_(ツ)_/¯)
         ContactPoint contactPoint = collision.GetContact(0);
+
         Vector3 actualCollidedSurfaceNormal = CalculateCollisionNormal(contactPoint);
         if (debugMode) Debug.DrawRay(contactPoint.point, actualCollidedSurfaceNormal * 16, Color.green, 0.66f);
         BounceMyselfOffCollision(actualCollidedSurfaceNormal);
         //UnityEditor.EditorApplication.isPaused = true;
+
+        onShipCollision.Invoke(contactPoint.point);
     }
 
     private Vector3 CalculateCollisionNormal(ContactPoint contactPoint)
