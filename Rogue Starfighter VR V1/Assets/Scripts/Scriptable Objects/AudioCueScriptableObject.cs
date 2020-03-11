@@ -8,15 +8,14 @@ public class AudioCueScriptableObject : ScriptableObject
 {
     public AudioClip[] clips;
     public AudioMixerGroup audioMixerGroup;
-    public float minVolume;
-    public float maxVolume;
+    [Range(0, 1)] public float minVolume;
+    [Range(0, 1)] public float maxVolume;
     public float minPitch;
     public float maxPitch;
+    public AudioRolloffMode rolloffMode = AudioRolloffMode.Logarithmic;
 
-    public GameObject Play(Vector3 position)
+    public GameObject PlayWithNewAudioSourceAtPosition(Vector3 position)
     {
-        Debug.Log("Playing a one shot-sound.");
-
         // choose random variables
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         float volume = Random.Range(minVolume, maxVolume);
@@ -30,6 +29,8 @@ public class AudioCueScriptableObject : ScriptableObject
         audioSource.spatialBlend = 1.0f;
         audioSource.outputAudioMixerGroup = audioMixerGroup;
         audioSource.PlayOneShot(clip, volume);
+        audioSource.rolloffMode = rolloffMode;
+
         Destroy(obj, clip.length / pitch); // clean up created object after done playing
         return obj;
     }

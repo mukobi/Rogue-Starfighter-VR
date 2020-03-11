@@ -90,14 +90,16 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 4c75fd9d5d716d94d8d05a41eef827e6
   m_FloatValues:
-    5ae39320a7327ff4db5d0810f33b729a: 9.260412
-    564d3cb27276ec94a838960453961b50: 13
-    cdab1ae2f16d768469238848023b3c6f: -2.5738313
-    1d9811448e4a3d24d865c72e3884f2ad: 7.22
+    5ae39320a7327ff4db5d0810f33b729a: 3
+    0b258aa168e567349b336d2fa2fd3ec4: 0.05
+    564d3cb27276ec94a838960453961b50: 17.4
+    cdab1ae2f16d768469238848023b3c6f: 0
+    15eeecc38ee272e42b12743de01d3779: 0.042
+    1d9811448e4a3d24d865c72e3884f2ad: 4.2
     bb751615fa5a75d4e9e4fefed4153543: 0
     862bc2d69ec9aa14da5d28ba71c6d1c7: -24.162655
     233607f7acccb9043a9d117428ac8f1c: -12.5
-    14aa1f2a145519046ade9da921593486: -11.000072
+    14aa1f2a145519046ade9da921593486: -9
   m_TransitionOverrides: {}
 --- !u!243 &243078391499754788
 AudioMixerGroupController:
@@ -105,7 +107,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Weapons
+  m_Name: XW Weapons
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 938c032340df3d4429301be6c8ca8595
   m_Children: []

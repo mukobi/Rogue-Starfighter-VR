@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 8072092744891898654}
   - component: {fileID: 2538162111553595367}
   - component: {fileID: 964964120968779077}
-  - component: {fileID: 7597196408860840847}
+  - component: {fileID: 2578870577784731151}
+  - component: {fileID: 3457111486950658803}
+  - component: {fileID: 1391943939827871717}
   m_Layer: 0
   m_Name: star destroyer
   m_TagString: Untagged
@@ -105,7 +107,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7597196408860840847
+--- !u!64 &2578870577784731151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252958197592347451}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6167755700232899300, guid: 052bf7159cd520244a513af1c527ef23, type: 3}
+--- !u!114 &3457111486950658803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252958197592347451}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd31ad0891973214286dad7063d7c349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseCruiseSpeed: 0
+  SpeedAtInstantiation: 0
+  maxPositiveAcceleration: 1
+--- !u!114 &1391943939827871717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,6 +145,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4252958197592347451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c333b4eb5c3969c4d981b6dd9ed899a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 979a8d803f294e14fa3bc0905e33a98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
