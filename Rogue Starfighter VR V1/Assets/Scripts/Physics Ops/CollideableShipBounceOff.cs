@@ -15,7 +15,9 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         // collided with another ship
         if (debugMode)
         {
+#if UNITY_EDITOR
             UnityEditor.EditorApplication.isPaused = true;
+#endif
             Debug.Log($"Ship collision! {collision.contactCount} contacts");
             //UnityEditor.EditorApplication.Beep();
             foreach (ContactPoint contact in collision.contacts)
@@ -90,7 +92,9 @@ public class CollideableShipBounceOff : CollideableShipAbstract
         {
             Debug.LogError("No Raycast hit for calculating ship collision normal.");
             Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.red, 0.66f);
+#if UNITY_EDITOR
             UnityEditor.EditorApplication.isPaused = true;
+#endif
         }
         return contactNormal;
     }
