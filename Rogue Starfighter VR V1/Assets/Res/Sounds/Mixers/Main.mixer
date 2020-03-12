@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-8762767145967406488
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 00bf9ff93b7b6ea48a73e2cdc73a7287
+  m_EffectName: Attenuation
+  m_MixLevel: 2507daaa32127df44b1f2326168c3e2e
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-8704083180788236103
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Laser Impacts
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1144ccfb859f34746ad8439221f2ce81
+  m_Children: []
+  m_Volume: 828ab427651fde742aa034c885048c34
+  m_Pitch: 29b5a4af77e6ef647bef9f68aa860211
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8762767145967406488}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-2980531814522827496
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -39,6 +72,7 @@ AudioMixerController:
     - b91309e5d363e144e91ce32abb722fb1
     - 938c032340df3d4429301be6c8ca8595
     - e2d6a62f67d5c1442b40aff0f93b6df6
+    - 1144ccfb859f34746ad8439221f2ce81
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -56,6 +90,7 @@ AudioMixerGroupController:
   - {fileID: 243366450046692526}
   - {fileID: 243078391499754788}
   - {fileID: 1406020007422230679}
+  - {fileID: -8704083180788236103}
   m_Volume: ab42ebf99d066b24c96ca30db6136b6d
   m_Pitch: bcac327279b36b144998cbe26c6bd058
   m_Send: 00000000000000000000000000000000
@@ -98,6 +133,7 @@ AudioMixerSnapshotController:
     1d9811448e4a3d24d865c72e3884f2ad: 4.2
     bb751615fa5a75d4e9e4fefed4153543: 0
     862bc2d69ec9aa14da5d28ba71c6d1c7: -24.162655
+    828ab427651fde742aa034c885048c34: -3.8468595
     233607f7acccb9043a9d117428ac8f1c: -12.5
     14aa1f2a145519046ade9da921593486: -9
   m_TransitionOverrides: {}

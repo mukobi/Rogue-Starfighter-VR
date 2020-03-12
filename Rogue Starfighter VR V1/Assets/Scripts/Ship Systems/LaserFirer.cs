@@ -17,10 +17,8 @@ public class LaserFirer : MonoBehaviour
     {
         if(isTryingToFire)
         {
-            Debug.Log("isTryingToFire");
             if(Time.time - lastFireTime > fireInterval)
             {
-                Debug.Log("fireInterval");
                 laserGuns[fireInstantiationPointCurrentIndex].Fire();
                 fireInstantiationPointCurrentIndex = (fireInstantiationPointCurrentIndex + 1) % laserGuns.Length;
                 lastFireTime = Time.time;

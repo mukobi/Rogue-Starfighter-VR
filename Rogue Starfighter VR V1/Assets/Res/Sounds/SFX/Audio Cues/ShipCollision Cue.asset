@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: ShipCollision Cue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: f846789ef10bad8489133375f7e74d1f, type: 3}
+  - {fileID: 8300000, guid: d7ec31c484a80f14b8157b2fc4bd46bc, type: 3}
+  - {fileID: 8300000, guid: 56cf6bfdeddb09f468ab0ca27e22f68c, type: 3}
+  - {fileID: 8300000, guid: bfb92e7c79536c4408eb6ada1ee01a7b, type: 3}
+  - {fileID: 8300000, guid: 450f1277d589bde448ca806aa26bcac6, type: 3}
+  - {fileID: 8300000, guid: c2c4fb1479ddb9743b4318323afb6373, type: 3}
+  - {fileID: 8300000, guid: fbfcbf0f8ca18e14cb64b2be0d85a7a6, type: 3}
+  - {fileID: 8300000, guid: e5ad283d29dd07c4880aa4fdf2869d97, type: 3}
+  - {fileID: 8300000, guid: f0d12062a51141b468cd8aed426e9b46, type: 3}
+  - {fileID: 8300000, guid: cc83158837133504ea7f1b3ef54928b2, type: 3}
+  - {fileID: 8300000, guid: 647fd62ac8262f540943fdb558c6e980, type: 3}
+  - {fileID: 8300000, guid: 66da24089a30f1d4aa2f2b5ae33b55f1, type: 3}
+  - {fileID: 8300000, guid: 568edd1fe1fe135449fc5024fee258ec, type: 3}
+  - {fileID: 8300000, guid: 67a5556caf4781c49b2ca2b16425c95a, type: 3}
+  - {fileID: 8300000, guid: 7acc2c07c351302419e645426285c29e, type: 3}
+  - {fileID: 8300000, guid: bf6bf550af6c5494786089b0e5bf86d7, type: 3}
+  - {fileID: 8300000, guid: 5a5c874466ed96e4da90d75d72878bb8, type: 3}
+  - {fileID: 8300000, guid: 1085f082260b48c41b30d95350f88285, type: 3}
+  audioMixerGroup: {fileID: 243366450046692526, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  minPitch: 0.9
+  maxPitch: 1
+  rolloffMode: 1
