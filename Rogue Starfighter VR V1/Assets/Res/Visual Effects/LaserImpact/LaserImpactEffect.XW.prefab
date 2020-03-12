@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1059097060791409516}
   - component: {fileID: 1059097060791409519}
   - component: {fileID: 1059097060791409518}
+  - component: {fileID: -3076800232006642661}
   m_Layer: 0
-  m_Name: LaserImpact.XW
+  m_Name: LaserImpactEffect.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4812,3 +4813,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-3076800232006642661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059097060791409513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab45acb8d39b035428bbc1bf4fb34aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyTimeSeconds: 1
