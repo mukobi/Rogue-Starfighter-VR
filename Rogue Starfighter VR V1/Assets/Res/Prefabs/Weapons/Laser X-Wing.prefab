@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab45acb8d39b035428bbc1bf4fb34aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTime: 6
+  DestroyTimeSeconds: 6
 --- !u!1 &1294439708279576512
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,4 +257,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1059097060791409513, guid: 75017657bab67e946968034c2a504153, type: 3}
-  destroyTime: 1

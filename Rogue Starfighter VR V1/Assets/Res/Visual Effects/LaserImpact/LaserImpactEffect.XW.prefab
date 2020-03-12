@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1059097060791409519}
   - component: {fileID: 1059097060791409518}
   - component: {fileID: -3076800232006642661}
+  - component: {fileID: 6556705340043663577}
   m_Layer: 0
   m_Name: LaserImpactEffect.XW
   m_TagString: Untagged
@@ -4826,3 +4827,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DestroyTimeSeconds: 1
+--- !u!114 &6556705340043663577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059097060791409513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 65a5335efce3cef4996fd74af409ff73, type: 2}
+  playOnAwake: 1
