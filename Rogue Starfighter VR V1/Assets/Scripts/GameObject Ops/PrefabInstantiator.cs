@@ -6,9 +6,20 @@ public class PrefabInstantiator : MonoBehaviour
 {
     public GameObject prefab;
 
+    [Tooltip("Optional, leave null to instantiate under my parent.")]
+    public Transform childOfDesiredParent;
+
     [ContextMenu("InstantiatePrefabAtMyTransform")]
     public void InstantiatePrefabAtMyTransform()
     {
-        GameObject gameObject = Instantiate(prefab, transform.position, transform.rotation);
+        if (childOfDesiredParent != null)
+        {
+            Instantiate(prefab, transform.position, transform.rotation, childOfDesiredParent.parent);
+        }
+        else
+        {
+            // set my parent as its parent
+            Instantiate(prefab, transform.position, transform.rotation, transform.parent);
+        }
     }
 }
