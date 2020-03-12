@@ -6,6 +6,6 @@ public class DestroyAfterTime : MonoBehaviour
 
     private void Awake()
     {
-        Destroy(gameObject, DestroyTime);
+        Destroy(gameObject, DestroyTimeSeconds);
     }
 }
