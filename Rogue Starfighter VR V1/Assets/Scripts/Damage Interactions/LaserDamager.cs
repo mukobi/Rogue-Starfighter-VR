@@ -15,7 +15,8 @@ public class LaserDamager : MonoBehaviour, IDamager
 
     private void OnCollisionEnter(Collision other)
     {
-        var damageableByLaser = other.gameObject.GetComponent<IDamageableByLaser>();
+        var damageableByLaser = other.gameObject.GetComponent<DamageableShipPart>();
+        Debug.Log(damageableByLaser);
         if (damageableByLaser != null)
         {
             Damage(damageableByLaser);
