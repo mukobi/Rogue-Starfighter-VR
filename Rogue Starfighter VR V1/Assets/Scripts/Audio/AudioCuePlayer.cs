@@ -5,6 +5,15 @@ using UnityEngine;
 public class AudioCuePlayer : MonoBehaviour
 {
     [SerializeField] private AudioCueScriptableObject audioCue = default;
+    [SerializeField] private bool playOnAwake = false;
+
+    private void Awake()
+    {
+        if(playOnAwake)
+        {
+            PlayAtMyPosition();
+        }
+    }
 
     public void PlayAtMyPosition()
     {

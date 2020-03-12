@@ -2,7 +2,7 @@
 
 public class DestroyAfterTime : MonoBehaviour
 {
-    [SerializeField] private float DestroyTimeSeconds;
+    [SerializeField] private float DestroyTimeSeconds = default;
 
     private void Awake()
     {
