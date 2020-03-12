@@ -257,3 +257,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1059097060791409513, guid: 75017657bab67e946968034c2a504153, type: 3}
+  childOfDesiredParent: {fileID: 1294439706563347089}
