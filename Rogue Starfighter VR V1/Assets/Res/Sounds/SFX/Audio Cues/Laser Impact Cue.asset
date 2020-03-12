@@ -263,4 +263,4 @@ MonoBehaviour:
   maxVolume: 1
   minPitch: 0.9
   maxPitch: 1.3
-  rolloffMode: 0
+  rolloffMode: 1
