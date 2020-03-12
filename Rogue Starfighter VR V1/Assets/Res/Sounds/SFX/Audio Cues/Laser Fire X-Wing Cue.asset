@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
-  m_Name: Laser Fire X-Wing
+  m_Name: Laser Fire X-Wing Cue
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: d427665ec1dee0e498458b32affa785f, type: 3}
