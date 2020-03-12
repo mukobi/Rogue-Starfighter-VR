@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: LaserImpact
+  m_EditorClassIdentifier: 
+  clips: []
+  audioMixerGroup: {fileID: -8704083180788236103, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  minPitch: 0.9
+  maxPitch: 1.3
+  rolloffMode: 1
