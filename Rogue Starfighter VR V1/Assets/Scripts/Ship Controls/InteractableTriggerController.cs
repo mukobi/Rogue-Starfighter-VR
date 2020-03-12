@@ -14,8 +14,6 @@ public class InteractableTriggerController : MonoBehaviour
     {
         if (interactable.attachedToHand)
         {
-
-            Debug.Log(interactable.attachedToHand.uiInteractAction.GetState(interactable.attachedToHand.handType));
             laserFirer.isTryingToFire = interactable.attachedToHand.uiInteractAction.GetState(interactable.attachedToHand.handType);
         }
         else
