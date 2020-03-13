@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(SteeringSystem))]
 public class BoidAgent : MonoBehaviour
 {
 
@@ -12,10 +11,15 @@ public class BoidAgent : MonoBehaviour
     Collider agentCollider;
     public Collider AgentCollider { get { return agentCollider; } }
 
+
+    public float maxRotationDeltaDegrees = 30;
+    private SteeringSystem steeringSystem;
+
     // Start is called before the first frame update
     void Start()
     {
         agentCollider = GetComponent<Collider>();
+        steeringSystem = GetComponent<SteeringSystem>();
     }
 
     public void Initialize(BoidFlock flock)
@@ -23,9 +27,10 @@ public class BoidAgent : MonoBehaviour
         agentFlock = flock;
     }
 
-    public void Move(Vector2 velocity)
+    public void SetDeltaRotation(Vector3 desiredForward)
     {
-        transform.up = velocity;
-        transform.position += (Vector3)velocity * Time.deltaTime;
+        Quaternion desiredRotation = Quaternion.LookRotation(desiredForward);
+        Quaternion deltaRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
+        steeringSystem.deltaRotation = deltaRotation;
     }
 }

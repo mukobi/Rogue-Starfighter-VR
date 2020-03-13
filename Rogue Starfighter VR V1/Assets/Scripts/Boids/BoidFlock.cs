@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BoidFlock : MonoBehaviour
+public abstract class BoidFlock : MonoBehaviour
 {
-    public BoidAgent agentPrefab;
-    List<BoidAgent> agents = new List<BoidAgent>();
+    public List<BoidAgent> agents = new List<BoidAgent>();
     public BoidBehaviour behavior;
 
     [Range(1f, 10f)]
@@ -30,8 +29,8 @@ public class BoidFlock : MonoBehaviour
         {
             List<Transform> context = GetNearbyObjects(agent);
 
-            Vector3 move = behavior.CalculateMove(agent, context, this);
-            agent.Move(move);
+            Vector3 desiredForward = behavior.CalculateDesiredForward(agent, context, this);
+            agent.SetDeltaRotation(desiredForward);
         }
     }
 
