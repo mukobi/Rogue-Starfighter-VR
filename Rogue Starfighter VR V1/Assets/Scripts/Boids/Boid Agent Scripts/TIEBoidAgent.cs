@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TIEBoidAgent : BoidAgent
 {
-    private void Start()
+    protected override void Start()
     {
         base.Start();
         Initialize(TIEBoidFlock.Instance);

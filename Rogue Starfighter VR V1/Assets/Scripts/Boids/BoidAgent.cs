@@ -16,7 +16,7 @@ public abstract class BoidAgent : MonoBehaviour
     private SteeringSystem steeringSystem;
 
     // Start is called before the first frame update
-    protected void Start()
+    protected virtual void Start()
     {
         agentCollider = GetComponent<Collider>();
         steeringSystem = GetComponent<SteeringSystem>();
