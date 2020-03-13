@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
-public class AvoidanceBehavior : FilteredFlockBehavior
+public class AvoidanceBehavior : FilteredBoidBehavior
 {
-    public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         //if no neighbors, return no adjustment
         if (context.Count == 0)
-            return Vector2.zero;
+            return Vector3.zero;
 
         //add all points together and average
-        Vector2 avoidanceMove = Vector2.zero;
+        Vector3 avoidanceMove = Vector3.zero;
         int nAvoid = 0;
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
         foreach (Transform item in filteredContext)
         {
-            if (Vector2.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
+            if (Vector3.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
             {
                 nAvoid++;
-                avoidanceMove += (Vector2)(agent.transform.position - item.position);
+                avoidanceMove += agent.transform.position - item.position;
             }
         }
         if (nAvoid > 0)

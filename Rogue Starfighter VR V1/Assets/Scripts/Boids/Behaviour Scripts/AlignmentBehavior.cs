@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Alignment")]
-public class AlignmentBehavior : FilteredFlockBehavior
+public class AlignmentBehavior : FilteredBoidBehavior
 {
-    public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         //if no neighbors, maintain current alignment
         if (context.Count == 0)
-            return agent.transform.up;
+            return agent.transform.forward;
 
         //add all points together and average
-        Vector2 alignmentMove = Vector2.zero;
+        Vector3 alignmentDirection = Vector3.zero;
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
         foreach (Transform item in filteredContext)
         {
-            alignmentMove += (Vector2)item.transform.up;
+            alignmentDirection += item.transform.forward;
         }
-        alignmentMove /= context.Count;
+        alignmentDirection /= context.Count;
 
-        return alignmentMove;
+        return alignmentDirection;
     }
 }

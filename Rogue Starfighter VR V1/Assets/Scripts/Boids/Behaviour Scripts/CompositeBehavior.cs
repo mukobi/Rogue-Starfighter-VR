@@ -3,42 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Composite")]
-public class CompositeBehavior : FlockBehavior
+public class CompositeBehavior : BoidBehaviour
 {
-    public FlockBehavior[] behaviors;
+    public BoidBehaviour[] behaviors;
     public float[] weights;
 
-    public override Vector2 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         //handle data mismatch
         if (weights.Length != behaviors.Length)
         {
             Debug.LogError("Data mismatch in " + name, this);
-            return Vector2.zero;
+            return Vector3.zero;
         }
 
-        //set up move
-        Vector2 move = Vector2.zero;
+        //set up desired forward
+        Vector3 desiredForward = Vector3.zero;
 
         //iterate through behaviors
         for (int i = 0; i < behaviors.Length; i++)
         {
-            Vector2 partialMove = behaviors[i].CalculateMove(agent, context, flock) * weights[i];
+            Vector3 partialDesiredForward = behaviors[i].CalculateDesiredForward(agent, context, flock) * weights[i];
 
-            if (partialMove != Vector2.zero)
+            if (partialDesiredForward != Vector3.zero)
             {
-                if (partialMove.sqrMagnitude > weights[i] * weights[i])
+                // TODO: experiment without this if block
+                if (partialDesiredForward.sqrMagnitude > weights[i] * weights[i])
                 {
-                    partialMove.Normalize();
-                    partialMove *= weights[i];
+                    partialDesiredForward.Normalize();
+                    partialDesiredForward *= weights[i];
                 }
 
-                move += partialMove;
+                desiredForward += partialDesiredForward;
 
             }
         }
 
-        return move;
+        return desiredForward;
 
 
     }
