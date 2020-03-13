@@ -146,7 +146,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -156,12 +156,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -176,7 +176,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -188,6 +188,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!4 &314592179 stripped
@@ -221,7 +227,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -231,12 +237,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -251,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -263,6 +269,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!4 &689586145 stripped
@@ -296,7 +308,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -306,12 +318,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -326,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -338,6 +350,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!4 &712703372 stripped
@@ -377,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -387,12 +405,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -407,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -419,6 +437,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!1001 &985581352
@@ -446,7 +470,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -456,12 +480,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -476,7 +500,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -488,6 +512,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!1 &1021441841
@@ -624,6 +654,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024076948}
     m_Modifications:
+    - target: {fileID: 5915972563203125483, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -652,12 +687,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -672,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -684,6 +719,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!1001 &1237830365
@@ -792,7 +833,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -802,12 +843,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -822,7 +863,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -834,6 +875,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!4 &1615214162 stripped
@@ -987,7 +1034,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -997,12 +1044,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -1017,7 +1064,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -1029,6 +1076,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
 --- !u!1001 &2112556578
@@ -1056,7 +1109,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -1066,12 +1119,12 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00036770105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -1086,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180.04199
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -1098,5 +1151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TIE Fighter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8934575496407826915, guid: 0a6df03505d822842ba36a3c2a731bb0,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6df03505d822842ba36a3c2a731bb0, type: 3}
