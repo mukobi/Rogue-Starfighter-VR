@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class MusicManager : MonoBehaviour
+public class AudioMixerManager : MonoBehaviour
 {
     public AudioMixerSnapshot fullMix;
     public AudioMixerSnapshot muteMusic;

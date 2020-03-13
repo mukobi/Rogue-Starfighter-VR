@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameOrchestrator : MonoBehaviour
+public class GameSequencer : MonoBehaviour
 {
 }
