@@ -1,0 +1,26 @@
+Major code resources for the boid system were used from:
+
+Board To Bits Games (https://www.youtube.com/channel/UCifiUB82IZ6kCkjNXN8dwsQ)
+and their flocking algorithm tutorial
+(https://www.youtube.com/watch?v=mjKINQigAE4&list=PL5KbKbJ6Gf99UlyIqzV1UpOzseyRn5H1d)
+
+The main differences are:
+* Board To Bits Games's solution is built for 2D, this is for 3D
+* The behaviours I wrote are slightly different (and not technically the exact
+  same as in the original boid paper by Craig Reynolds) to fit this game
+* Instead of directly moving each boid to a point as Board To Bits Games does,
+  I try to respect the theoretical capabilities of the virtual pilots flying
+  these boid ships and the physical limits of the ships themselves. I do this
+  by calculating the desired future position as Board To Bits Games does but
+  then calculating a rotation pointing from the current rotation to that position
+  limited to a specific angle in each axis (can't instantly turn around) and
+  setting the delta rotation on a SteeringSystem component to this rotation
+  (so rotation is smoothed over time).
+
+
+Additional inspiration and reference from:
+
+Sebastian Lague - Coding Adventure: Boids (https://www.youtube.com/watch?v=bqtqltqcQhw)
+
+Craig W. Reynold - Flocks, Herds, and Schools: A Distributed Behavioral Model
+(the original boid paper) (http://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/)
