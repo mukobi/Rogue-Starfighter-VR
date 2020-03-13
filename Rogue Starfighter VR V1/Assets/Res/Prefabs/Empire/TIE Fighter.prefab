@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8934575496407826912}
   - component: {fileID: 4793078825552081761}
   - component: {fileID: 2036718971651599707}
-  - component: {fileID: 9123658108808602133}
+  - component: {fileID: 5915972563203125483}
   - component: {fileID: 5488986112986433803}
   m_Layer: 0
   m_Name: TIE Fighter
@@ -210,7 +210,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &9123658108808602133
+--- !u!114 &5915972563203125483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,12 +219,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8934575496407826915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68ecde5b27f983409dffd71c6629c24, type: 3}
+  m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slerpFactor: 0.1
-  TargetTransform: {fileID: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 0}
+  maxRotationDeltaDegrees: 30
 --- !u!114 &5488986112986433803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4a99c88e9d0f54f88839cf6666589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationScaleEuler: {x: 0, y: 0, z: 0}
+  rotationScaleEuler: {x: 0.01, y: 0.005, z: 0.01}
   deltaRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &8934575497648892956
 PrefabInstance:

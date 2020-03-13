@@ -6,7 +6,6 @@ public abstract class BoidFlock : MonoBehaviour
     public List<BoidAgent> agents = new List<BoidAgent>();
     public BoidBehaviour behavior;
 
-    [Range(1f, 10f)]
     public float neighborRadius = 1.5f;
     [Range(0f, 1f)]
     public float avoidanceRadiusMultiplier = 0.5f;

@@ -2,10 +2,10 @@
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(SteeringSystem))]
-public class BoidAgent : MonoBehaviour
+public abstract class BoidAgent : MonoBehaviour
 {
-
     BoidFlock agentFlock;
+
     public BoidFlock AgentFlock { get { return agentFlock; } }
 
     Collider agentCollider;
@@ -16,7 +16,7 @@ public class BoidAgent : MonoBehaviour
     private SteeringSystem steeringSystem;
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         agentCollider = GetComponent<Collider>();
         steeringSystem = GetComponent<SteeringSystem>();
@@ -32,5 +32,18 @@ public class BoidAgent : MonoBehaviour
         Quaternion desiredRotation = Quaternion.LookRotation(desiredForward);
         Quaternion deltaRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
         steeringSystem.deltaRotation = deltaRotation;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (agentFlock != null)
+        {
+            // draw awareness sphere
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius);
+            // draw avoidance sphere
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius * agentFlock.avoidanceRadiusMultiplier);
+        }
     }
 }
