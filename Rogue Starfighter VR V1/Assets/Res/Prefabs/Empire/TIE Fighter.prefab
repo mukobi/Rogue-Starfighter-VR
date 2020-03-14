@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseCruiseSpeed: 200
-  SpeedAtInstantiation: 200
+  SpeedAtInstantiation: 0
   maxPositiveAcceleration: 1
 --- !u!82 &2036718971651599707
 AudioSource:
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRotationDeltaDegrees: 30
+  maxRotationDeltaDegrees: 66
 --- !u!114 &5488986112986433803
 MonoBehaviour:
   m_ObjectHideFlags: 0

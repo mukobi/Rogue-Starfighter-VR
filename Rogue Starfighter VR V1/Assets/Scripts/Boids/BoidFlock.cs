@@ -26,6 +26,10 @@ public abstract class BoidFlock : MonoBehaviour
     {
         foreach (BoidAgent agent in agents)
         {
+            //if (agent == null)
+            //{
+            //    agents.Remove(agent);
+            //}
             List<Transform> context = GetNearbyObjects(agent);
 
             Vector3 desiredForward = behavior.CalculateDesiredForward(agent, context, this);

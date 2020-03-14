@@ -40,7 +40,6 @@ public abstract class BoidAgent : MonoBehaviour
         desiredRotation = Quaternion.LookRotation(desiredForward);
         desiredRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
         deltaRotation = desiredRotation * Quaternion.Inverse(transform.rotation);
-        Debug.Log(Quaternion.Angle(transform.rotation, deltaRotation));
         //deltaRotation = Quaternion.Inverse(transform.rotation) * deltaRotation;
         steeringSystem.deltaRotation = deltaRotation;
     }
@@ -62,16 +61,16 @@ public abstract class BoidAgent : MonoBehaviour
     {
         if (drawRotationGizmos) {
             // forward direction
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, transform.position + 5 * transform.forward);
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, transform.position + 10 * transform.forward);
 
             // desired forward
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, transform.position + 5 * (desiredRotation * Vector3.forward));
+            //Gizmos.color = Color.red;
+            //Gizmos.DrawLine(transform.position, transform.position + 5 * (desiredRotation * Vector3.forward));
 
-            // forward after a second
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(transform.position, transform.position + 7 * (deltaRotation * transform.forward));
+            // forward after deltarotation
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotation * transform.forward));
         }
     }
 }

@@ -11,7 +11,7 @@ public class StayInRadiusBehavior : BoidBehaviour
     {
         Vector3 centerOffset = agent.AgentFlock.transform.position - agent.transform.position;
         float t = centerOffset.magnitude / radius;
-        if (t < 0.9f)
+        if (t < 0.95f)
         {
             return Vector3.zero;
         }
