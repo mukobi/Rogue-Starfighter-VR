@@ -20,7 +20,7 @@ public class AvoidanceBehavior : FilteredBoidBehavior
             if (Vector3.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
             {
                 nAvoid++;
-                avoidanceMove += agent.transform.position - item.position;
+                avoidanceMove += -(item.position - agent.transform.position).normalized;
             }
         }
         if (nAvoid > 0)

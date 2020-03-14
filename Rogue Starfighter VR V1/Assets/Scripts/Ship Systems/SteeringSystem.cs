@@ -21,6 +21,7 @@ public class SteeringSystem : MonoBehaviour
     void FixedUpdate()
     {
         // convert deltaRotation to Euler in range [-180, 180]
+        deltaRotation.Normalize();
         deltaRotationEuler = deltaRotation.eulerAngles;
         
         // TODO: extract this code to a library function
@@ -32,6 +33,13 @@ public class SteeringSystem : MonoBehaviour
         if (deltaRotationEuler.z < -180) deltaRotationEuler.z += 360;
 
 
-        rb.MoveRotation(transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationEuler, rotationScaleEuler)));
+        rb.MoveRotation(Quaternion.Euler(Vector3.Scale(deltaRotationEuler, rotationScaleEuler)) * transform.rotation);
+        //rb.MoveRotation(deltaRotation * transform.localRotation);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawLine(transform.position, transform.position + 5 * (deltaRotation * transform.forward));
     }
 }

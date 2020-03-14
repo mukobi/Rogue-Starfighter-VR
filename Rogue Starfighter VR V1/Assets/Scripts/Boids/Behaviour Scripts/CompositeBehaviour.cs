@@ -40,7 +40,5 @@ public class CompositeBehaviour : BoidBehaviour
         }
 
         return desiredForward;
-
-
     }
 }
