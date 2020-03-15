@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3fe849ff5a10746b20b016b92f7c6c, type: 3}
   m_Name: Stay In Radius Behaviour
   m_EditorClassIdentifier: 
-  radius: 2000
+  radius: 1616

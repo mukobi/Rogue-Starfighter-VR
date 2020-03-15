@@ -6215,8 +6215,8 @@ MonoBehaviour:
   - {fileID: 1244926484}
   - {fileID: 1610271700}
   behavior: {fileID: 11400000, guid: e27984bf5cc69344d9510aa75e9ac34d, type: 2}
-  neighborRadius: 200
-  avoidanceRadiusMultiplier: 0.5
+  neighborRadius: 180
+  avoidanceRadiusMultiplier: 0.53
 --- !u!4 &1794907906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
