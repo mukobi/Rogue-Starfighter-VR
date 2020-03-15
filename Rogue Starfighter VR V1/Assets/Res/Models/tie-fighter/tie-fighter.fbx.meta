@@ -7,6 +7,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: aba1edeb925da414a89a5d89bdd01a88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 898f51a32bca07240b914c0e80cce940, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TIE Cockpit
+    second: {fileID: 2100000, guid: 6ed84aabc48271f49a524070e7f46fd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TIE Emmisive Points Strong
     second: {fileID: 2100000, guid: ddbfd511b2b4aa840bb567ace14813c8, type: 2}
   - first:
