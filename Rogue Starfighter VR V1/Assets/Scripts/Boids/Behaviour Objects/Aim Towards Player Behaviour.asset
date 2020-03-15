@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3fe849ff5a10746b20b016b92f7c6c, type: 3}
-  m_Name: Stay In Radius Behaviour
+  m_Script: {fileID: 11500000, guid: 0164ac5758cae0b40939867f4b1343f2, type: 3}
+  m_Name: Aim Towards Player Behaviour
   m_EditorClassIdentifier: 
-  radius: 2000
