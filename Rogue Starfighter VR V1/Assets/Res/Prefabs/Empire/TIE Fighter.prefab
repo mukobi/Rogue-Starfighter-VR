@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2036718971651599707}
   - component: {fileID: 5915972563203125483}
   - component: {fileID: 5488986112986433803}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TIE Fighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,6 +229,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8934575496407826913}
     m_Modifications:
+    - target: {fileID: -7253827710361171588, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -6090093342004241890, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -5517246016900409353, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: daf32d97aa94f8e43a5d5b3135efea29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -284,10 +299,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3079224232116177244, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: daf32d97aa94f8e43a5d5b3135efea29,
         type: 3}
       propertyPath: m_Name
       value: tie-fighter model
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -75062712272612209, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 988515150930404154, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249063631492211179, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045577942015386839, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf32d97aa94f8e43a5d5b3135efea29, type: 3}
