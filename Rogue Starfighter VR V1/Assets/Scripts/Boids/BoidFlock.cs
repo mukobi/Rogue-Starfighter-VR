@@ -24,8 +24,9 @@ public abstract class BoidFlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (BoidAgent agent in agents)
+        for (int i = 0; i < agents.Count; i++)
         {
+            BoidAgent agent = agents[i];
             //if (agent == null)
             //{
             //    agents.Remove(agent);
@@ -41,8 +42,9 @@ public abstract class BoidFlock : MonoBehaviour
     {
         List<Transform> context = new List<Transform>();
         Collider[] contextColliders = Physics.OverlapSphere(agent.transform.position, neighborRadius);
-        foreach (Collider c in contextColliders)
+        for (int i = 0; i < contextColliders.Length; i++)
         {
+            Collider c = contextColliders[i];
             if (c != agent.AgentCollider)
             {
                 context.Add(c.transform);

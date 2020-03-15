@@ -14,8 +14,9 @@ public class CohesionBehavior : FilteredBoidBehavior
         //add all points together and average
         Vector3 cohesionMove = Vector3.zero;
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
-        foreach (Transform item in filteredContext)
+        for (int i = 0; i < filteredContext.Count; i++)
         {
+            Transform item = filteredContext[i];
             cohesionMove += item.position;
         }
         cohesionMove /= context.Count;

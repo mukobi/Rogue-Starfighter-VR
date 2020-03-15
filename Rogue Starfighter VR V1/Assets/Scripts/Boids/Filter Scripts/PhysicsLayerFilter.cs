@@ -10,8 +10,9 @@ public class PhysicsLayerFilter : ContextFilter
     public override List<Transform> Filter(BoidAgent agent, List<Transform> original)
     {
         List<Transform> filtered = new List<Transform>();
-        foreach (Transform item in original)
+        for (int i = 0; i < original.Count; i++)
         {
+            Transform item = original[i];
             if (mask == (mask | (1 << item.gameObject.layer)))
             {
                 filtered.Add(item);

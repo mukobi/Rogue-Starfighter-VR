@@ -14,8 +14,9 @@ public class AlignmentBehavior : FilteredBoidBehavior
         //add all points together and average
         Vector3 alignmentDirection = Vector3.zero;
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
-        foreach (Transform item in filteredContext)
+        for (int i = 0; i < filteredContext.Count; i++)
         {
+            Transform item = filteredContext[i];
             alignmentDirection += item.transform.forward;
         }
         alignmentDirection /= context.Count;

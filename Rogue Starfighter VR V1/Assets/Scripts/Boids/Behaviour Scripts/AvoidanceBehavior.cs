@@ -15,8 +15,9 @@ public class AvoidanceBehavior : FilteredBoidBehavior
         Vector3 avoidanceMove = Vector3.zero;
         int nAvoid = 0;
         List<Transform> filteredContext = (filter == null) ? context : filter.Filter(agent, context);
-        foreach (Transform item in filteredContext)
+        for (int i = 0; i < filteredContext.Count; i++)
         {
+            Transform item = filteredContext[i];
             if (Vector3.SqrMagnitude(item.position - agent.transform.position) < flock.SquareAvoidanceRadius)
             {
                 nAvoid++;
