@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 public abstract class BoidFlock : MonoBehaviour
 {
@@ -31,9 +32,13 @@ public abstract class BoidFlock : MonoBehaviour
             //{
             //    agents.Remove(agent);
             //}
+            Profiler.BeginSample("GetNearbyObjects");
             List<Transform> context = GetNearbyObjects(agent);
+            Profiler.EndSample();
 
+            Profiler.BeginSample("CalculateDesiredForward");
             Vector3 desiredForward = behavior.CalculateDesiredForward(agent, context, this);
+            Profiler.EndSample();
             agent.SetDeltaRotation(desiredForward);
         }
     }

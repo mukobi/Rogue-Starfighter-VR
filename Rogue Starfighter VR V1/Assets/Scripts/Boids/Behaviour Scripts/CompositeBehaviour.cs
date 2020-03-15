@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Profiling;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Composite")]
 public class CompositeBehaviour : BoidBehaviour
 {
-    public BoidBehaviour[] behaviors;
+    public BoidBehaviour[] behaviours;
     public float[] weights;
 
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         //handle data mismatch
-        if (weights.Length != behaviors.Length)
+        if (weights.Length != behaviours.Length)
         {
             Debug.LogError("Data mismatch in " + name, this);
             return Vector3.zero;
@@ -21,9 +22,9 @@ public class CompositeBehaviour : BoidBehaviour
         Vector3 desiredForward = Vector3.zero;
 
         //iterate through behaviors
-        for (int i = 0; i < behaviors.Length; i++)
+        for (int i = 0; i < behaviours.Length; i++)
         {
-            Vector3 partialDesiredForward = behaviors[i].CalculateDesiredForward(agent, context, flock) * weights[i];
+            Vector3 partialDesiredForward = behaviours[i].CalculateDesiredForward(agent, context, flock) * weights[i];
 
             if (partialDesiredForward != Vector3.zero)
             {
