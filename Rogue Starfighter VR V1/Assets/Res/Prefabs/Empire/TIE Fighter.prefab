@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steerChangeSlerpFactor: 0.1
   maxRotationDeltaDegrees: 66
 --- !u!114 &5488986112986433803
 MonoBehaviour:

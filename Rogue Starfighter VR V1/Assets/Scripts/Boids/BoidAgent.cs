@@ -11,7 +11,9 @@ public abstract class BoidAgent : MonoBehaviour
     Collider agentCollider;
     public Collider AgentCollider { get { return agentCollider; } }
 
-
+    // steering
+    [Range(0,1)]
+    public float steerChangeSlerpFactor;
     public float maxRotationDeltaDegrees = 15;
     private SteeringSystem steeringSystem;
 
@@ -39,8 +41,10 @@ public abstract class BoidAgent : MonoBehaviour
         desiredForward.Normalize();
         desiredRotation = Quaternion.LookRotation(desiredForward);
         desiredRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
-        deltaRotation = desiredRotation * Quaternion.Inverse(transform.rotation);
-        //deltaRotation = Quaternion.Inverse(transform.rotation) * deltaRotation;
+        Quaternion desiredDeltaRotation = desiredRotation * Quaternion.Inverse(transform.rotation);
+
+        deltaRotation = Quaternion.Slerp(deltaRotation, desiredDeltaRotation, steerChangeSlerpFactor);
+
         steeringSystem.deltaRotation = deltaRotation;
     }
 
@@ -62,7 +66,7 @@ public abstract class BoidAgent : MonoBehaviour
         if (drawRotationGizmos) {
             // forward direction
             Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, transform.position + 10 * transform.forward);
+            Gizmos.DrawLine(transform.position, transform.position + 30 * transform.forward);
 
             // desired forward
             //Gizmos.color = Color.red;
@@ -70,7 +74,7 @@ public abstract class BoidAgent : MonoBehaviour
 
             // forward after deltarotation
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotation * transform.forward));
+            Gizmos.DrawLine(transform.position, transform.position + 20 * (deltaRotation * transform.forward));
         }
     }
 }
