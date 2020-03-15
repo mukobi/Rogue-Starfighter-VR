@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0164ac5758cae0b40939867f4b1343f2, type: 3}
   m_Name: Aim Towards Player Behaviour
   m_EditorClassIdentifier: 
-  maxAngleToAim: 30
+  maxAngleToAim: 45
+  minDistToAim: 500
