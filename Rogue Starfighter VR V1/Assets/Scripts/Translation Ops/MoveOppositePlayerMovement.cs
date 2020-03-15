@@ -6,8 +6,8 @@ public class MoveOppositePlayerMovement : MonoBehaviour
 {
     private void Update()
     {
-        Vector3 playerRotationForward = PlayerGlobalReference.Instance.rotationRoot.forward;
-        float playerSpeed = PlayerGlobalReference.Instance.forwardEnginePlayerRef.CurrentSpeed;
+        Vector3 playerRotationForward = PlayerGlobalReference.I.shipRotationRoot.forward;
+        float playerSpeed = PlayerGlobalReference.I.forwardEnginePlayerRef.CurrentSpeed;
 
         Vector3 playerGlobalVelocity = playerRotationForward * playerSpeed * Time.fixedDeltaTime;
         Vector3 targetPosition = transform.position + -playerGlobalVelocity;
