@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2117669412639903321}
   - component: {fileID: -7482329185328933931}
   m_Layer: 0
-  m_Name: Laser X-Wing
+  m_Name: Laser.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab45acb8d39b035428bbc1bf4fb34aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTimeSeconds: 6
+  DestroyTimeSeconds: 10
 --- !u!1 &1294439708279576512
 GameObject:
   m_ObjectHideFlags: 0
