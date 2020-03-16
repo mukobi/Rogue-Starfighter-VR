@@ -268,9 +268,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 15
-  OnDestroyed:
+  OnNoHealth:
     m_PersistentCalls:
       m_Calls: []
+  destroyOnNoHealth: 1
 --- !u!114 &4793078825552081761
 MonoBehaviour:
   m_ObjectHideFlags: 0

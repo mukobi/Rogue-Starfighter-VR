@@ -6,16 +6,26 @@ public class DamageableShipPartWithHealth : DamageableShipPart
     [SerializeField] private float currentHealth = default;
     //[SerializeField] private float maxHealth;
 
-    public UnityEvent OnDestroyed;
+    public UnityEvent OnNoHealth;
+
+    [Tooltip("Should I destroy myself when I run out of health?")]
+    [SerializeField] private bool destroyOnNoHealth = false;
 
     public override bool IsDestroyed => (currentHealth <= 0.0f);
 
     public override bool TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        if (IsDestroyed)
+        if (!IsDestroyed)
         {
-            OnDestroyed.Invoke();
+            currentHealth -= damage;
+            if (IsDestroyed)
+            {
+                OnNoHealth.Invoke();
+                if (destroyOnNoHealth)
+                {
+                    Destroy(gameObject);
+                }
+            }
         }
         return IsDestroyed;
     }
