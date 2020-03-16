@@ -6996,7 +6996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a37c49c9c3a7d16438a91f458b604568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRotationDegrees: {x: 45, y: 30, z: 45}
+  maxRotationDegrees: {x: 30, y: 30, z: 30}
 --- !u!1 &1505385796
 GameObject:
   m_ObjectHideFlags: 0
