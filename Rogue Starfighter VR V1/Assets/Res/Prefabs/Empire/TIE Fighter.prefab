@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 8934575496407826913}
   - component: {fileID: 8934575496407826914}
   - component: {fileID: 5356298258361324623}
-  - component: {fileID: 8934575496407826927}
   - component: {fileID: 8934575496407826912}
   - component: {fileID: 4793078825552081761}
   - component: {fileID: 2036718971651599707}
-  - component: {fileID: 9123658108808602133}
+  - component: {fileID: 5915972563203125483}
   - component: {fileID: 5488986112986433803}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TIE Fighter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,21 +67,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8934575496407826927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8934575496407826915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 979a8d803f294e14fa3bc0905e33a98f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onShipCollision:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &8934575496407826912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BaseCruiseSpeed: 200
-  SpeedAtInstantiation: 200
+  SpeedAtInstantiation: 0
   maxPositiveAcceleration: 1
 --- !u!82 &2036718971651599707
 AudioSource:
@@ -210,7 +194,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &9123658108808602133
+--- !u!114 &5915972563203125483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,12 +203,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8934575496407826915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f68ecde5b27f983409dffd71c6629c24, type: 3}
+  m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slerpFactor: 0.1
-  TargetTransform: {fileID: 0}
-  TargetRotation: {x: 0, y: 0, z: 0, w: 0}
+  steerChangeSlerpFactor: 0.1
+  maxRotationDeltaDegrees: 66
 --- !u!114 &5488986112986433803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4a99c88e9d0f54f88839cf6666589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationScaleEuler: {x: 0, y: 0, z: 0}
+  rotationScaleEuler: {x: 0.01, y: 0.005, z: 0.01}
   deltaRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &8934575497648892956
 PrefabInstance:
@@ -246,6 +229,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8934575496407826913}
     m_Modifications:
+    - target: {fileID: -7253827710361171588, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -6090093342004241890, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -5517246016900409353, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: daf32d97aa94f8e43a5d5b3135efea29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,10 +299,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3079224232116177244, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: daf32d97aa94f8e43a5d5b3135efea29,
         type: 3}
       propertyPath: m_Name
       value: tie-fighter model
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -75062712272612209, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 988515150930404154, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249063631492211179, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045577942015386839, guid: daf32d97aa94f8e43a5d5b3135efea29,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daf32d97aa94f8e43a5d5b3135efea29, type: 3}
