@@ -29,7 +29,7 @@ public abstract class BoidAgent : MonoBehaviour
     private Quaternion desiredDeltaRotationLocal;
     private Quaternion deltaRotationLocal;
 
-    private readonly bool drawVisionSpheres = true;
+    private readonly bool drawVisionSpheres = false;
     private readonly bool drawRotationGizmos = true;
 
     // Start is called before the first frame update
@@ -49,12 +49,13 @@ public abstract class BoidAgent : MonoBehaviour
     {
         // normalize desired forward vector in local space
         desiredForwardWorld = desiredForwardWorldIn;
+        desiredForwardWorld.Normalize();
 
         //desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
         //desiredForwardLocal.Normalize();
 
         // compute rotation pointing at desired forward vector
-        desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorldIn);
+        desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorld);
 
         // clamp to maxRotationDeltaDegrees away from current rotation
         desiredOrientationWorld = Quaternion.RotateTowards(transform.rotation, desiredOrientationWorld, maxRotationDeltaDegrees);
@@ -80,7 +81,7 @@ public abstract class BoidAgent : MonoBehaviour
             Gizmos.DrawLine(transform.position, transform.position + 30 * transform.forward);
 
             //Gizmos.color = Color.yellow;
-            //Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredOrientationWorld * Vector3.forward));
+            //Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredForwardWorld));
         }
     }
 

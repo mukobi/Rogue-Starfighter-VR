@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4a99c88e9d0f54f88839cf6666589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationScaleLocalEuler: {x: 0.04, y: 0.04, z: 0.04}
+  rotationScaleLocalEuler: {x: 0.02, y: 0.02, z: 0.02}
   deltaRotationLocal: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &43421824596618999
 MonoBehaviour:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steerChangeSlerpFactor: 0.11
+  steerChangeSlerpFactor: 0.13
   maxRotationDeltaDegrees: 66
 --- !u!1001 &7540031218741720016
 PrefabInstance:

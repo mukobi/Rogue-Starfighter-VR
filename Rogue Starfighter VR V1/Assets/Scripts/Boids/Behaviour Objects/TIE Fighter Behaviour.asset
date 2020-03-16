@@ -14,17 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviours:
   - {fileID: 11400000, guid: da01bd0509efb2f448228a1806242013, type: 2}
+  - {fileID: 11400000, guid: 3206ba437dd52904c872f187e6bc2655, type: 2}
   - {fileID: 11400000, guid: 2a0ebc50e4feffd4fbc14c33d56866c5, type: 2}
   - {fileID: 11400000, guid: 52c2d400301bb684d82a762c3165d008, type: 2}
   - {fileID: 11400000, guid: 6260186999826634b930329a61c1129b, type: 2}
-  - {fileID: 11400000, guid: 0266f7bea5e9d474db6b7cd65175ac30, type: 2}
   - {fileID: 11400000, guid: d1c8241ae8d0ecf4ebbef9de046e6cbc, type: 2}
+  - {fileID: 11400000, guid: b452309b5ab76f6499bb6a2de49d8954, type: 2}
+  - {fileID: 11400000, guid: 0266f7bea5e9d474db6b7cd65175ac30, type: 2}
   - {fileID: 11400000, guid: 32670f2946219584785c6bd742b8b430, type: 2}
   weights:
   - 16
+  - 32
+  - 2
+  - 0.6
   - 10
-  - 0.5
-  - 10
-  - 0.5
-  - 0
+  - 200
+  - 0.4
+  - 5
   - 0.2

@@ -6,6 +6,19 @@ using UnityEngine.Profiling;
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
 public class AvoidanceBehavior : FilteredBoidBehaviour
 {
+    private float visionRangeMultiplier;
+    public float avoidanceRange;
+
+    private float squareVisionRangeMultiplier;
+    private float squareAvoidanceRange;
+
+    public override void Initialize()
+    {
+        squareVisionRangeMultiplier = visionRangeMultiplier * visionRangeMultiplier;
+        squareAvoidanceRange = avoidanceRange * avoidanceRange;
+        Debug.Log(squareAvoidanceRange);
+    }
+
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         Profiler.BeginSample("Avoidance setup");
@@ -37,7 +50,7 @@ public class AvoidanceBehavior : FilteredBoidBehaviour
             float squareDistance = Vector3.SqrMagnitude(item.position - agent.transform.position);
             Profiler.EndSample();
             Profiler.BeginSample("compare distance");
-            if (squareDistance < flock.SquareAvoidanceRadius)
+            if (squareDistance < squareAvoidanceRange)
             {
                 Profiler.BeginSample("calculate single move");
                 nAvoid++;

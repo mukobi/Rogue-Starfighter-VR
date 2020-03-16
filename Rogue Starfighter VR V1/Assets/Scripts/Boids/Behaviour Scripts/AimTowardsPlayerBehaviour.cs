@@ -11,8 +11,7 @@ public class AimTowardsPlayerBehaviour : BoidBehaviour
     public float minDistToAim;
     private float squareMinDistToAim;
 
-    [RuntimeInitializeOnLoadMethod]
-    private void RuntimeInitializeOnLoad()
+    public override void Initialize()
     {
         squareMinDistToAim = minDistToAim * minDistToAim;
     }
@@ -21,12 +20,10 @@ public class AimTowardsPlayerBehaviour : BoidBehaviour
     {
         if (agent.PlayerRelative.ToPlayerSqrMagnitude < squareMinDistToAim)
         {
-            Debug.Log("ToPlayerSqrMagnitude");
             return Vector3.zero;
         }
         if (agent.PlayerRelative.AngleToPlayer > maxAngleToAim)
         {
-            Debug.Log("AngleToPlayer");
             return Vector3.zero;
         }
         return agent.PlayerRelative.ToPlayerNormalized;

@@ -5747,7 +5747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agents: []
   behavior: {fileID: 11400000, guid: e27984bf5cc69344d9510aa75e9ac34d, type: 2}
-  neighborRadius: 100
+  neighborRadius: 160
   avoidanceRadiusMultiplier: 0.5
 --- !u!4 &1794907906 stripped
 Transform:

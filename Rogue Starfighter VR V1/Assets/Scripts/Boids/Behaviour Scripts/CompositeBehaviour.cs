@@ -9,6 +9,14 @@ public class CompositeBehaviour : BoidBehaviour
     public BoidBehaviour[] behaviours;
     public float[] weights;
 
+    public override void Initialize()
+    {
+        for (int i = 0; i < behaviours.Length; i++)
+        {
+            behaviours[i].Initialize();
+        }
+    }
+
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         //handle data mismatch
