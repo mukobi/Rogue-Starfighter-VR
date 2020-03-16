@@ -5,7 +5,7 @@ using UnityEngine;
 public class SlowDownEngineBasedOnTurning : MonoBehaviour
 {
     [Tooltip("Steering system with delta rotation to read.")]
-    [SerializeField] private SteeringSystem steeringSystem = default;
+    [SerializeField] private GenericSteeringSystem steeringSystem = default;
     [Tooltip("Engine with turning slowdown to write.")]
     [SerializeField] private ForwardEngineAbstract forwardEngine = default;
 

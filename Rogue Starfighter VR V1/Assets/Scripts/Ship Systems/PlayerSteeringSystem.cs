@@ -2,20 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SteeringSystem : MonoBehaviour
+public class PlayerSteeringSystem : GenericSteeringSystem
 {
-    public Vector3 rotationScaleLocalEuler;
-
-    [HideInInspector]
-    public Quaternion deltaRotationLocal;
-
-    private Vector3 deltaRotationLocalEuler;
-    private Rigidbody rb;
-
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
 
     void FixedUpdate()
     {
@@ -31,12 +19,7 @@ public class SteeringSystem : MonoBehaviour
         if (deltaRotationLocalEuler.z > 180)  deltaRotationLocalEuler.z -= 360;
         if (deltaRotationLocalEuler.z < -180) deltaRotationLocalEuler.z += 360;
 
-        rb.MoveRotation(Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)) * transform.localRotation);
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotationLocal * transform.forward));
+        // This line is the only difference from GenericSteeringSystem
+        rb.MoveRotation(transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)));
     }
 }

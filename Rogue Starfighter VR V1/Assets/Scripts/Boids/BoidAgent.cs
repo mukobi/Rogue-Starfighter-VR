@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(SteeringSystem))]
+[RequireComponent(typeof(GenericSteeringSystem))]
 public abstract class BoidAgent : MonoBehaviour
 {
     BoidFlock agentFlock;
@@ -15,7 +15,7 @@ public abstract class BoidAgent : MonoBehaviour
     [Range(0,1)]
     public float steerChangeSlerpFactor;
     public float maxRotationDeltaDegrees = 15;
-    private SteeringSystem steeringSystem;
+    private GenericSteeringSystem steeringSystem;
 
     // for debug
     private Quaternion desiredOrientationWorld;
@@ -30,7 +30,7 @@ public abstract class BoidAgent : MonoBehaviour
     protected virtual void Start()
     {
         agentCollider = GetComponent<Collider>();
-        steeringSystem = GetComponent<SteeringSystem>();
+        steeringSystem = GetComponent<GenericSteeringSystem>();
     }
 
     public void Initialize(BoidFlock flock)
