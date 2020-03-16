@@ -31,13 +31,12 @@ public class SteeringSystem : MonoBehaviour
         if (deltaRotationLocalEuler.z > 180)  deltaRotationLocalEuler.z -= 360;
         if (deltaRotationLocalEuler.z < -180) deltaRotationLocalEuler.z += 360;
 
-        //transform.localRotation *= scaledLocal;
-        rb.MoveRotation(transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)));
+        rb.MoveRotation(Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)) * transform.localRotation);
     }
 
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.white;
-    //    Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotationLocal * transform.forward));
-    //}
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotationLocal * transform.forward));
+    }
 }

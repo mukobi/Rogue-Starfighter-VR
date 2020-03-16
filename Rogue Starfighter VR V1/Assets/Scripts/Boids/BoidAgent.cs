@@ -40,8 +40,9 @@ public abstract class BoidAgent : MonoBehaviour
 
     public void SetDeltaRotation(Vector3 desiredForwardWorld)
     {
-        // normalize desired forward vector
-        desiredForwardWorld.Normalize();
+        // normalize desired forward vector in local space
+        Vector3 desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
+        desiredForwardLocal.Normalize();
 
         // compute rotation pointing at desired forward vector
         desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorld);
@@ -69,21 +70,9 @@ public abstract class BoidAgent : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, transform.position + 30 * transform.forward);
 
-            // desired orientation world
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredOrientationWorld * Vector3.forward));
 
-            // desired orientation local
-            Gizmos.color = Color.white;
-            Gizmos.DrawLine(transform.position, transform.position + 22 * (desiredOrientationLocal * transform.forward));
-
-            // desired deltarotation local
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(transform.position, transform.position + 21 * (desiredDeltaRotationLocal * transform.forward));
-
-            // forward after deltarotation
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, transform.position + 20 * (deltaRotationLocal * transform.forward));
+            //Gizmos.color = Color.yellow;
+            //Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredOrientationWorld * Vector3.forward));
         }
         if (drawVisionSpheres && agentFlock != null)
         {
