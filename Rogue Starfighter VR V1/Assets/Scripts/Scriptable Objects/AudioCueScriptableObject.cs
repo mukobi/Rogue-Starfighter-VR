@@ -37,4 +37,16 @@ public class AudioCueScriptableObject : ScriptableObject
         Destroy(obj, clip.length / pitch); // clean up created object after done playing
         return obj;
     }
+
+    public void PlayOnExistingAudioSourceAtPosition(AudioSource audioSource)
+    {
+        // choose random variables
+        AudioClip clip = clips[Random.Range(0, clips.Length)];
+        float volume = Random.Range(minVolume, maxVolume);
+        float pitch = Random.Range(minPitch, maxPitch);
+
+        // play that thang
+        audioSource.pitch = pitch;
+        audioSource.PlayOneShot(clip, volume);
+    }
 }
