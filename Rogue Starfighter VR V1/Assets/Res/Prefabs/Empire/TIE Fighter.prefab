@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1843431018666066404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708621089163663692}
+  - component: {fileID: 4865991265573718259}
+  m_Layer: 0
+  m_Name: ShipCollisionSFX.TIE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708621089163663692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843431018666066404}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3698889583621802379}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4865991265573718259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843431018666066404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: ab2af150cac8885439b795f235e81f53, type: 2}
+  playOnAwake: 0
 --- !u!1 &3138883773616127970
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104561645196462048}
+  - {fileID: 1708621089163663692}
   m_Father: {fileID: 8934575496407826913}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -201,10 +247,11 @@ GameObject:
   - component: {fileID: 2036718971651599707}
   - component: {fileID: 5915972563203125483}
   - component: {fileID: 5488986112986433803}
+  - component: {fileID: 43421824596618999}
   m_Layer: 12
   m_Name: TIE Fighter
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -411,6 +458,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationScaleLocalEuler: {x: 0.01, y: 0.01, z: 0.01}
   deltaRotationLocal: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &43421824596618999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934575496407826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36279bf5bdb469469378429bb1fb5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onShipCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4865991265573718259}
+        m_MethodName: PlayAtSpecificPosition
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  transformToJumpAheadOnCollision: {fileID: 8934575496407826913}
+  collisionJumpBias: 0.66
 --- !u!1001 &7540031218741720016
 PrefabInstance:
   m_ObjectHideFlags: 0
