@@ -48,19 +48,6 @@ public abstract class BoidAgent : MonoBehaviour
         steeringSystem.deltaRotation = deltaRotation;
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        if (drawVisionSpheres && agentFlock != null)
-        {
-            // draw awareness sphere
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius);
-            // draw avoidance sphere
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius * agentFlock.avoidanceRadiusMultiplier);
-        }
-    }
-
     private void OnDrawGizmos()
     {
         if (drawRotationGizmos) {
@@ -75,6 +62,15 @@ public abstract class BoidAgent : MonoBehaviour
             // forward after deltarotation
             Gizmos.color = Color.green;
             Gizmos.DrawLine(transform.position, transform.position + 20 * (deltaRotation * transform.forward));
+        }
+        if (drawVisionSpheres && agentFlock != null)
+        {
+            // draw awareness sphere
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius);
+            // draw avoidance sphere
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, agentFlock.neighborRadius * agentFlock.avoidanceRadiusMultiplier);
         }
     }
 }

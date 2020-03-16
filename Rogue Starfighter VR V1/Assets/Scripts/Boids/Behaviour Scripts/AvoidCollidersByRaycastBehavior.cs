@@ -37,7 +37,7 @@ public class AvoidCollidersByRaycastBehavior : FilteredBoidBehaviour
             Profiler.BeginSample("raycast");
             Vector3 toItem = item.position - agent.transform.position;
             RaycastHit hitInfo;
-            if(Physics.Raycast(agent.transform.position, toItem, out hitInfo, flock.neighborRadius, layerMask))
+            if(Physics.Raycast(agent.transform.position, toItem, out hitInfo, 2 * flock.neighborRadius, layerMask))
             {
                 nAvoid++;
                 avoidanceMove += (agent.transform.position - hitInfo.point).normalized;

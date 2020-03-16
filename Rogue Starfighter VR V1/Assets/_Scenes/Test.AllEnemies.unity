@@ -6220,7 +6220,7 @@ MonoBehaviour:
   - {fileID: 1244926484}
   - {fileID: 1610271700}
   behavior: {fileID: 11400000, guid: e27984bf5cc69344d9510aa75e9ac34d, type: 2}
-  neighborRadius: 180
+  neighborRadius: 160
   avoidanceRadiusMultiplier: 0.53
 --- !u!4 &1794907906 stripped
 Transform:
