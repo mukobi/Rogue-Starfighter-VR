@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerSteeringSystem : GenericSteeringSystem
 {
 
-    void FixedUpdate()
+    void Update()
     {
         // convert deltaRotation to Euler in range [-180, 180]
         deltaRotationLocal.Normalize();
@@ -20,6 +20,6 @@ public class PlayerSteeringSystem : GenericSteeringSystem
         if (deltaRotationLocalEuler.z < -180) deltaRotationLocalEuler.z += 360;
 
         // This line is the only difference from GenericSteeringSystem
-        rb.MoveRotation(transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)));
+        transform.localRotation = transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler));
     }
 }

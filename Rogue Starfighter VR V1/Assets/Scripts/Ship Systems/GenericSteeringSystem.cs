@@ -17,7 +17,7 @@ public class GenericSteeringSystem : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         // convert deltaRotation to Euler in range [-180, 180]
         deltaRotationLocal.Normalize();
@@ -31,7 +31,7 @@ public class GenericSteeringSystem : MonoBehaviour
         if (deltaRotationLocalEuler.z > 180)  deltaRotationLocalEuler.z -= 360;
         if (deltaRotationLocalEuler.z < -180) deltaRotationLocalEuler.z += 360;
 
-        rb.MoveRotation(Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)) * transform.localRotation);
+        transform.localRotation = Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)) * transform.localRotation;
     }
 
     private void OnDrawGizmos()
