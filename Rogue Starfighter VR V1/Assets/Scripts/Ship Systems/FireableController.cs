@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserFirer : MonoBehaviour
+public class FireableController : MonoBehaviour
 {
 
-    public LaserGun[] laserGuns;
+    public Fireable[] fireables;
 
     public float fireInterval;
     public bool isTryingToFire = false;
@@ -19,8 +19,8 @@ public class LaserFirer : MonoBehaviour
         {
             if(Time.time - lastFireTime > fireInterval)
             {
-                laserGuns[fireInstantiationPointCurrentIndex].Fire();
-                fireInstantiationPointCurrentIndex = (fireInstantiationPointCurrentIndex + 1) % laserGuns.Length;
+                fireables[fireInstantiationPointCurrentIndex].Fire();
+                fireInstantiationPointCurrentIndex = (fireInstantiationPointCurrentIndex + 1) % fireables.Length;
                 lastFireTime = Time.time;
             }
         }

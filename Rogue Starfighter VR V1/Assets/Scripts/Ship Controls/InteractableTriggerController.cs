@@ -7,7 +7,7 @@ using Valve.VR.InteractionSystem;
 public class InteractableTriggerController : MonoBehaviour
 {
     public Interactable interactable;
-    public LaserFirer laserFirer;
+    public FireableController laserFirer;
 
     // Update is called once per frame
     void Update()
