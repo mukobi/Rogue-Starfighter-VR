@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Weak Avoidance Behavior
   m_EditorClassIdentifier: 
   filter: {fileID: 0}
-  avoidanceRange: 60
+  avoidanceRange: 80
