@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Laser Fire TIE Cue
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: d427665ec1dee0e498458b32affa785f, type: 3}
-  audioMixerGroup: {fileID: 243078391499754788, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+  - {fileID: 8300000, guid: f756e567fd66b4d4a88bbcdceb202a5e, type: 3}
+  audioMixerGroup: {fileID: 5044227932576836603, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
   minVolume: 0.9
   maxVolume: 1
-  minPitch: 0.95
+  minPitch: 0.9
   maxPitch: 1.05
   rolloffMode: 1
