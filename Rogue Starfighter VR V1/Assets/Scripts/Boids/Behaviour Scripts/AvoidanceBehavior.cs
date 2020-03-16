@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Profiling;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
-public class AvoidanceBehavior : FilteredBoidBehavior
+public class AvoidanceBehavior : FilteredBoidBehaviour
 {
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {

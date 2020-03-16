@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Profiling;
 
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoid Colliders By Raycast")]
-public class AvoidCollidersByRaycastBehavior : FilteredBoidBehavior
+public class AvoidCollidersByRaycastBehavior : FilteredBoidBehaviour
 {
     public LayerMask layerMask;
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)

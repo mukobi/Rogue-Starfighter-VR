@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class FilteredBoidBehavior : BoidBehaviour
+public abstract class FilteredBoidBehaviour : BoidBehaviour
 {
     public ContextFilter filter;
 }
