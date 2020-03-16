@@ -15,7 +15,7 @@ public class SlowDownEngineBasedOnTurning : MonoBehaviour
     private void FixedUpdate()
     {
         // calculate how much we're turning
-        float turnAngleDegrees = Quaternion.Angle(steeringSystem.deltaRotation, Quaternion.identity);
+        float turnAngleDegrees = Quaternion.Angle(steeringSystem.deltaRotationLocal, Quaternion.identity);
 
         // calculate appropriate slowdown
         turnAngleDegrees = Mathf.Clamp(turnAngleDegrees, 0, angleOfMaxSlowdownDegrees);

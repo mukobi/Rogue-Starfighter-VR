@@ -9,6 +9,6 @@ public class SetShipSteeringFromLocalRotation : MonoBehaviour
 
     private void FixedUpdate()
     {
-        steeringSystem.deltaRotation = transform.localRotation;
+        steeringSystem.deltaRotationLocal = transform.localRotation;
     }
 }

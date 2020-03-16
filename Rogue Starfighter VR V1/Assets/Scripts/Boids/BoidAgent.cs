@@ -19,7 +19,7 @@ public abstract class BoidAgent : MonoBehaviour
 
     // for debug
     private Quaternion desiredRotation;
-    private Quaternion deltaRotation;
+    private Quaternion deltaRotationLocal;
 
     private readonly bool drawVisionSpheres = false;
     private readonly bool drawRotationGizmos = true;
@@ -36,16 +36,17 @@ public abstract class BoidAgent : MonoBehaviour
         agentFlock = flock;
     }
 
-    public void SetDeltaRotation(Vector3 desiredForward)
+    public void SetDeltaRotation(Vector3 desiredForwardWorld)
     {
-        desiredForward.Normalize();
-        desiredRotation = Quaternion.LookRotation(desiredForward);
+        desiredForwardWorld.Normalize();
+        Vector3 desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
+        desiredRotation = Quaternion.LookRotation(desiredForwardLocal);
         desiredRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
         Quaternion desiredDeltaRotation = desiredRotation * Quaternion.Inverse(transform.rotation);
 
-        deltaRotation = Quaternion.Slerp(deltaRotation, desiredDeltaRotation, steerChangeSlerpFactor);
+        deltaRotationLocal = Quaternion.Slerp(deltaRotationLocal, desiredDeltaRotation, steerChangeSlerpFactor);
 
-        steeringSystem.deltaRotation = deltaRotation;
+        steeringSystem.deltaRotationLocal = deltaRotationLocal;
     }
 
     private void OnDrawGizmos()
@@ -61,7 +62,7 @@ public abstract class BoidAgent : MonoBehaviour
 
             // forward after deltarotation
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, transform.position + 20 * (deltaRotation * transform.forward));
+            Gizmos.DrawLine(transform.position, transform.position + 20 * (deltaRotationLocal * transform.forward));
         }
         if (drawVisionSpheres && agentFlock != null)
         {
