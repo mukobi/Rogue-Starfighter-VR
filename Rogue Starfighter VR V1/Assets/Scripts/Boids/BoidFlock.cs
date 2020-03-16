@@ -43,6 +43,11 @@ public abstract class BoidFlock : MonoBehaviour
             Profiler.BeginSample("CalculateDesiredForward");
             Vector3 desiredForward = behavior.CalculateDesiredForward(agent, context, this);
             Profiler.EndSample();
+            // handle zero case
+            if (desiredForward == Vector3.zero)
+            {
+                desiredForward = agent.transform.forward;
+            }
             agent.SetDeltaRotation(desiredForward);
         }
     }

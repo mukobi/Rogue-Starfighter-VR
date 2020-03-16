@@ -22,12 +22,14 @@ public abstract class BoidAgent : MonoBehaviour
     public PlayerRelativeTransformCalculator PlayerRelative { get; private set; }
 
     // for debug
+    Vector3 desiredForwardWorld;
+    Vector3 desiredForwardLocal;
     private Quaternion desiredOrientationWorld;
     private Quaternion desiredOrientationLocal;
     private Quaternion desiredDeltaRotationLocal;
     private Quaternion deltaRotationLocal;
 
-    private readonly bool drawVisionSpheres = false;
+    private readonly bool drawVisionSpheres = true;
     private readonly bool drawRotationGizmos = true;
 
     // Start is called before the first frame update
@@ -43,14 +45,16 @@ public abstract class BoidAgent : MonoBehaviour
         agentFlock = flock;
     }
 
-    public void SetDeltaRotation(Vector3 desiredForwardWorld)
+    public void SetDeltaRotation(Vector3 desiredForwardWorldIn)
     {
         // normalize desired forward vector in local space
-        Vector3 desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
-        desiredForwardLocal.Normalize();
+        desiredForwardWorld = desiredForwardWorldIn;
+
+        //desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
+        //desiredForwardLocal.Normalize();
 
         // compute rotation pointing at desired forward vector
-        desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorld);
+        desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorldIn);
 
         // clamp to maxRotationDeltaDegrees away from current rotation
         desiredOrientationWorld = Quaternion.RotateTowards(transform.rotation, desiredOrientationWorld, maxRotationDeltaDegrees);
@@ -75,10 +79,13 @@ public abstract class BoidAgent : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, transform.position + 30 * transform.forward);
 
-
             //Gizmos.color = Color.yellow;
             //Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredOrientationWorld * Vector3.forward));
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    { 
         if (drawVisionSpheres && agentFlock != null)
         {
             // draw awareness sphere

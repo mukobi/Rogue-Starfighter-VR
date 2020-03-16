@@ -20,9 +20,15 @@ public class AimTowardsPlayerBehaviour : BoidBehaviour
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         if (agent.PlayerRelative.ToPlayerSqrMagnitude < squareMinDistToAim)
+        {
+            Debug.Log("ToPlayerSqrMagnitude");
             return Vector3.zero;
-        if (agent.PlayerRelative.ToPlayerSqrMagnitude > maxAngleToAim)
+        }
+        if (agent.PlayerRelative.AngleToPlayer > maxAngleToAim)
+        {
+            Debug.Log("AngleToPlayer");
             return Vector3.zero;
+        }
         return agent.PlayerRelative.ToPlayerNormalized;
     }
 }

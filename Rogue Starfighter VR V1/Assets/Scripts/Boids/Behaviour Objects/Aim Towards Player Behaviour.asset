@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Aim Towards Player Behaviour
   m_EditorClassIdentifier: 
   maxAngleToAim: 99
-  minDistToAim: 1313
+  minDistToAim: 400

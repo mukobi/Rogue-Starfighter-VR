@@ -3986,7 +3986,7 @@ PrefabInstance:
     - target: {fileID: 302610681037154903, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4793078825552081761, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -4001,7 +4001,7 @@ PrefabInstance:
     - target: {fileID: 8699062592107846646, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
         type: 3}
@@ -5747,8 +5747,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agents: []
   behavior: {fileID: 11400000, guid: e27984bf5cc69344d9510aa75e9ac34d, type: 2}
-  neighborRadius: 160
-  avoidanceRadiusMultiplier: 0.53
+  neighborRadius: 100
+  avoidanceRadiusMultiplier: 0.5
 --- !u!4 &1794907906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
