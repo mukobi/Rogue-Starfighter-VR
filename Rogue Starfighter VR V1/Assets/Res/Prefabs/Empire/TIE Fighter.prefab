@@ -249,6 +249,8 @@ GameObject:
   - component: {fileID: 43421824596618999}
   - component: {fileID: 8699062592107846646}
   - component: {fileID: 302610681037154903}
+  - component: {fileID: 6456072646492766723}
+  - component: {fileID: 3568337565673982541}
   m_Layer: 12
   m_Name: TIE Fighter
   m_TagString: Untagged
@@ -332,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd31ad0891973214286dad7063d7c349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseCruiseSpeed: 200
+  BaseCruiseSpeed: 132
   SpeedAtInstantiation: 0
   maxPositiveAcceleration: 1
 --- !u!82 &2036718971651599707
@@ -499,6 +501,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steerChangeSlerpFactor: 0.13
   maxRotationDeltaDegrees: 66
+--- !u!114 &6456072646492766723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934575496407826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7e870c8e023324a9d156cc8fa591fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAngleAwayToFire: 2
+  fireableController: {fileID: 7201709092073817526}
+--- !u!114 &3568337565673982541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934575496407826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3e64d42f745404a81cbe69742f6071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7540031218741720016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,12 +653,6 @@ PrefabInstance:
       objectReference: {fileID: 8934575496407826913}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd871bfd4875350459a3bfa2b297bcfb, type: 3}
---- !u!4 &7733060991599776268 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 7943991586705489257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7733060991599776275 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 391778267867754362, guid: bd871bfd4875350459a3bfa2b297bcfb,
@@ -643,6 +665,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa3fa419e552e249b4dbd5eda50c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7733060991599776268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7943991586705489257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8934575497648892956
 PrefabInstance:
   m_ObjectHideFlags: 0

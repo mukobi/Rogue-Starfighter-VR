@@ -6,15 +6,11 @@ using UnityEngine.Profiling;
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoidance")]
 public class AvoidanceBehavior : FilteredBoidBehaviour
 {
-    private float visionRangeMultiplier;
     public float avoidanceRange;
-
-    private float squareVisionRangeMultiplier;
     private float squareAvoidanceRange;
 
     public override void Initialize()
     {
-        squareVisionRangeMultiplier = visionRangeMultiplier * visionRangeMultiplier;
         squareAvoidanceRange = avoidanceRange * avoidanceRange;
         Debug.Log(squareAvoidanceRange);
     }
