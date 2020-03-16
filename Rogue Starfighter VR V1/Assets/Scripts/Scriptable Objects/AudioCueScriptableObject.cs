@@ -22,7 +22,10 @@ public class AudioCueScriptableObject : ScriptableObject
         float pitch = Random.Range(minPitch, maxPitch);
 
         // play that thang
-        GameObject obj = new GameObject(); // create a new GameObject to play from
+        GameObject obj = new GameObject
+        {
+            name = "Audio Source"
+        }; // create a new GameObject to play from
         obj.transform.position = position;
         AudioSource audioSource = obj.AddComponent<AudioSource>();
         audioSource.pitch = pitch;
