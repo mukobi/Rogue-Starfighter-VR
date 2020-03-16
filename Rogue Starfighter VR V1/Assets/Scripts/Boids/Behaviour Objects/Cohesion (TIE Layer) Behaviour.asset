@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ee0174f3089f144db5d9d88295107a8, type: 3}
-  m_Name: Cohesion (Same Flock) Behaviour
+  m_Name: Cohesion (TIE Layer) Behaviour
   m_EditorClassIdentifier: 
-  filter: {fileID: 11400000, guid: 16e183fd1f6fe114f9fce4f665e369fe, type: 2}
+  filter: {fileID: 11400000, guid: 689e8bab52a9322449e749dfbca971fe, type: 2}

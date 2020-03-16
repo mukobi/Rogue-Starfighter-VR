@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6149638b64c64b240ad94741b00431c3, type: 3}
   m_Name: TIE Fighter Behaviour
   m_EditorClassIdentifier: 
-  behaviors:
+  behaviours:
   - {fileID: 11400000, guid: b68afb7286bc52347a059fad2589e5c5, type: 2}
   - {fileID: 11400000, guid: 2a0ebc50e4feffd4fbc14c33d56866c5, type: 2}
   - {fileID: 11400000, guid: 52c2d400301bb684d82a762c3165d008, type: 2}

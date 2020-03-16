@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f36d3617434ac54c8612f7c12962df9, type: 3}
-  m_Name: Alignment (Same Flock) Behaviour
+  m_Name: Alignment (TIE Layer) Behaviour
   m_EditorClassIdentifier: 
-  filter: {fileID: 11400000, guid: 16e183fd1f6fe114f9fce4f665e369fe, type: 2}
+  filter: {fileID: 11400000, guid: 689e8bab52a9322449e749dfbca971fe, type: 2}
