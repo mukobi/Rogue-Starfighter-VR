@@ -11,6 +11,9 @@ public abstract class BoidFlock : MonoBehaviour
     [Range(0f, 1f)]
     public float avoidanceRadiusMultiplier = 0.5f;
 
+    float avoidanceRadius;
+    public float AvoidanceRadius { get { return avoidanceRadius; } }
+
     float squareNeighborRadius;
     float squareAvoidanceRadius;
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
@@ -19,7 +22,8 @@ public abstract class BoidFlock : MonoBehaviour
     void Start()
     {
         squareNeighborRadius = neighborRadius * neighborRadius;
-        squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
+        avoidanceRadius = neighborRadius * avoidanceRadiusMultiplier;
+        squareAvoidanceRadius = avoidanceRadius * avoidanceRadius;
     }
 
     // Update is called once per frame

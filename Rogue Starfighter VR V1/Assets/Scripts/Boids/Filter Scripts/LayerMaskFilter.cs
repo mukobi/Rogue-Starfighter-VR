@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Filter/Physics Layer")]
-public class PhysicsLayerFilter : ContextFilter
+[CreateAssetMenu(menuName = "Flock/Filter/Layer Mask")]
+public class LayerMaskFilter : ContextFilter
 {
-    public LayerMask mask;
-
+    public LayerMask layerMask;
     public override List<Transform> Filter(BoidAgent agent, List<Transform> original)
     {
         List<Transform> filtered = new List<Transform>();
         for (int i = 0; i < original.Count; i++)
         {
             Transform item = original[i];
-            if (mask == (mask | (1 << item.gameObject.layer)))
+            if ((layerMask & 1 << item.gameObject.layer) != 0)
             {
                 filtered.Add(item);
             }

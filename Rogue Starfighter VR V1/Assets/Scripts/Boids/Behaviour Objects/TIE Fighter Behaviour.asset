@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: TIE Fighter Behaviour
   m_EditorClassIdentifier: 
   behaviours:
-  - {fileID: 11400000, guid: b68afb7286bc52347a059fad2589e5c5, type: 2}
+  - {fileID: 11400000, guid: da01bd0509efb2f448228a1806242013, type: 2}
   - {fileID: 11400000, guid: 2a0ebc50e4feffd4fbc14c33d56866c5, type: 2}
   - {fileID: 11400000, guid: 52c2d400301bb684d82a762c3165d008, type: 2}
   - {fileID: 11400000, guid: 6260186999826634b930329a61c1129b, type: 2}
   - {fileID: 11400000, guid: 0266f7bea5e9d474db6b7cd65175ac30, type: 2}
+  - {fileID: 11400000, guid: d1c8241ae8d0ecf4ebbef9de046e6cbc, type: 2}
   weights:
   - 16
   - 1.5
   - 0.6
   - 10
   - 10
+  - 500
