@@ -245,9 +245,10 @@ GameObject:
   - component: {fileID: 8934575496407826912}
   - component: {fileID: 4793078825552081761}
   - component: {fileID: 2036718971651599707}
-  - component: {fileID: 5915972563203125483}
   - component: {fileID: 5488986112986433803}
   - component: {fileID: 43421824596618999}
+  - component: {fileID: 8699062592107846646}
+  - component: {fileID: 302610681037154903}
   m_Layer: 12
   m_Name: TIE Fighter
   m_TagString: Untagged
@@ -430,20 +431,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5915972563203125483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8934575496407826915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steerChangeSlerpFactor: 0.1
-  maxRotationDeltaDegrees: 66
 --- !u!114 &5488986112986433803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +473,32 @@ MonoBehaviour:
         m_CallState: 2
   transformToJumpAheadOnCollision: {fileID: 8934575496407826913}
   collisionJumpBias: 0.66
+--- !u!114 &8699062592107846646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934575496407826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b49c9cd656a9c4db8ea585b1997e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &302610681037154903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934575496407826915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587bb92c87363394b90f5704a1e06828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steerChangeSlerpFactor: 0.1
+  maxRotationDeltaDegrees: 80
 --- !u!1001 &7540031218741720016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,12 +553,6 @@ PrefabInstance:
       objectReference: {fileID: 8934575496407826913}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd871bfd4875350459a3bfa2b297bcfb, type: 3}
---- !u!4 &7911824211210738869 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 7540031218741720016}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7911824211210738858 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 391778267867754362, guid: bd871bfd4875350459a3bfa2b297bcfb,
@@ -558,6 +565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa3fa419e552e249b4dbd5eda50c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7911824211210738869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7540031218741720016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7943991586705489257
 PrefabInstance:
   m_ObjectHideFlags: 0

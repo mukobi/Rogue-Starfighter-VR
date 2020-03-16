@@ -2,6 +2,7 @@
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(GenericSteeringSystem))]
+[RequireComponent(typeof(PlayerRelativeTransformCalculator))]
 public abstract class BoidAgent : MonoBehaviour
 {
     BoidFlock agentFlock;
@@ -16,6 +17,9 @@ public abstract class BoidAgent : MonoBehaviour
     public float steerChangeSlerpFactor;
     public float maxRotationDeltaDegrees = 15;
     private GenericSteeringSystem steeringSystem;
+    
+    // player reference
+    public PlayerRelativeTransformCalculator PlayerRelative { get; private set; }
 
     // for debug
     private Quaternion desiredOrientationWorld;
@@ -31,6 +35,7 @@ public abstract class BoidAgent : MonoBehaviour
     {
         agentCollider = GetComponent<Collider>();
         steeringSystem = GetComponent<GenericSteeringSystem>();
+        PlayerRelative = GetComponent<PlayerRelativeTransformCalculator>();
     }
 
     public void Initialize(BoidFlock flock)
