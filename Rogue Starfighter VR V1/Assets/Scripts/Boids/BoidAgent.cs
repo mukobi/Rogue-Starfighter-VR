@@ -18,7 +18,9 @@ public abstract class BoidAgent : MonoBehaviour
     private SteeringSystem steeringSystem;
 
     // for debug
-    private Quaternion desiredRotation;
+    private Quaternion desiredOrientationWorld;
+    private Quaternion desiredOrientationLocal;
+    private Quaternion desiredDeltaRotationLocal;
     private Quaternion deltaRotationLocal;
 
     private readonly bool drawVisionSpheres = false;
@@ -38,14 +40,25 @@ public abstract class BoidAgent : MonoBehaviour
 
     public void SetDeltaRotation(Vector3 desiredForwardWorld)
     {
+        // normalize desired forward vector
         desiredForwardWorld.Normalize();
-        Vector3 desiredForwardLocal = transform.InverseTransformDirection(desiredForwardWorld);
-        desiredRotation = Quaternion.LookRotation(desiredForwardLocal);
-        desiredRotation = Quaternion.RotateTowards(transform.rotation, desiredRotation, maxRotationDeltaDegrees);
-        Quaternion desiredDeltaRotation = desiredRotation * Quaternion.Inverse(transform.rotation);
 
-        deltaRotationLocal = Quaternion.Slerp(deltaRotationLocal, desiredDeltaRotation, steerChangeSlerpFactor);
+        // compute rotation pointing at desired forward vector
+        desiredOrientationWorld = Quaternion.LookRotation(desiredForwardWorld);
 
+        // clamp to maxRotationDeltaDegrees away from current rotation
+        desiredOrientationWorld = Quaternion.RotateTowards(transform.rotation, desiredOrientationWorld, maxRotationDeltaDegrees);
+
+        // compute desired orientation in local space
+        desiredOrientationLocal = Quaternion.Inverse(transform.parent.rotation) * desiredOrientationWorld;
+
+        // compute rotation that gets us from current rotation to desired local rotation
+        desiredDeltaRotationLocal = desiredOrientationLocal * Quaternion.Inverse(transform.localRotation);
+
+        // spherically interpolate previous ▲rotation to desired ▲rotation (smoothes the steering)
+        deltaRotationLocal = Quaternion.Slerp(deltaRotationLocal, desiredDeltaRotationLocal, steerChangeSlerpFactor);
+
+        // apply steering to the SteeringSystem component (i.e. steer the ship)
         steeringSystem.deltaRotationLocal = deltaRotationLocal;
     }
 
@@ -56,9 +69,17 @@ public abstract class BoidAgent : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, transform.position + 30 * transform.forward);
 
-            // desired forward
-            //Gizmos.color = Color.red;
-            //Gizmos.DrawLine(transform.position, transform.position + 5 * (desiredRotation * Vector3.forward));
+            // desired orientation world
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, transform.position + 25 * (desiredOrientationWorld * Vector3.forward));
+
+            // desired orientation local
+            Gizmos.color = Color.white;
+            Gizmos.DrawLine(transform.position, transform.position + 22 * (desiredOrientationLocal * transform.forward));
+
+            // desired deltarotation local
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(transform.position, transform.position + 21 * (desiredDeltaRotationLocal * transform.forward));
 
             // forward after deltarotation
             Gizmos.color = Color.green;

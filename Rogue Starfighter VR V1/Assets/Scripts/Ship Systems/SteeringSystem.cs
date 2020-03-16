@@ -35,9 +35,9 @@ public class SteeringSystem : MonoBehaviour
         rb.MoveRotation(transform.localRotation * Quaternion.Euler(Vector3.Scale(deltaRotationLocalEuler, rotationScaleLocalEuler)));
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.white;
-        Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotationLocal * transform.forward));
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.white;
+    //    Gizmos.DrawLine(transform.position, transform.position + 17 * (deltaRotationLocal * transform.forward));
+    //}
 }
