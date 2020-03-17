@@ -21,4 +21,5 @@ MonoBehaviour:
   spatialBlend: 0
   minPitch: 1
   maxPitch: 1
+  maxDistance: 1000
   rolloffMode: 1
