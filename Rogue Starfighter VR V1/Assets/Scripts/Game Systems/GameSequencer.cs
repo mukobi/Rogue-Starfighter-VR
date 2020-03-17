@@ -14,6 +14,8 @@ public class GameSequencer : MonoBehaviour
 
         await Task.Delay(5000);
 
+        GameSceneManager.AddSceneIfNotLoaded(1);
+
         Debug.Log("End main game sequence");
     }
 }
