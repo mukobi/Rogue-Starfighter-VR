@@ -54,11 +54,14 @@ public abstract class BoidFlock : MonoBehaviour
         }
     }
 
+    private readonly Collider[] contextColliders = new Collider[64];
+
     List<Transform> GetNearbyObjects(BoidAgent agent)
     {
         List<Transform> context = new List<Transform>();
-        Collider[] contextColliders = Physics.OverlapSphere(agent.transform.position, neighborRadius);
-        for (int i = 0; i < contextColliders.Length; i++)
+        int overlapCount = Physics.OverlapSphereNonAlloc(agent.transform.position, neighborRadius, contextColliders);
+        Debug.Log(overlapCount);
+        for (int i = 0; i < overlapCount; i++)
         {
             Collider c = contextColliders[i];
             if (c != agent.AgentCollider)
