@@ -12,7 +12,7 @@ public class GameSequencer : MonoBehaviour
     {
         Debug.Log("Start main game sequence");
 
-        await Task.Delay(5000);
+        await Task.Delay(4300);
 
         GameSceneManager.AddSceneIfNotLoaded(1);
 

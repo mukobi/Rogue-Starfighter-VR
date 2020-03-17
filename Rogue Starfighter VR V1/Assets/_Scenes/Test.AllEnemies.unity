@@ -3500,6 +3500,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 8556604861335204366, guid: 95a0dee430d9ae1428567bc63623efc5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a0dee430d9ae1428567bc63623efc5, type: 3}
 --- !u!4 &1244926482 stripped
@@ -6401,6 +6406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024076948}
   - component: {fileID: 2024076947}
+  - component: {fileID: 2024076949}
   m_Layer: 0
   m_Name: MoveOppositePlayerMovement (1)
   m_TagString: Untagged
@@ -6438,6 +6444,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024076949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024076946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d87cbe0ad4753142a78166d6a21ef52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpDistance: -100000
+  LerpPerFrame: 0.66
 --- !u!4 &2025312290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,
