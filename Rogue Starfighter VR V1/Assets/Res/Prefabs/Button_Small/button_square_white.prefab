@@ -1,5 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5282346649002046530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758954239620184060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c7dbaec28574e40b2b743e34ca9941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2689998773782948343
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,6 +52,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987489868254455231}
+  - component: {fileID: 3478100397828449664}
+  - component: {fileID: 381837784465980280}
   m_Layer: 0
   m_Name: button_square_white
   m_TagString: Untagged
@@ -62,6 +76,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3478100397828449664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455253973233586605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.005, z: 0.02}
+  m_Center: {x: 0, y: 0.01, z: 0}
+--- !u!114 &381837784465980280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455253973233586605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3821ad514e4a964494a479e2c17c71d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+  OnLayeredCollisionEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5492786960828688485}
+        m_MethodName: SetConstantEmission
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnLayeredCollisionExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5492786960828688485}
+        m_MethodName: SetConstantEmission
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5492786960828688485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367791558380028305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7549c2f1bfcb741911992d78834664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &234007640975224571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69,6 +151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1823100471069625703}
     m_Modifications:
+    - target: {fileID: -4637898434534232214, guid: d76c997f45322164ab03929a48b6105a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d76c997f45322164ab03929a48b6105a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -144,6 +231,18 @@ PrefabInstance:
 --- !u!4 &5063708971741185505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d76c997f45322164ab03929a48b6105a,
+    type: 3}
+  m_PrefabInstance: {fileID: 234007640975224571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &758954239620184060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 700033119156721927, guid: d76c997f45322164ab03929a48b6105a,
+    type: 3}
+  m_PrefabInstance: {fileID: 234007640975224571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367791558380028305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4637898434534232214, guid: d76c997f45322164ab03929a48b6105a,
     type: 3}
   m_PrefabInstance: {fileID: 234007640975224571}
   m_PrefabAsset: {fileID: 0}

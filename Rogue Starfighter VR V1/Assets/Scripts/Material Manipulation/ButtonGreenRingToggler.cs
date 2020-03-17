@@ -14,7 +14,7 @@ public class ButtonGreenRingToggler : MonoBehaviour
         material = GetComponent<MeshRenderer>().materials[1];
     }
 
-    public void ToggleConstantEmission(bool toEmit)
+    public void SetConstantEmission(bool toEmit)
     {
         material.SetFloat("_UseEmissiveIntensity", toEmit ? 1 : 0);
         material.SetFloat("_EmissiveIntensity", toEmit ? onIntensity : offIntensity);

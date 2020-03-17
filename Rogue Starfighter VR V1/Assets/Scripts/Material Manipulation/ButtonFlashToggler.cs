@@ -11,12 +11,12 @@ public class ButtonFlashToggler : MonoBehaviour
         material = GetComponent<MeshRenderer>().material;
     }
 
-    private void ToggleFlashing(bool toFlash)
+    public void SetFlashing(bool toFlash)
     {
         material.SetFloat("__enable_flashing", toFlash ? 1.0f : 0.0f);
     }
 
-    public void ToggleConstantEmission(bool toEmit)
+    public void SetConstantEmission(bool toEmit)
     {
         material.SetFloat("__force_emission_on", toEmit ? 1.0f : 0.0f);
     }
