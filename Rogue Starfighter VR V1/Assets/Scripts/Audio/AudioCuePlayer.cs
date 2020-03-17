@@ -24,4 +24,9 @@ public class AudioCuePlayer : MonoBehaviour
     {
         audioCue.PlayWithNewAudioSourceAtPosition(position);
     }
+
+    public void PlayOnExistingAudioSource(AudioSource audioSource)
+    {
+        audioCue.PlayOnExistingAudioSourceAtPosition(audioSource);
+    }
 }

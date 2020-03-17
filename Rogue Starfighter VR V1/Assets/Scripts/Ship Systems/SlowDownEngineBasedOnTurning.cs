@@ -5,7 +5,7 @@ using UnityEngine;
 public class SlowDownEngineBasedOnTurning : MonoBehaviour
 {
     [Tooltip("Steering system with delta rotation to read.")]
-    [SerializeField] private SteeringSystem steeringSystem = default;
+    [SerializeField] private GenericSteeringSystem steeringSystem = default;
     [Tooltip("Engine with turning slowdown to write.")]
     [SerializeField] private ForwardEngineAbstract forwardEngine = default;
 
@@ -15,7 +15,7 @@ public class SlowDownEngineBasedOnTurning : MonoBehaviour
     private void FixedUpdate()
     {
         // calculate how much we're turning
-        float turnAngleDegrees = Quaternion.Angle(steeringSystem.deltaRotation, Quaternion.identity);
+        float turnAngleDegrees = Quaternion.Angle(steeringSystem.deltaRotationLocal, Quaternion.identity);
 
         // calculate appropriate slowdown
         turnAngleDegrees = Mathf.Clamp(turnAngleDegrees, 0, angleOfMaxSlowdownDegrees);

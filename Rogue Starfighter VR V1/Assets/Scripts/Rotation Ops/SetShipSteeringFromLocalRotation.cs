@@ -5,10 +5,10 @@ using UnityEngine;
 public class SetShipSteeringFromLocalRotation : MonoBehaviour
 {
     // TODO: change this into an interface
-    [SerializeField] SteeringSystem steeringSystem = default;
+    [SerializeField] GenericSteeringSystem steeringSystem = default;
 
     private void FixedUpdate()
     {
-        steeringSystem.deltaRotation = transform.localRotation;
+        steeringSystem.deltaRotationLocal = transform.localRotation;
     }
 }

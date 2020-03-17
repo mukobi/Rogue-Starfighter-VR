@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class LaserGun : MonoBehaviour
+public class LaserGun : Fireable
 {
-    public MoveOppositePlayerMovement moveOppositePlayerMovement;
-    public GameObject laserPrefab;
-
     public UnityEvent fireEvent;
     
-    public void Fire()
+    public override void Fire()
     {
-        GameObject laser = Instantiate(laserPrefab, transform.position, transform.rotation, moveOppositePlayerMovement.transform);
         fireEvent.Invoke();
     }
 }

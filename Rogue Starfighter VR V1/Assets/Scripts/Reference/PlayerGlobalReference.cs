@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerGlobalReference : MonoBehaviour
 {
-    public Transform rotationRoot;
+    public Transform shipRotationRoot;
 
     public ForwardEnginePlayerRef forwardEnginePlayerRef;
 
-    public static PlayerGlobalReference Instance;
+    public static PlayerGlobalReference I;
 
     private void Awake()
     {
-        Instance = this;
+        I = this;
     }
 }
