@@ -3,6 +3,10 @@ using System.Threading.Tasks;
 
 public class GameSequencer : MonoBehaviour
 {
+    [Header("SFX")]
+    public AudioSource GlobalSFX;
+    public AudioCuePlayer HyperspaceExitCue;
+
     async void Start()
     {
         await MainGameTask();
@@ -12,9 +16,11 @@ public class GameSequencer : MonoBehaviour
     {
         Debug.Log("Start main game sequence");
 
-        await Task.Delay(4300);
-
-        GameSceneManager.AddSceneIfNotLoaded(1);
+        /*** SECTION: Load Star Destroyer ***/
+        await Task.Delay(2500);
+        HyperspaceExitCue.PlayOnExistingAudioSource(GlobalSFX);
+        await Task.Delay(1850); // 3 sec from start of hspace exit to boom
+        GameSceneManager.AddSceneIfNotLoaded(1); // scene with Star Destroyer
 
         Debug.Log("End main game sequence");
     }

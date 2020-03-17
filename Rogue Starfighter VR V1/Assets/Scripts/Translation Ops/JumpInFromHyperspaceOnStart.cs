@@ -11,14 +11,11 @@ public class JumpInFromHyperspaceOnStart : MonoBehaviour
 
     private IEnumerator Start()
     {
-        Debug.Log("Jumping");
         initialPosition = transform.position;
-        Debug.Log(transform.position);
         transform.position -= JumpDistance * transform.forward;
         yield return null;
         while ((transform.position - initialPosition).sqrMagnitude > 1)
         {
-            Debug.Log(transform.position);
             transform.position = Vector3.Lerp(transform.position, initialPosition, LerpPerFrame);
             yield return null;
         }
