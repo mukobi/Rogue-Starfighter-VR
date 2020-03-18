@@ -11,6 +11,7 @@ public class ButtonGameController : MonoBehaviour
 
     public List<ButtonSmall> buttons;
 
+    [ContextMenu("Require Random Number Of Buttons Pressed")]
     public async Task RequireRandomNumberOfButtonsPressed()
     {
         await RequireButtonsPressed(Random.Range(buttonsToPressMin, buttonsToPressMax));
