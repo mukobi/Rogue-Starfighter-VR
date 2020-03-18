@@ -53,7 +53,9 @@ GameObject:
   m_Component:
   - component: {fileID: 987489868254455231}
   - component: {fileID: 3478100397828449664}
+  - component: {fileID: 1603085029843741857}
   - component: {fileID: 381837784465980280}
+  - component: {fileID: 9013537053162641240}
   m_Layer: 0
   m_Name: button_square_white
   m_TagString: Untagged
@@ -84,11 +86,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3455253973233586605}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.005, z: 0.02}
   m_Center: {x: 0, y: 0.01, z: 0}
+--- !u!65 &1603085029843741857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455253973233586605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.018, z: 0.03}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &381837784465980280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +119,7 @@ MonoBehaviour:
   LayerMask:
     serializedVersion: 2
     m_Bits: 512
-  OnLayeredCollisionEnter:
+  WhenTriggerEnter:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5492786960828688485}
@@ -118,10 +133,84 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  OnLayeredCollisionExit:
+      - m_Target: {fileID: 9013537053162641240}
+        m_MethodName: set_ButtonIsPressedMarker
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  WhenTriggerExit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5492786960828688485}
+        m_MethodName: SetConstantEmission
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &9013537053162641240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455253973233586605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e46367401bbc44b93aff686916bddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonCheckIntervalMilliseconds: 100
+  OnRequireButtonPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5492786960828688485}
+        m_MethodName: SetFlashing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5282346649002046530}
+        m_MethodName: SetConstantEmission
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnSatisfyButtonPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5492786960828688485}
+        m_MethodName: SetFlashing
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5282346649002046530}
         m_MethodName: SetConstantEmission
         m_Mode: 6
         m_Arguments:

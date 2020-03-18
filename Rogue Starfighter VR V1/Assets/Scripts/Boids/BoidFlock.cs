@@ -70,7 +70,7 @@ public abstract class BoidFlock : MonoBehaviour
     {
         List<Transform> context = new List<Transform>();
         int overlapCount = Physics.OverlapSphereNonAlloc(agent.transform.position, neighborRadius, contextColliders);
-        Debug.Log(overlapCount);
+        //Debug.Log(overlapCount);
         for (int i = 0; i < overlapCount; i++)
         {
             Collider c = contextColliders[i];

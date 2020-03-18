@@ -6,7 +6,7 @@ public class ButtonFlashToggler : MonoBehaviour
 {
     private Material material;
 
-    private void Start()
+    private void Awake()
     {
         material = GetComponent<MeshRenderer>().material;
     }

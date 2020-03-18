@@ -9,7 +9,7 @@ public class ButtonGreenRingToggler : MonoBehaviour
     private const float offIntensity = 0.0f;
     private const float onIntensity = 100.0f;
 
-    private void Start()
+    private void Awake()
     {
         material = GetComponent<MeshRenderer>().materials[1];
     }

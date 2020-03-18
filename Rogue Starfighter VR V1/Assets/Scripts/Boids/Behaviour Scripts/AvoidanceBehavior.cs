@@ -12,7 +12,7 @@ public class AvoidanceBehavior : FilteredBoidBehaviour
     public override void Initialize()
     {
         squareAvoidanceRange = avoidanceRange * avoidanceRange;
-        Debug.Log(squareAvoidanceRange);
+        //Debug.Log(squareAvoidanceRange);
     }
 
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
