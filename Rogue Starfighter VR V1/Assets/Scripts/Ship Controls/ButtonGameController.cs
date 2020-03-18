@@ -11,14 +11,6 @@ public class ButtonGameController : MonoBehaviour
 
     public List<ButtonSmall> buttons;
 
-    private async void Start()
-    {
-        while (true)
-        {
-            await RequireRandomNumberOfButtonsPressed();
-        }
-    }
-
     public async Task RequireRandomNumberOfButtonsPressed()
     {
         await RequireButtonsPressed(Random.Range(buttonsToPressMin, buttonsToPressMax));
@@ -26,17 +18,17 @@ public class ButtonGameController : MonoBehaviour
 
     public async Task RequireButtonsPressed(int numButtons)
     {
-        List<ButtonSmall> randomButtons = chooseRandomButtons(numButtons);
+        List<ButtonSmall> randomButtons = ChooseRandomButtons(numButtons);
         var buttonTasks = randomButtons.Select(button => button.RequireButtonPress());
         await Task.WhenAll(buttonTasks);
     }
 
-    private List<ButtonSmall> chooseRandomButtons(int numButtons)
+    private List<ButtonSmall> ChooseRandomButtons(int numButtons)
     {
         List<ButtonSmall> chosen = new List<ButtonSmall>();
         for (int i = 0; i < numButtons; i++)
         {
-            for (int j = 0; j < 16; j++) // try 5 times to not repick
+            for (int j = 0; j < 16; j++) // try 16 times to not repick
             {
                 ButtonSmall selected = buttons[Random.Range(0, buttons.Count)];
                 if (!chosen.Contains(selected))
