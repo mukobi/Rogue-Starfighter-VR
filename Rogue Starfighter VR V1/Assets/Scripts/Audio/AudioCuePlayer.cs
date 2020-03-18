@@ -37,4 +37,9 @@ public class AudioCuePlayer : MonoBehaviour
     {
         audioCue.PlayOnExistingAudioSourceAtPosition(audioSource);
     }
+
+    public void PlayOneShotOnExistingAudioSource()
+    {
+        audioCue.PlayOneShotOnExistingAudioSourceAtPosition(audioSource);
+    }
 }
