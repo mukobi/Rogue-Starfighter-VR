@@ -43,7 +43,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_59BDC928: 2.6
-    - Vector1_CBD7A6E: 0.02
+    - Vector1_CBD7A6E: 0.025
     - Vector1_ECEB7574: 0.5
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
@@ -79,7 +79,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Vector2_A3AB3194: {r: 0.66, g: 1, b: 0, a: 0}
+    - Vector2_A3AB3194: {r: 0.5, g: 1, b: 0, a: 0}
     - Vector2_B0512897: {r: 0.3, g: 1, b: 0, a: 0}
     - Vector2_B224AEF2: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
