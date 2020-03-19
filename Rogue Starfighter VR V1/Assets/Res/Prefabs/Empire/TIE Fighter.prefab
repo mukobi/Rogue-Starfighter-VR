@@ -316,8 +316,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5ebd2fee545c348a4b42c5526a4846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minHealth: 0
+  maxHealth: 15
   initialHealth: 15
   OnHealthChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealthLose:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealthGain:
     m_PersistentCalls:
       m_Calls: []
   OnNoHealth:
@@ -348,7 +356,8 @@ AudioSource:
   m_GameObject: {fileID: 8934575496407826915}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 5044227932576836603, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
