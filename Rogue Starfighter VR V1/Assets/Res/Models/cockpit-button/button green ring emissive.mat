@@ -21,13 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: button green ring emissive
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 7531ef1c3a06f2840973cfba2d911cbb,
+    type: 3}
   m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -122,6 +124,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_3645A19D: 10
+    - Vector1_45B828C0: 1
+    - Vector1_6B06DC4E: 0.66
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -241,7 +246,11 @@ Material:
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
+    - __enable_flashing: 0
+    - __force_emission_on: 0
     m_Colors:
+    - Color_151757C8: {r: 0, g: 24543.875, b: 3598.055, a: 1}
+    - Color_70E2E4F0: {r: 0, g: 0.33, b: 0.16107145, a: 0.5215687}
     - _BaseColor: {r: 0.0014773323, g: 0.055905294, b: 0, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.0014773323, g: 0.055905268, b: 0, a: 1}

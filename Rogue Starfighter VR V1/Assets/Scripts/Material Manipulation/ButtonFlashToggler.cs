@@ -5,10 +5,11 @@ using UnityEngine;
 public class ButtonFlashToggler : MonoBehaviour
 {
     private Material material;
+    [SerializeField] private int materialIndex = 0;
 
     private void Awake()
     {
-        material = GetComponent<MeshRenderer>().material;
+        material = GetComponent<MeshRenderer>().materials[materialIndex];
     }
 
     public void SetFlashing(bool toFlash)
