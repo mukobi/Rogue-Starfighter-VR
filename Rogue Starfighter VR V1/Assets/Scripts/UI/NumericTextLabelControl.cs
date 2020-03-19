@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 
-public class TextFloatLabelControl : MonoBehaviour
+public class NumericTextLabelControl : MonoBehaviour
 {
     [SerializeField] private string prefix = default;
 
@@ -14,6 +14,11 @@ public class TextFloatLabelControl : MonoBehaviour
     }
 
     public void SetText(float value)
+    {
+        text.text = prefix + value.ToString();
+    }
+
+    public void SetText(int value)
     {
         text.text = prefix + value.ToString();
     }
