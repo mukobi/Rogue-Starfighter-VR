@@ -6,11 +6,12 @@ public class NumericTextLabelControl : MonoBehaviour
 {
     [SerializeField] private string prefix = default;
 
-    private TextMeshPro text;
+    //private TextMeshPro text;
+    private TextMeshProUGUI text;
 
-    private void Start()
+    private void Awake()
     {
-        text = GetComponent<TextMeshPro>();
+        text = GetComponent<TextMeshProUGUI>();
     }
 
     public void SetText(float value)
