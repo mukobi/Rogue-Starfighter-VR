@@ -7,7 +7,7 @@ public class LinearProgressBar : MonoBehaviour
     public float MaxValue = 100;
     //[SerializeField] private float defaultValue = 100;
 
-    [SerializeField] private RectTransform fill;
+    [SerializeField] private RectTransform fill = default;
 
     public UnityEventFloat OnValueSet;
 

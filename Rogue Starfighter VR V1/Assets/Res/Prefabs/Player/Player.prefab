@@ -1449,7 +1449,7 @@ MonoBehaviour:
   handCollider: {fileID: 0}
   clearanceCheckMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 14903
   hand: {fileID: 0}
 --- !u!1 &8684395497201528525
 GameObject:
@@ -1590,7 +1590,7 @@ MonoBehaviour:
   handCollider: {fileID: 0}
   clearanceCheckMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 14903
   hand: {fileID: 0}
 --- !u!1 &8684811656679944481
 GameObject:
