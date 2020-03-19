@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="100mm"
@@ -27,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="36.231931"
-     inkscape:cy="191.34814"
+     inkscape:zoom="5.1887588"
+     inkscape:cx="227.62934"
+     inkscape:cy="213.62673"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +39,21 @@
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-midpoints="true"
+     inkscape:object-paths="false"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-tangential="true"
+     inkscape:snap-center="true">
     <sodipodi:guide
        position="0,0"
        orientation="0,377.95276"
@@ -73,20 +88,46 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="main"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-197)"
      style="display:inline">
-    <circle
-       id="path4932"
-       cx="15.30118"
-       cy="244.48181"
-       style="fill:#ffffff;stroke-width:0.26458332"
-       r="15.501633" />
+    <path
+       style="fill:#ffffff;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 50,247 -44.320713,5.06699 1.16e-5,-10.13398 h -1.21e-5 v 0"
+       id="path862"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="22.160357" />
+    <path
+       style="fill:#ffffff;stroke-width:0.15011998"
+       d="M 55.1,247 A 5.1000002,5.1000016 0 0 1 50,252.1 5.1000002,5.1000016 0 0 1 44.9,247 5.1000002,5.1000016 0 0 1 50,241.9 5.1000002,5.1000016 0 0 1 55.1,247 Z"
+       id="path831"
+       inkscape:connector-curvature="0" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path831"
+       id="use842"
+       width="100%"
+       height="100%"
+       transform="translate(-44.9)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#use842"
+       id="use844"
+       transform="translate(89.8)"
+       width="100%"
+       height="100%" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path862"
+       inkscape:transform-center-x="-22.160356"
+       id="use866"
+       transform="rotate(-180,50,247)"
+       width="100%"
+       height="100%" />
   </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="Layer 2" />
 </svg>
