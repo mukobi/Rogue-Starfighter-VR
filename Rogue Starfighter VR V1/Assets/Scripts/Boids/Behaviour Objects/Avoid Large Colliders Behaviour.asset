@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Avoid Large Colliders Behaviour
   m_EditorClassIdentifier: 
   filter: {fileID: 11400000, guid: 91d2590b702831c40838e829efb9ef30, type: 2}
-  layerMask:
+  LayerMask:
     serializedVersion: 2
-    m_Bits: 8192
+    m_Bits: 0
+  MaxAngleFromForward: 30

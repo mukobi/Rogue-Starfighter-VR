@@ -12,6 +12,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1264190429091763035, guid: 3719854cc7ee8cf47bffdfcb4564009c,
+        type: 3}
+      propertyPath: min
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264190429091763035, guid: 3719854cc7ee8cf47bffdfcb4564009c,
+        type: 3}
+      propertyPath: max
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1294439706563347089, guid: 3719854cc7ee8cf47bffdfcb4564009c,
         type: 3}
       propertyPath: m_RootOrder

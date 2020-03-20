@@ -7,11 +7,21 @@ public class AudioCuePlayer : MonoBehaviour
     [SerializeField] private AudioCueScriptableObject audioCue = default;
     [SerializeField] private bool playOnAwake = false;
 
+    private AudioSource audioSource;
+
     private void Awake()
     {
-        if(playOnAwake)
+        audioSource = GetComponent<AudioSource>();
+        if (playOnAwake)
         {
-            PlayAtMyPosition();
+            if (audioSource != null)
+            {
+                PlayOnExistingAudioSource();
+            }
+            else
+            {
+                PlayAtMyPosition();
+            }
         }
     }
 
@@ -25,8 +35,18 @@ public class AudioCuePlayer : MonoBehaviour
         audioCue.PlayWithNewAudioSourceAtPosition(position);
     }
 
-    public void PlayOnExistingAudioSource(AudioSource audioSource)
+    public void PlayOnPassedInAudioSource(AudioSource passedInAudioSource)
+    {
+        audioCue.PlayOnExistingAudioSourceAtPosition(passedInAudioSource);
+    }
+
+    public void PlayOnExistingAudioSource()
     {
         audioCue.PlayOnExistingAudioSourceAtPosition(audioSource);
+    }
+
+    public void PlayOneShotOnExistingAudioSource()
+    {
+        audioCue.PlayOneShotOnExistingAudioSourceAtPosition(audioSource);
     }
 }

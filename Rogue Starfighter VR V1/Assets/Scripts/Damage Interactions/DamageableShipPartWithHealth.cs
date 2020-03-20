@@ -3,28 +3,51 @@ using UnityEngine;
 
 public class DamageableShipPartWithHealth : DamageableShipPart
 {
-    [SerializeField] private float currentHealth = default;
+    [SerializeField] private float minHealth = default;
+    [SerializeField] private float maxHealth = default;
+    [SerializeField] private float initialHealth = default;
+    private float currentHealth;
     //[SerializeField] private float maxHealth;
 
+    public UnityEventFloat OnHealthChange;
+    public UnityEventFloat OnHealthLose;
+    public UnityEventFloat OnHealthGain;
     public UnityEvent OnNoHealth;
 
     [Tooltip("Should I destroy myself when I run out of health?")]
     [SerializeField] private bool destroyOnNoHealth = false;
 
-    public override bool IsDestroyed => (currentHealth <= 0.0f);
+    // TODO: try compare to minHealth + smallEpsilon if encountering float comparison bug
+    public override bool IsDestroyed => (currentHealth <= minHealth);
 
-    public override bool TakeDamage(float damage)
+    private void Start()
     {
-        if (!IsDestroyed)
+        SetHealth(initialHealth);
+    }
+
+    public override bool TakeDamage(float amount)
+    {
+        OnHealthLose.Invoke(amount);
+        return SetHealth(currentHealth - amount);
+    }
+
+    public bool GainHealth(float amount)
+    {
+        OnHealthGain.Invoke(amount);
+        return SetHealth(currentHealth + amount);
+    }
+
+    public bool SetHealth(float newHealth)
+    {
+        newHealth = Mathf.Clamp(newHealth, minHealth, maxHealth);
+        currentHealth = newHealth;
+        OnHealthChange.Invoke(currentHealth);
+        if (IsDestroyed)
         {
-            currentHealth -= damage;
-            if (IsDestroyed)
+            OnNoHealth.Invoke();
+            if (destroyOnNoHealth)
             {
-                OnNoHealth.Invoke();
-                if (destroyOnNoHealth)
-                {
-                    Destroy(gameObject);
-                }
+                Destroy(gameObject);
             }
         }
         return IsDestroyed;

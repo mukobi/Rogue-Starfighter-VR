@@ -19,6 +19,12 @@ public abstract class BoidFlock : MonoBehaviour
     float squareAvoidanceRadius;
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
 
+    [Tooltip("n where each boid is update only every nth frame. Staggers updates for" +
+        "a constant performance gain.")]
+    [Range(1,5)]
+    [SerializeField] private int updateFrameInterval = 1;
+    private int currentUpdateFrameOffset = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +39,9 @@ public abstract class BoidFlock : MonoBehaviour
     {
         for (int i = 0; i < agents.Count; i++)
         {
+            if (i % updateFrameInterval != currentUpdateFrameOffset)
+                continue; // only update the nth boid every nth frame
+
             BoidAgent agent = agents[i];
             //if (agent == null)
             //{
@@ -52,13 +61,17 @@ public abstract class BoidFlock : MonoBehaviour
             }
             agent.SetDeltaRotation(desiredForward);
         }
+        currentUpdateFrameOffset = (currentUpdateFrameOffset + 1) % updateFrameInterval;
     }
+
+    private readonly Collider[] contextColliders = new Collider[64];
 
     List<Transform> GetNearbyObjects(BoidAgent agent)
     {
         List<Transform> context = new List<Transform>();
-        Collider[] contextColliders = Physics.OverlapSphere(agent.transform.position, neighborRadius);
-        for (int i = 0; i < contextColliders.Length; i++)
+        int overlapCount = Physics.OverlapSphereNonAlloc(agent.transform.position, neighborRadius, contextColliders);
+        //Debug.Log(overlapCount);
+        for (int i = 0; i < overlapCount; i++)
         {
             Collider c = contextColliders[i];
             if (c != agent.AgentCollider)

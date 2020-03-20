@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1294439706563347089}
   - component: {fileID: 1294439706563347088}
   - component: {fileID: 5404395597999612339}
+  - component: {fileID: 1264190429091763035}
   - component: {fileID: 4983608701291512836}
   - component: {fileID: 2117669412639903321}
   - component: {fileID: -7482329185328933931}
@@ -66,7 +67,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb0a2b9774dcf1409879925dec37e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 800
+  speed: 1100
+--- !u!114 &1264190429091763035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294439706563347091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8273bd51576f76b4690c83d91607fc24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: 10
+  max: 20
+  randomValueOnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4983608701291512836}
+        m_MethodName: set_Damage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4983608701291512836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,7 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1e39bf448a1794d804d1cc41f83824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
   onDamage:
     m_PersistentCalls:
       m_Calls:
@@ -105,8 +133,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 16}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.5, y: 0.5, z: 36}
+  m_Center: {x: 0, y: 0, z: -10}
 --- !u!114 &-7482329185328933931
 MonoBehaviour:
   m_ObjectHideFlags: 0

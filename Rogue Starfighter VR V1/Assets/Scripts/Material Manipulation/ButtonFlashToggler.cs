@@ -5,18 +5,19 @@ using UnityEngine;
 public class ButtonFlashToggler : MonoBehaviour
 {
     private Material material;
+    [SerializeField] private int materialIndex = 0;
 
-    private void Start()
+    private void Awake()
     {
-        material = GetComponent<MeshRenderer>().material;
+        material = GetComponent<MeshRenderer>().materials[materialIndex];
     }
 
-    private void ToggleFlashing(bool toFlash)
+    public void SetFlashing(bool toFlash)
     {
         material.SetFloat("__enable_flashing", toFlash ? 1.0f : 0.0f);
     }
 
-    public void ToggleConstantEmission(bool toEmit)
+    public void SetConstantEmission(bool toEmit)
     {
         material.SetFloat("__force_emission_on", toEmit ? 1.0f : 0.0f);
     }

@@ -14,7 +14,7 @@ public class JumpInFromHyperspaceOnStart : MonoBehaviour
         initialPosition = transform.position;
         transform.position -= JumpDistance * transform.forward;
         yield return null;
-        while ((transform.position - initialPosition).sqrMagnitude > 1)
+        while ((transform.position - initialPosition).sqrMagnitude > 8)
         {
             transform.position = Vector3.Lerp(transform.position, initialPosition, LerpPerFrame);
             yield return null;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerGlobalReference : MonoBehaviour
 {
+    public Transform AheadOfPlayerTarget;
+
     public Transform shipRotationRoot;
 
     public ForwardEnginePlayerRef forwardEnginePlayerRef;

@@ -42,7 +42,7 @@ public class AudioCueScriptableObject : ScriptableObject
         return obj;
     }
 
-    public void PlayOnExistingAudioSourceAtPosition(AudioSource audioSource)
+    public void PlayOneShotOnExistingAudioSourceAtPosition(AudioSource audioSource)
     {
         // choose random variables
         AudioClip clip = clips[Random.Range(0, clips.Length)];
@@ -52,5 +52,19 @@ public class AudioCueScriptableObject : ScriptableObject
         // play that thang
         audioSource.pitch = pitch;
         audioSource.PlayOneShot(clip, volume);
+    }
+
+    public void PlayOnExistingAudioSourceAtPosition(AudioSource audioSource)
+    {
+        // choose random variables
+        AudioClip clip = clips[Random.Range(0, clips.Length)];
+        float volume = Random.Range(minVolume, maxVolume);
+        float pitch = Random.Range(minPitch, maxPitch);
+
+        // play that thang
+        audioSource.clip = clip;
+        audioSource.pitch = pitch;
+        audioSource.volume = volume;
+        audioSource.Play();
     }
 }

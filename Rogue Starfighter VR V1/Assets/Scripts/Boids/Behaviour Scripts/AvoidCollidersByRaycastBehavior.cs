@@ -6,7 +6,10 @@ using UnityEngine.Profiling;
 [CreateAssetMenu(menuName = "Flock/Behavior/Avoid Colliders By Raycast")]
 public class AvoidCollidersByRaycastBehavior : FilteredBoidBehaviour
 {
-    public LayerMask layerMask;
+    public LayerMask LayerMask;
+    [Tooltip("How far in degrees from forward to consider avoiding")]
+    public float MaxAngleFromForward;
+
     public override Vector3 CalculateDesiredForward(BoidAgent agent, List<Transform> context, BoidFlock flock)
     {
         Profiler.BeginSample("Avoid collider raycast setup");
@@ -36,11 +39,14 @@ public class AvoidCollidersByRaycastBehavior : FilteredBoidBehaviour
 
             Profiler.BeginSample("raycast");
             Vector3 toItem = item.position - agent.transform.position;
-            RaycastHit hitInfo;
-            if(Physics.Raycast(agent.transform.position, toItem, out hitInfo, 2 * flock.neighborRadius, layerMask))
+            if (Physics.Raycast(agent.transform.position, toItem, out RaycastHit hitInfo, 2 * flock.neighborRadius, LayerMask))
             {
-                nAvoid++;
-                avoidanceMove += (agent.transform.position - hitInfo.point).normalized;
+                Vector3 toHitPoint = hitInfo.point - agent.transform.position;
+                if (Vector3.Angle(agent.transform.forward, toHitPoint) < MaxAngleFromForward)
+                {
+                    nAvoid++;
+                    avoidanceMove += -toHitPoint.normalized;
+                }
             }
             Profiler.EndSample();
         }

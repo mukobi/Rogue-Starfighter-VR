@@ -11,10 +11,11 @@ public class ForwardEngineMoveSelf : ForwardEngineAbstract
         rb = GetComponent<Rigidbody>();
     }
 
-    protected override void FixedUpdate()
+    protected override void Update()
     {
-        base.FixedUpdate();
-        Vector3 targetPosition = rb.position + internalCurrentVelocity;
-        rb.MovePosition(targetPosition);
+        base.Update();
+        Vector3 targetPosition = transform.position + internalCurrentVelocity;
+        transform.position = targetPosition;
+        //    rb.MovePosition(targetPosition); // has issues when childed to a MoveOppositePlayerMovement object
     }
 }

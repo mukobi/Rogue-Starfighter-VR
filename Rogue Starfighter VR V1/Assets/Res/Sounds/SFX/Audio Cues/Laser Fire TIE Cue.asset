@@ -20,6 +20,6 @@ MonoBehaviour:
   maxVolume: 0.83
   spatialBlend: 1
   minPitch: 0.9
-  maxPitch: 1.05
+  maxPitch: 1.1
   maxDistance: 1000
   rolloffMode: 1

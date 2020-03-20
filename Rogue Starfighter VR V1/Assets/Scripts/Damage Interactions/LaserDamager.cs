@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class LaserDamager : MonoBehaviour, IDamager
 {
-    [SerializeField] private float damage = default;
+    public float Damage { get; set; }
 
     public UnityEvent onDamage;
 
-    public bool Damage(IDamageable damageable)
+    public bool DoDamage(IDamageable damageable)
     {
         onDamage.Invoke();
-        return damageable.TakeDamage(damage);
+        return damageable.TakeDamage(Damage);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -18,7 +18,7 @@ public class LaserDamager : MonoBehaviour, IDamager
         var damageableByLaser = other.gameObject.GetComponent<DamageableShipPart>();
         if (damageableByLaser != null)
         {
-            Damage(damageableByLaser);
+            DoDamage(damageableByLaser);
             Destroy(gameObject);
         }
     }
