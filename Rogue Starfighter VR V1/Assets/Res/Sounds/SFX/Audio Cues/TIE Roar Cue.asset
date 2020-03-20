@@ -28,8 +28,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9b2dec9bebfae1c49a1230b0effd3a54, type: 3}
   audioMixerGroup: {fileID: 5044227932576836603, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
-  minVolume: 1
-  maxVolume: 1
+  minVolume: 0.9
+  maxVolume: 0.9
   spatialBlend: 1
   minPitch: 0.95
   maxPitch: 1.05
