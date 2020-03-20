@@ -6,7 +6,7 @@ public class RandomInitializerFloat : MonoBehaviour
     [SerializeField] private float min = default;
     [SerializeField] private float max = default;
 
-    [SerializeField] private UnityEventFloat randomValueOnStart;
+    [SerializeField] private UnityEventFloat randomValueOnStart = default;
 
     private void Start()
     {
