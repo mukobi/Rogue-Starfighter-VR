@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class GameSceneManager : MonoBehaviour
 {
@@ -8,11 +9,15 @@ public class GameSceneManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public static void AddSceneIfNotLoaded(int index)
+    public static async Task AddSceneIfNotLoaded(int index)
     {
         if (!SceneManager.GetSceneAt(index).isLoaded)
         {
-            SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
+            AsyncOperation sceneLoader = SceneManager.LoadSceneAsync(index, LoadSceneMode.Additive);
+            while (!sceneLoader.isDone)
+            {
+                await Task.Delay(10);
+            }
         }
     }
 }
