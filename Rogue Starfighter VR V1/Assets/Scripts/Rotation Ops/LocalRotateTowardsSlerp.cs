@@ -7,6 +7,9 @@ public class LocalRotateTowardsSlerp : MonoBehaviour
     [Range(0,1)]
     public float slerpFactor = 1;
 
+    [Tooltip("Difference angle below which I'll just snap to the target rotation.")]
+    public float instantSnapAngleDegrees = 1;
+
     [Tooltip("If None, will use the public Quaternion TargetRotation as target")]
     [SerializeField] Transform TargetTransform = default;
 
@@ -18,7 +21,11 @@ public class LocalRotateTowardsSlerp : MonoBehaviour
         if (TargetTransform)
             TargetRotation = TargetTransform.localRotation;
 
-        if(transform.localRotation != TargetRotation)
+        if (Quaternion.Angle(transform.localRotation, TargetRotation) < instantSnapAngleDegrees)
+        {
+            transform.localRotation = TargetRotation;
+        }
+        else
         {
             transform.localRotation = Quaternion.Slerp(transform.localRotation, TargetRotation, slerpFactor);
         }
