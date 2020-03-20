@@ -21,7 +21,6 @@ public class GameSequencer : MonoBehaviour
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
         await Task.Delay(1850); // 3 sec from start of hspace exit to boom
         await GameSceneManager.AddSceneIfNotLoaded(1); // scene with Star Destroyer
-        await Task.Delay(1850); // 3 sec from start of hspace exit to boom
 
         Debug.Log("End main game sequence");
     }
