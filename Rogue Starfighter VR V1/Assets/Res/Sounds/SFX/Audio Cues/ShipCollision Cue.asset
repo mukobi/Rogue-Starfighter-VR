@@ -34,9 +34,9 @@ MonoBehaviour:
   audioMixerGroup: {fileID: -5646323540916387304, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
   minVolume: 0.9
-  maxVolume: 1
+  maxVolume: 0.95
   spatialBlend: 1
   minPitch: 0.9
-  maxPitch: 1
-  maxDistance: 360
+  maxPitch: 1.05
+  maxDistance: 250
   rolloffMode: 1
