@@ -12,6 +12,7 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
 
     private float internalTargetSpeed;
     public float CurrentSpeed { get; private set; }
+
     protected Vector3 internalCurrentVelocity;
 
     private void Start()
@@ -19,7 +20,7 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
         CurrentSpeed = SpeedAtInstantiation;
     }
 
-    protected virtual void FixedUpdate()
+    protected virtual void Update()
     {
         // calculate internalTargetSpeed
         internalTargetSpeed = BaseCruiseSpeed + SpeedBoost - TurnSpeedReduction;
@@ -43,6 +44,6 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
         CurrentSpeed += currentAcceleration;
 
         // calculate internalCurrentVelocity so child classes can move based off of it
-        internalCurrentVelocity = transform.forward * CurrentSpeed * Time.fixedDeltaTime;
+        internalCurrentVelocity = transform.forward * CurrentSpeed * Time.deltaTime;
     }
 }

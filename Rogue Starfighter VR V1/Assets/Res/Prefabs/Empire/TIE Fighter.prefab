@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd31ad0891973214286dad7063d7c349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseCruiseSpeed: 132
+  BaseCruiseSpeed: 100
   SpeedAtInstantiation: 0
   maxPositiveAcceleration: 1
 --- !u!114 &5488986112986433803
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationScaleLocalEuler: {x: 0.02, y: 0.02, z: 0.02}
   deltaRotationLocal: {x: 0, y: 0, z: 0, w: 0}
+  deltaRotationLocalEuler: {x: 0, y: 0, z: 0}
 --- !u!114 &43421824596618999
 MonoBehaviour:
   m_ObjectHideFlags: 0
