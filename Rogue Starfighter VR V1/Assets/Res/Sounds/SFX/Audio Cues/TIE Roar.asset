@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: TIE Roar
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 8962544c74ea7f943a6cf570aa188b3d, type: 3}
+  - {fileID: 8300000, guid: 1d576860271d2cf4fb78544037b097e6, type: 3}
+  - {fileID: 8300000, guid: ea654c91572a0dd4186099afadf3c972, type: 3}
+  - {fileID: 8300000, guid: 4b2703ec56c868845bbee244c6e17529, type: 3}
+  - {fileID: 8300000, guid: 76139b7cbc760494cb18bd3786f9a2cf, type: 3}
+  - {fileID: 8300000, guid: efe359f2e3b8ef2449136b4020890e11, type: 3}
+  - {fileID: 8300000, guid: 7c11140e28183ac42b65cef160d0310f, type: 3}
+  - {fileID: 8300000, guid: 552c69fbd6b9b384eb935143cc659e9c, type: 3}
+  - {fileID: 8300000, guid: 4592f0ebd10c28f4eab8dfea07132b8f, type: 3}
+  - {fileID: 8300000, guid: 458106952ae3e8b45b6c0434e0416215, type: 3}
+  - {fileID: 8300000, guid: 64bb63a59f6dbf743b14fdd71cfa3f54, type: 3}
+  - {fileID: 8300000, guid: b648242a596b9774e9a6ac5044fafa1a, type: 3}
+  - {fileID: 8300000, guid: 9b2dec9bebfae1c49a1230b0effd3a54, type: 3}
+  audioMixerGroup: {fileID: 5044227932576836603, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  spatialBlend: 1
+  minPitch: 0.95
+  maxPitch: 1.05
+  maxDistance: 660
+  rolloffMode: 1
