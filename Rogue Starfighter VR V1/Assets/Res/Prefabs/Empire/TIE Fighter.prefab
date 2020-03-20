@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7e870c8e023324a9d156cc8fa591fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAngleAwayToFire: 2
+  maxAngleAwayToFire: 1.313
   maxDistAwayToFire: 666
   fireableController: {fileID: 7201709092073817526}
 --- !u!1001 &7540031218741720016
