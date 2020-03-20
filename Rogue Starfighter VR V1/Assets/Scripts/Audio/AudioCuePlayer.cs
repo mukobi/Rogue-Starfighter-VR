@@ -14,7 +14,14 @@ public class AudioCuePlayer : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         if (playOnAwake)
         {
-            PlayAtMyPosition();
+            if (audioSource != null)
+            {
+                PlayOnExistingAudioSource();
+            }
+            else
+            {
+                PlayAtMyPosition();
+            }
         }
     }
 
