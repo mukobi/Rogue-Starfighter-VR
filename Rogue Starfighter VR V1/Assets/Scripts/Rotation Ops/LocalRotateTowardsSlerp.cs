@@ -13,7 +13,7 @@ public class LocalRotateTowardsSlerp : MonoBehaviour
     [HideInInspector]
     public Quaternion TargetRotation;
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (TargetTransform)
             TargetRotation = TargetTransform.localRotation;
