@@ -9,7 +9,7 @@ public class PlayerRelativeTransformCalculator : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ToPlayer = PlayerGlobalReference.I.shipRotationRoot.position - transform.position;
+        ToPlayer = PlayerGlobalReference.I.AheadOfPlayerTarget.position - transform.position;
         ToPlayerNormalized = ToPlayer.normalized;
         ToPlayerSqrMagnitude = ToPlayer.sqrMagnitude;
         AngleToPlayer = Vector3.Angle(transform.forward, ToPlayerNormalized);
