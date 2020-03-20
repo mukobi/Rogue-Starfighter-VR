@@ -6,10 +6,9 @@ public class GenericSteeringSystem : MonoBehaviour
 {
     public Vector3 rotationScaleLocalEuler;
 
-    [HideInInspector]
-    public Quaternion deltaRotationLocal;
+    [HideInInspector] public Quaternion deltaRotationLocal;
+    [HideInInspector] public Vector3 deltaRotationLocalEuler;
 
-    protected Vector3 deltaRotationLocalEuler;
     protected Rigidbody rb;
 
     private void Start()
