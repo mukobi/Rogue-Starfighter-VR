@@ -24,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: button moveable part
     second: {fileID: 2100000, guid: 5e32edaa44e356c458c4c075c528c96f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default
+    second: {fileID: 2100000, guid: 105eaa1a781047b41a567972fa598dfa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
