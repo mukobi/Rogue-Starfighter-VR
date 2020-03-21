@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 1.295283, g: 1.3061557, b: 1.295283, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2563,7 +2563,7 @@ GameObject:
   - component: {fileID: 508597141}
   - component: {fileID: 508597142}
   m_Layer: 0
-  m_Name: targetHeadsetTransform
+  m_Name: TargetHeadsetTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6226,7 +6226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchoredPosition: {x: 0, y: 323}
   m_SizeDelta: {x: 170, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255419051
@@ -6253,8 +6253,8 @@ MonoBehaviour:
     Sit comfortably and hold the trigger
     to recalibrate'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8dde5ab936a65504cb67e6ab6e29e8c8, type: 2}
-  m_sharedMaterial: {fileID: -2280478578457133046, guid: 8dde5ab936a65504cb67e6ab6e29e8c8,
+  m_fontAsset: {fileID: 11400000, guid: 6a3bbdc8141ae28499c058c1ab5ca27e, type: 2}
+  m_sharedMaterial: {fileID: -2280478578457133046, guid: 6a3bbdc8141ae28499c058c1ab5ca27e,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6309,7 +6309,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -6318,7 +6318,7 @@ MonoBehaviour:
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
+  m_IsTextObjectScaleStatic: 1
   m_VertexBufferAutoSizeReduction: 1
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
