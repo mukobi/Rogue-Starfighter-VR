@@ -220,7 +220,7 @@ MonoBehaviour:
   OnRKeyPressed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124645903}
+      - m_Target: {fileID: 0}
         m_MethodName: ResetPlayAreaTransformFunction
         m_Mode: 1
         m_Arguments:
@@ -2517,7 +2517,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 508597141}
-  - {fileID: 2124645902}
   - {fileID: 156316977}
   m_Father: {fileID: 1505385797}
   m_RootOrder: 2
@@ -2562,6 +2561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508597141}
   - component: {fileID: 508597142}
+  - component: {fileID: 508597143}
   m_Layer: 0
   m_Name: TargetHeadsetTransform
   m_TagString: Untagged
@@ -2597,6 +2597,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 156331297}
   range: 0.3
+--- !u!114 &508597143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508597140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4ef7957fd2fd44dbd2afcca6fbe158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hmd: {fileID: 156331297}
+  leftHand: {fileID: 1996563999}
+  rightHand: {fileID: 203267781}
+  playArea: {fileID: 156316977}
+  targetHeadsetTransform: {fileID: 508597141}
+  resetPositionAction:
+    actionPath: /actions/default/in/Teleport
+    needsReinit: 0
 --- !u!1001 &518456943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15338,57 +15358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e46367401bbc44b93aff686916bddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2124645901
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2124645902}
-  - component: {fileID: 2124645903}
-  m_Layer: 0
-  m_Name: ResetPlayAreaTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2124645902
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124645901}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 480566185}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2124645903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124645901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4ef7957fd2fd44dbd2afcca6fbe158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hmd: {fileID: 156331297}
-  leftHand: {fileID: 1996563999}
-  rightHand: {fileID: 203267781}
-  playArea: {fileID: 156316977}
-  targetHeadsetTransform: {fileID: 508597141}
-  resetPositionAction:
-    actionPath: /actions/default/in/Teleport
-    needsReinit: 0
 --- !u!4 &2125222334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6581099687555526453, guid: 5cc92bf86dfff724e8374d9ac5755201,
