@@ -75,6 +75,7 @@ Shader "RSVR/Sprite_Overlay"
 				fixed4 color    : COLOR;
 				half2 texcoord  : TEXCOORD0;
 				float4 worldPosition : TEXCOORD1;
+				UNITY_VERTEX_OUTPUT_STEREO // for single pass instanced rendering
 			};
 			
 			fixed4 _Color;
@@ -86,6 +87,9 @@ Shader "RSVR/Sprite_Overlay"
 				v2f OUT;
 
 				UNITY_SETUP_INSTANCE_ID(IN); // for GPU instancing
+				UNITY_INITIALIZE_OUTPUT(v2f, OUT); // for single pass instanced rendering
+				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(OUT); // for single pass instanced rendering
+
 
 				OUT.worldPosition = IN.vertex;
 				OUT.vertex = UnityObjectToClipPos(OUT.worldPosition);
