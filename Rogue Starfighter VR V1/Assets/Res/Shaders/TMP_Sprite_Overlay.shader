@@ -58,12 +58,15 @@ Shader "RSVR/Sprite_Overlay"
 
 			#pragma multi_compile __ UNITY_UI_CLIP_RECT
 			#pragma multi_compile __ UNITY_UI_ALPHACLIP
+
+			#pragma multi_compile_instancing // for GPU instancing
 			
 			struct appdata_t
 			{
 				float4 vertex   : POSITION;
 				float4 color    : COLOR;
 				float2 texcoord : TEXCOORD0;
+				UNITY_VERTEX_INPUT_INSTANCE_ID // for GPU instancing
 			};
 
 			struct v2f
@@ -81,6 +84,9 @@ Shader "RSVR/Sprite_Overlay"
 			v2f vert(appdata_t IN)
 			{
 				v2f OUT;
+
+				UNITY_SETUP_INSTANCE_ID(IN); // for GPU instancing
+
 				OUT.worldPosition = IN.vertex;
 				OUT.vertex = UnityObjectToClipPos(OUT.worldPosition);
 
