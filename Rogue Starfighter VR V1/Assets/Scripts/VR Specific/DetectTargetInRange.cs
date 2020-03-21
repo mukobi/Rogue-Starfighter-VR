@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class DetectTargetInRange: MonoBehaviour
 {
-
-    [SerializeField] private Transform target;
-    [SerializeField] private float range;
+    [SerializeField] private Transform target = default;
+    [SerializeField] private float range = default;
 
     private float sqrRange;
 
