@@ -13,5 +13,8 @@ public class TMProOverlaySet : MonoBehaviour
         if (textMeshProUGUI != null) textMeshProUGUI.isOverlay = isOverlay;
         var textMeshPro = GetComponent<TextMeshPro>();
         if (textMeshPro != null) textMeshPro.isOverlay = isOverlay;
+
+        if (textMeshProUGUI == null && textMeshPro == null)
+            Debug.LogWarning("Why no TextMeshPro component?", gameObject);
     }
 }
