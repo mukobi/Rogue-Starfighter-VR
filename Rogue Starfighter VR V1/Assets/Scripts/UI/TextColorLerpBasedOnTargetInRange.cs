@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextColorLerpBasedOnTargetInRange : MonoBehaviour
 {
-    [SerializeField] private DetectTargetInRange detectTargetInRange;
+    [SerializeField] private DetectTargetInRange detectTargetInRange = default;
 
     private LerpTextBetweenColors lerpTextBetweenColors;
 
