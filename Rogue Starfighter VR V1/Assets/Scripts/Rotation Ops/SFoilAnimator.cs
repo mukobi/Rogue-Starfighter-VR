@@ -13,6 +13,8 @@ public class SFoilAnimator : MonoBehaviour
 {
     [SerializeField] private Transform wingTopLeft = default;
     [SerializeField] private Transform wingTopRight = default;
+    [SerializeField] private Transform reticleUITopLeft = default;
+    [SerializeField] private Transform reticleUITopRight = default;
 
     [SerializeField] private float openWingRotationDegrees = default;
     [SerializeField] private float wingAnimationTimeSeconds = default;
@@ -75,12 +77,12 @@ public class SFoilAnimator : MonoBehaviour
         float startTime = Time.time;
         while ((t = (Time.time - startTime) / wingAnimationTimeSeconds) < 1.0f)
         {
-            ApplyWingRotation(t);
+            ApplySFoilRotation(t);
 
             yield return null;
         }
 
-        ApplyWingRotation(1);
+        ApplySFoilRotation(1);
         CurrentSFoilState = SFoilState.attack;
         OnSFoilAttackTransitionEnd.Invoke();
     }
@@ -107,17 +109,17 @@ public class SFoilAnimator : MonoBehaviour
         float startTime = Time.time;
         while ((t = (Time.time - startTime) / wingAnimationTimeSeconds) < 1.0f)
         {
-            ApplyWingRotation(1.0f-t);
+            ApplySFoilRotation(1.0f-t);
 
             yield return null;
         }
 
-        ApplyWingRotation(0);
+        ApplySFoilRotation(0);
         CurrentSFoilState = SFoilState.closed;
         OnSFoilClosedTransitionEnd.Invoke();
     }
 
-    private void ApplyWingRotation(float t)
+    private void ApplySFoilRotation(float t)
     {
         // calculate rotation
         currentWingZRotation = Mathf.Lerp(0, openWingRotationDegrees, t);
@@ -126,5 +128,8 @@ public class SFoilAnimator : MonoBehaviour
         // apply rotation
         wingTopLeft.localEulerAngles = -currentWingRotationEuler;
         wingTopRight.localEulerAngles = currentWingRotationEuler;
+
+        reticleUITopLeft.localEulerAngles = -currentWingRotationEuler;
+        reticleUITopRight.localEulerAngles = currentWingRotationEuler;
     }
 }
