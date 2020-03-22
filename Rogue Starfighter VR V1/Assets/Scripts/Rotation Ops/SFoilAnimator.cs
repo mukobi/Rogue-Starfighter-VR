@@ -22,6 +22,19 @@ public class SFoilAnimator : MonoBehaviour
 
     public SFoilState CurrentSFoilState { get; private set; } = SFoilState.closed;
 
+    [ContextMenu("Toggle S-Foil Position")]
+    public void ToggleSFoilPosition()
+    {
+        if (CurrentSFoilState == SFoilState.closed)
+        {
+            LockInAttackPosition();
+        }
+        else if (CurrentSFoilState == SFoilState.attack)
+        {
+            LockInClosedPosition();
+        }
+    }
+
     [ContextMenu("Lock In Attack Position")]
     public void LockInAttackPosition()
     {
