@@ -16,6 +16,7 @@ public class SFoilAnimator : MonoBehaviour
 
     [SerializeField] private float openWingRotationDegrees = default;
     [SerializeField] private float wingAnimationTimeSeconds = default;
+    [SerializeField] private float animationStartDelaySeconds = default;
 
     private float currentWingZRotation = 0;
     private Vector3 currentWingRotationEuler = Vector3.zero;
@@ -68,6 +69,7 @@ public class SFoilAnimator : MonoBehaviour
         CurrentSFoilState = SFoilState.transitioning;
         OnSFoilAttackTransitionStart.Invoke();
         yield return null;
+        yield return new WaitForSeconds(animationStartDelaySeconds);
 
         float t;
         float startTime = Time.time;
@@ -99,6 +101,7 @@ public class SFoilAnimator : MonoBehaviour
         CurrentSFoilState = SFoilState.transitioning;
         OnSFoilClosedTransitionStart.Invoke();
         yield return null;
+        yield return new WaitForSeconds(animationStartDelaySeconds);
 
         float t;
         float startTime = Time.time;
