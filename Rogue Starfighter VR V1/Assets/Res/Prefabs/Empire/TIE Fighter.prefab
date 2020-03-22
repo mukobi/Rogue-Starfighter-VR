@@ -361,6 +361,7 @@ MonoBehaviour:
   - {fileID: 4619680205075583148}
   fireInterval: 0.15
   isTryingToFire: 0
+  isAbleToFire: 1
   OnStoppedFiring:
     m_PersistentCalls:
       m_Calls:
@@ -503,7 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd31ad0891973214286dad7063d7c349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseCruiseSpeed: 110
+  baseCruiseSpeed: 110
   SpeedAtInstantiation: 0
   maxPositiveAcceleration: 1
 --- !u!114 &4797425003185304133

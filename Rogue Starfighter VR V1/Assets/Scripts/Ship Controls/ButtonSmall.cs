@@ -11,6 +11,7 @@ public class ButtonSmall : MonoBehaviour
     public UnityEvent OnRequireButtonPress;
     public UnityEvent OnSatisfyButtonPress;
 
+    [ContextMenu("Require button pressed")]
     public async Task RequireButtonPress()
     {
         ButtonIsPressedMarker = false;

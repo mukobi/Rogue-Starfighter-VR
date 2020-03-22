@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 5721b98f96711114f89770f143bf99bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: button green ring emissive
     second: {fileID: 2100000, guid: 7f5e4362867bbf2489993d8ac853e2d5, type: 2}
   - first:
@@ -19,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: button moveable part
     second: {fileID: 2100000, guid: 5e32edaa44e356c458c4c075c528c96f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default
+    second: {fileID: 2100000, guid: 105eaa1a781047b41a567972fa598dfa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

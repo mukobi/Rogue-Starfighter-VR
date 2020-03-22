@@ -4,7 +4,9 @@ using UnityEngine;
 
 public abstract class ForwardEngineAbstract : MonoBehaviour
 {
-    public float BaseCruiseSpeed;
+    [SerializeField] private float baseCruiseSpeed;
+    public float BaseCruiseSpeed { get { return baseCruiseSpeed; } set { baseCruiseSpeed = value; } }
+
     public float SpeedAtInstantiation;
     public float SpeedBoost { get; set; }
     public float TurnSpeedReduction { get; set; }
@@ -23,7 +25,7 @@ public abstract class ForwardEngineAbstract : MonoBehaviour
     protected virtual void Update()
     {
         // calculate internalTargetSpeed
-        internalTargetSpeed = BaseCruiseSpeed + SpeedBoost - TurnSpeedReduction;
+        internalTargetSpeed = baseCruiseSpeed + SpeedBoost - TurnSpeedReduction;
 
         // update my CurrentSpeed
         float speedDifference = internalTargetSpeed - CurrentSpeed;

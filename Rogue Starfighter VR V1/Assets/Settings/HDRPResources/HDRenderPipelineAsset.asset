@@ -156,7 +156,7 @@ MonoBehaviour:
   m_DefaultLookDevProfile: {fileID: 0}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 70280697347917
+      data1: 70282844831565
       data2: 4539628424926265344
     lodBias: 1
     lodBiasMode: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
     customBufferFormat: 12
     supportedLitShaderMode: 1
     supportDecals: 1
-    msaaSampleCount: 1
+    msaaSampleCount: 8
     supportMotionVectors: 1
     supportRuntimeDebugDisplay: 1
     supportDitheringCrossFade: 1
@@ -312,7 +312,7 @@ MonoBehaviour:
       ChromaticAberrationMaxSamples: 03000000060000000c000000
     lightSettings:
       useContactShadow:
-        m_Values: 000000
+        m_Values: 010101
         m_SchemaId:
           m_Id: 
     maximumLODLevel:
