@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public enum SFoilState
@@ -21,6 +21,11 @@ public class SFoilAnimator : MonoBehaviour
     private Vector3 currentWingRotationEuler = Vector3.zero;
 
     public SFoilState CurrentSFoilState { get; private set; } = SFoilState.closed;
+
+    public UnityEvent OnSFoilAttackTransitionStart;
+    public UnityEvent OnSFoilAttackTransitionEnd;
+    public UnityEvent OnSFoilClosedTransitionStart;
+    public UnityEvent OnSFoilClosedTransitionEnd;
 
     [ContextMenu("Toggle S-Foil Position")]
     public void ToggleSFoilPosition()
@@ -61,6 +66,7 @@ public class SFoilAnimator : MonoBehaviour
         }
 
         CurrentSFoilState = SFoilState.transitioning;
+        OnSFoilAttackTransitionStart.Invoke();
         yield return null;
 
         float t;
@@ -74,6 +80,7 @@ public class SFoilAnimator : MonoBehaviour
 
         ApplyWingRotation(1);
         CurrentSFoilState = SFoilState.attack;
+        OnSFoilAttackTransitionEnd.Invoke();
     }
 
     private IEnumerator LockInClosedPositionCoroutine()
@@ -90,6 +97,7 @@ public class SFoilAnimator : MonoBehaviour
         }
 
         CurrentSFoilState = SFoilState.transitioning;
+        OnSFoilClosedTransitionStart.Invoke();
         yield return null;
 
         float t;
@@ -103,6 +111,7 @@ public class SFoilAnimator : MonoBehaviour
 
         ApplyWingRotation(0);
         CurrentSFoilState = SFoilState.closed;
+        OnSFoilClosedTransitionEnd.Invoke();
     }
 
     private void ApplyWingRotation(float t)
