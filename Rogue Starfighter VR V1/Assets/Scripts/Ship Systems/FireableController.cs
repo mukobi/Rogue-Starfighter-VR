@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class FireableController : MonoBehaviour
 {
-
     public Fireable[] fireables;
 
     public float fireInterval;
     public bool isTryingToFire = false;
+
+    [SerializeField] private bool isAbleToFire = true;
+    public bool IsAbleToFire { get { return isAbleToFire; } set { isAbleToFire = value; } }
 
     public UnityEvent OnStoppedFiring;
 
@@ -18,7 +20,7 @@ public class FireableController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isTryingToFire)
+        if(isTryingToFire && isAbleToFire)
         {
             if(Time.time - lastFireTime > fireInterval)
             {
