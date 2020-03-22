@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: f119a9da9532fde458b2460cf9ec4de1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FaceTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.1, y: 0.1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: -384266387407317606}
@@ -45,13 +45,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Ambient: 0.5
-    - _Bevel: 0.5
+    - _Bevel: 0.33
     - _BevelClamp: 0
     - _BevelOffset: 0
     - _BevelRoundness: 0
     - _BevelWidth: 0
-    - _BumpFace: 0
-    - _BumpOutline: 0
+    - _BumpFace: 1
+    - _BumpOutline: 1
     - _ColorMask: 15
     - _CullMode: 0
     - _Diffuse: 0.5
@@ -76,7 +76,7 @@ Material:
     - _OutlineUVSpeedY: 0
     - _OutlineWidth: 0.3
     - _PerspectiveFilter: 0.875
-    - _Reflectivity: 10
+    - _Reflectivity: 10.47
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.64125
     - _ScaleRatioC: 0.64125
@@ -84,7 +84,7 @@ Material:
     - _ScaleY: 1
     - _ShaderFlags: 1
     - _Sharpness: 0
-    - _SpecularPower: 2
+    - _SpecularPower: 1.48
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
