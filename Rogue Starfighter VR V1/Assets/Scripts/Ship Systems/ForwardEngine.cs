@@ -7,7 +7,7 @@ public class ForwardEngine : BasicShipSystemAbstract
     [SerializeField] private float baseCruiseSpeed;
     public float BaseCruiseSpeed { get { return baseCruiseSpeed; } set { baseCruiseSpeed = value; } }
 
-    [SerializeField] private float SpeedAtInstantiation;
+    [SerializeField] private float SpeedAtInstantiation = default;
     [SerializeField] private float systemDisabledSpeed = default;
     public float SpeedBoost { get; set; }
     public float TurnSpeedReduction { get; set; }
