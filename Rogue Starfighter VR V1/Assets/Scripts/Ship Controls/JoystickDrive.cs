@@ -4,7 +4,7 @@ using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
-public class TripleRotationalDrive : MonoBehaviour
+public class JoystickDrive : MonoBehaviour
 {
     private Interactable interactable;
 
@@ -25,6 +25,7 @@ public class TripleRotationalDrive : MonoBehaviour
         if(changeSlerpWhenGrabbed)
             LocalRotateTowardsSlerp.slerpFactor = slerpFactorReleased;
     }
+
     protected virtual void OnHandHoverBegin(Hand hand)
     {
         //hand.ShowGrabHint();
@@ -36,6 +37,7 @@ public class TripleRotationalDrive : MonoBehaviour
         //hand.HideGrabHint();
         //Debug.Log("OnHandHoverEnd");
     }
+
     protected virtual void HandHoverUpdate(Hand hand)
     {
         GrabTypes startingGrabType = hand.GetGrabStarting();

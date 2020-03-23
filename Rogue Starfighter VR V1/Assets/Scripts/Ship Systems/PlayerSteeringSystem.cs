@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerSteeringSystem : GenericSteeringSystem
 {
-
     void Update()
     {
         // convert deltaRotation to Euler in range [-180, 180]
