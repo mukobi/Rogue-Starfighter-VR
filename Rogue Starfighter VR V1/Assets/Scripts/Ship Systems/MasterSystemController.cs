@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class MasterSystemController : MonoBehaviour
 {
-    [SerializeField] private List<ShipSystemAbstract> shipSystems = new List<ShipSystemAbstract>();
+    [SerializeField] private List<BreakableShipSystemAbstract> breakableShipSystems = new List<BreakableShipSystemAbstract>();
     [SerializeField] private ButtonGameController buttonGameController = default;
     [SerializeField] private TextWriteOn systemDisplayText = default;
 
@@ -15,7 +15,7 @@ public class MasterSystemController : MonoBehaviour
     [ContextMenu("Disable random system")]
     public async void DisableRandomSystem()
     {
-        ShipSystemAbstract chosenSystem = GetRandomShipSystem();
+        BreakableShipSystemAbstract chosenSystem = GetRandomShipSystem();
         chosenSystem.DisableSystem();
         string offlineText = $"{chosenSystem.GetShipSystemName} offline!\nPress the buttons to repair.";
         Debug.Log(offlineText);
@@ -39,9 +39,22 @@ public class MasterSystemController : MonoBehaviour
     //    chosenSystem.RepairSystem();
     //}
 
-    private ShipSystemAbstract GetRandomShipSystem()
+    public void RepairAllSystemsSilently()
     {
-        int index = Random.Range(0, shipSystems.Count);
-        return shipSystems[index];
+        // TODO handle fixing the button game since it will probably still be flashing.
+        // This might require fancy async Task stuff.
+        for (int i = 0; i < breakableShipSystems.Count; i++)
+        {
+            if (breakableShipSystems[i].shipSystemIsDisabled)
+            {
+                breakableShipSystems[i].RepairSystem();
+            }
+        }
+    }
+
+    private BreakableShipSystemAbstract GetRandomShipSystem()
+    {
+        int index = Random.Range(0, breakableShipSystems.Count);
+        return breakableShipSystems[index];
     }
 }

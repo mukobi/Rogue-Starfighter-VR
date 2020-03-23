@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CabinPowerSystem : ShipSystemAbstract
+public class CabinPowerSystem : BreakableShipSystemAbstract
 {
     public DimmableAbstract[] dimmables;
 

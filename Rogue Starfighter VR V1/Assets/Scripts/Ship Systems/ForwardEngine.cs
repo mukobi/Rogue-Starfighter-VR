@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForwardEngine : ShipSystemAbstract
+public class ForwardEngine : BreakableShipSystemAbstract
 {
     [SerializeField] private float baseCruiseSpeed;
     public float BaseCruiseSpeed { get { return baseCruiseSpeed; } set { baseCruiseSpeed = value; } }

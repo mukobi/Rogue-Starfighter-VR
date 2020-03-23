@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ShipSystemAbstract : MonoBehaviour
+public abstract class BreakableShipSystemAbstract : MonoBehaviour
 {
-    protected bool shipSystemIsDisabled = false;
+    public bool shipSystemIsDisabled = false;
 
     public virtual void DisableSystem()
     {
