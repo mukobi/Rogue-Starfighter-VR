@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DimmableTransparentMaterial : DimmableAbstract
+public class DimmableTransparentImage : DimmableAbstract
 {
-    [SerializeField] private Material material = default;
+    private Material material;
     [SerializeField] private string opacityMaterialID = default;
+
+    private void Start()
+    {
+        material = GetComponent<Image>().material;
+    }
     public override float DimmableValue01 { set => material.SetFloat(opacityMaterialID, value); }
 }

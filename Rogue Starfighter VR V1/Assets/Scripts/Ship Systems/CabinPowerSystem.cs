@@ -22,7 +22,6 @@ public class CabinPowerSystem : ShipSystemAbstract
     [ContextMenu("Disable System")]
     public override void DisableSystem()
     {
-        Debug.Log("Child");
         base.DisableSystem();
         StartCoroutine(PlayFlickerAnimationCoroutine(false));
     }
