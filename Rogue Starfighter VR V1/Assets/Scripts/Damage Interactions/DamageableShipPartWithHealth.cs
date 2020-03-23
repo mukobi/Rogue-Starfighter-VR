@@ -25,19 +25,19 @@ public class DamageableShipPartWithHealth : DamageableShipPart
         SetHealth(initialHealth);
     }
 
-    public override bool TakeDamage(float amount)
+    public override void TakeDamage(float amount)
     {
         OnHealthLose.Invoke(amount);
-        return SetHealth(currentHealth - amount);
+        SetHealth(currentHealth - amount);
     }
 
-    public bool GainHealth(float amount)
+    public void GainHealth(float amount)
     {
         OnHealthGain.Invoke(amount);
-        return SetHealth(currentHealth + amount);
+        SetHealth(currentHealth + amount);
     }
 
-    public bool SetHealth(float newHealth)
+    public void SetHealth(float newHealth)
     {
         newHealth = Mathf.Clamp(newHealth, minHealth, maxHealth);
         currentHealth = newHealth;
@@ -50,6 +50,14 @@ public class DamageableShipPartWithHealth : DamageableShipPart
                 Destroy(gameObject);
             }
         }
-        return IsDestroyed;
+    }
+
+    public void RestoreToInitialHealth()
+    {
+        if (currentHealth < initialHealth)
+        {
+            OnHealthGain.Invoke(initialHealth - currentHealth);
+            SetHealth(initialHealth);
+        }
     }
 }

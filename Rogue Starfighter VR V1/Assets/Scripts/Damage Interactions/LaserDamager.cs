@@ -7,10 +7,10 @@ public class LaserDamager : MonoBehaviour, IDamager
 
     public UnityEvent onDamage;
 
-    public bool DoDamage(IDamageable damageable)
+    public void DoDamage(IDamageable damageable)
     {
         onDamage.Invoke();
-        return damageable.TakeDamage(Damage);
+        damageable.TakeDamage(Damage);
     }
 
     private void OnCollisionEnter(Collision other)

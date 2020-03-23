@@ -2,7 +2,7 @@
 {
     bool IsDestroyed { get; }
 
-    bool TakeDamage(float damage);
+    void TakeDamage(float damage);
 }
 
 public interface IDamageableByLaser : IDamageable { }

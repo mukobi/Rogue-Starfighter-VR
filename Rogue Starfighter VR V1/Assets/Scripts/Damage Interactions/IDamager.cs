@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IDamager
 {
-    bool DoDamage(IDamageable damageable);
+    void DoDamage(IDamageable damageable);
 }
