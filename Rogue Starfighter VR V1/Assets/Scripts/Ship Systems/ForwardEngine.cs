@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ForwardEngineAbstract : MonoBehaviour
+public class ForwardEngine : MonoBehaviour
 {
     [SerializeField] private float baseCruiseSpeed;
     public float BaseCruiseSpeed { get { return baseCruiseSpeed; } set { baseCruiseSpeed = value; } }
