@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MasterSystemController : MonoBehaviour
 {
-    [SerializeField] private List<IShipSystem> shipSystems = new List<IShipSystem>();
+    [SerializeField] private List<ShipSystemAbstract> shipSystems = new List<ShipSystemAbstract>();
     [SerializeField] private ButtonGameController buttonGameController = default;
 
     public async void DisableRandomSystem()
     {
-        IShipSystem chosenSystem = GetRandomShipSystem();
+        ShipSystemAbstract chosenSystem = GetRandomShipSystem();
         chosenSystem.DisableSystem();
 
         await buttonGameController.RequireRandomNumberOfButtonsPressed();
@@ -27,7 +27,7 @@ public class MasterSystemController : MonoBehaviour
     //    chosenSystem.RepairSystem();
     //}
 
-    private IShipSystem GetRandomShipSystem()
+    private ShipSystemAbstract GetRandomShipSystem()
     {
         int index = Random.Range(0, shipSystems.Count);
         return shipSystems[index];

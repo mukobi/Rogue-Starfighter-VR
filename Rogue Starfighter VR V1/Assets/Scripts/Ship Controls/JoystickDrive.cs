@@ -4,7 +4,7 @@ using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
-public class JoystickDrive : BasicShipSystemAbstract
+public class JoystickDrive : ShipSystemAbstract
 {
     private Interactable interactable;
 

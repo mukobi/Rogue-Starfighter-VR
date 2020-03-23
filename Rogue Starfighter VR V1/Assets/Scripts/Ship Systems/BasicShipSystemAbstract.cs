@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BasicShipSystemAbstract : MonoBehaviour, IShipSystem
+public abstract class ShipSystemAbstract : MonoBehaviour
 {
     protected bool shipSystemIsDisabled = false;
 
