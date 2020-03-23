@@ -33,4 +33,20 @@ public class TextWriteOn : MonoBehaviour
             yield return new WaitForSeconds(characterWriteOnIntervalSeconds);
         }
     }
+
+    public void WriteOffText()
+    {
+        StartCoroutine(WriteOffTextCoroutine());
+    }
+
+    private IEnumerator WriteOffTextCoroutine()
+    {
+        for (int i = textMesh.text.Length - 1; i >= 0; i--)
+        {
+            textMesh.maxVisibleCharacters = i;
+            OnCharacterWritten.Invoke();
+            yield return new WaitForSeconds(characterWriteOnIntervalSeconds);
+        }
+        textMesh.text = "";
+    }
 }
