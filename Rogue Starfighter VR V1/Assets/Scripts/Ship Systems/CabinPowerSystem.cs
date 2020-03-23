@@ -8,23 +8,49 @@ public class CabinPowerSystem : ShipSystemAbstract
 
     public override string GetShipSystemName => "Cabin Power";
 
-    public override void DisableSystem()
+    [SerializeField] private float currentFlickerValue = 1;
+
+    private Animator animator;
+    [SerializeField] private string animationName = default;
+    [SerializeField] private int animationDurationFrames = default;
+
+    private void Start()
     {
-        base.DisableSystem();
-        for (int i = 0; i < dimmables.Length; i++)
-        {
-            // TODO: tween with a library instead for flicker effect
-            dimmables[i].DimmableValue01 = 0;
-        }
+        animator = GetComponent<Animator>();
     }
 
+    [ContextMenu("Disable System")]
+    public override void DisableSystem()
+    {
+        Debug.Log("Child");
+        base.DisableSystem();
+        StartCoroutine(PlayFlickerAnimationCoroutine(false));
+    }
+
+    [ContextMenu("Repair System")]
     public override void RepairSystem()
     {
         base.RepairSystem();
-        for (int i = 0; i < dimmables.Length; i++)
+        StartCoroutine(PlayFlickerAnimationCoroutine(true));
+    }
+
+    private IEnumerator PlayFlickerAnimationCoroutine(bool reversed)
+    {
+        for (int i = 0; i <= animationDurationFrames; i++)
         {
-            // TODO: tween with a library instead for flicker effect
-            dimmables[i].DimmableValue01 = 1;
+            // play animation to chosen position
+            float offset = (float)i / animationDurationFrames;
+            if (reversed) offset = 1 - offset;
+            animator.Play(animationName, 0, offset);
+
+            // set the value on all the dimmable items
+            for (int j = 0; j < dimmables.Length; j++)
+            {
+                // TODO: tween with a library instead for flicker effect
+                dimmables[j].DimmableValue01 = currentFlickerValue;
+            }
+
+            yield return null;
         }
     }
 }

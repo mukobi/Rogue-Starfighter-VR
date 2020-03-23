@@ -8,6 +8,7 @@ public abstract class ShipSystemAbstract : MonoBehaviour
 
     public virtual void DisableSystem()
     {
+        Debug.Log("Base");
         shipSystemIsDisabled = true;
     }
 
