@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Events;
 using UnityEngine;
 
-public class FireableController : MonoBehaviour
+public class FireableController : BasicShipSystemAbstract
 {
     public Fireable[] fireables;
 
@@ -20,7 +20,7 @@ public class FireableController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isTryingToFire && isAbleToFire)
+        if(isTryingToFire && isAbleToFire && !shipSystemIsDisabled)
         {
             if(Time.time - lastFireTime > fireInterval)
             {
