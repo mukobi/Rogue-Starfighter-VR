@@ -6,12 +6,12 @@ public abstract class BasicShipSystemAbstract : MonoBehaviour, IShipSystem
 {
     protected bool shipSystemIsDisabled = false;
 
-    public void DisableSystem()
+    public virtual void DisableSystem()
     {
         shipSystemIsDisabled = true;
     }
 
-    public void RepairSystem()
+    public virtual void RepairSystem()
     {
         shipSystemIsDisabled = false;
     }

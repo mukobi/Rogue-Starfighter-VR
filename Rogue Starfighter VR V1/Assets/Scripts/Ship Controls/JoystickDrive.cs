@@ -4,7 +4,7 @@ using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
-public class JoystickDrive : MonoBehaviour
+public class JoystickDrive : BasicShipSystemAbstract
 {
     private Interactable interactable;
 
@@ -42,7 +42,9 @@ public class JoystickDrive : MonoBehaviour
     {
         GrabTypes startingGrabType = hand.GetGrabStarting();
 
-        if (interactable.attachedToHand == null && startingGrabType != GrabTypes.None)
+        if (interactable.attachedToHand == null 
+            && startingGrabType != GrabTypes.None
+            && !shipSystemIsDisabled) // can't grab when steering system disabled
         {
             // was just grabbed
             hand.AttachObject(gameObject, startingGrabType, attachmentFlags);
@@ -54,9 +56,7 @@ public class JoystickDrive : MonoBehaviour
 
     protected virtual void HandAttachedUpdate(Hand hand)
     {
-        //UpdateLinearMapping(hand.transform);
-
-        if (hand.IsGrabEnding(this.gameObject))
+        if (hand.IsGrabEnding(gameObject))
         {
             // just let go
             hand.DetachObject(gameObject);
@@ -72,6 +72,16 @@ public class JoystickDrive : MonoBehaviour
             // TODO: scale rotation
             Quaternion relativeRotation = Quaternion.Inverse(initialHandRotationOnGrab) * hand.transform.localRotation;
             LocalRotateTowardsSlerp.TargetRotation = relativeRotation;
+        }
+    }
+
+    public override void DisableSystem()
+    {
+        base.DisableSystem();
+        // if hand is on the joystick, gtfo
+        if (interactable.attachedToHand != null)
+        {
+            interactable.attachedToHand.DetachObject(gameObject);
         }
     }
 }
