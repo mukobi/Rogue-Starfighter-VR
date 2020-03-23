@@ -16,6 +16,8 @@ public class ForwardEngine : ShipSystemAbstract
     private float internalTargetSpeed;
     public float CurrentSpeed { get; private set; }
 
+    public override string GetShipSystemName => "Engine";
+
     protected Vector3 internalCurrentVelocity;
 
     private void Start()

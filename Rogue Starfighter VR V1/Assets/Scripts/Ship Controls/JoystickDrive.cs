@@ -18,6 +18,8 @@ public class JoystickDrive : ShipSystemAbstract
     private Quaternion initialHandRotationOnGrab;  // store initial rotation to use as difference // TODO: implement
     private LocalRotateTowardsSlerp LocalRotateTowardsSlerp;
 
+    public override string GetShipSystemName => "Steering System";
+
     private void Start()
     {
         interactable = GetComponent<Interactable>();

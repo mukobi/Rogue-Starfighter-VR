@@ -11,6 +11,8 @@ public class FireableController : ShipSystemAbstract
     [SerializeField] private bool isAbleToFire = true;
     public bool IsAbleToFire { get { return isAbleToFire; } set { isAbleToFire = value; } }
 
+    public override string GetShipSystemName => "Weapon Systems";
+
     public UnityEvent OnStoppedFiring;
 
     private bool wasFiringLastTime = false;

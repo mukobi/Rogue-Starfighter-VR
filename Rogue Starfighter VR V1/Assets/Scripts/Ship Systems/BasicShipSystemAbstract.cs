@@ -15,4 +15,6 @@ public abstract class ShipSystemAbstract : MonoBehaviour
     {
         shipSystemIsDisabled = false;
     }
+
+    public abstract string GetShipSystemName { get; }
 }
