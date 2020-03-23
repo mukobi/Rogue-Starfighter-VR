@@ -2359,8 +2359,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a681b5e67ff144b94cb48f6cf21608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipSystems: []
-  buttonGameController: {fileID: 0}
+  shipSystems:
+  - {fileID: 422353755}
+  - {fileID: 1467065393}
+  - {fileID: 1224458750}
+  buttonGameController: {fileID: 1994949684}
 --- !u!1 &460700676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4927000574117330199, guid: 0501722dad7944b4aa26c31d42211672,
