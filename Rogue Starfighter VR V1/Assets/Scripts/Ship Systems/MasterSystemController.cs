@@ -7,19 +7,25 @@ public class MasterSystemController : MonoBehaviour
 {
     [SerializeField] private List<ShipSystemAbstract> shipSystems = new List<ShipSystemAbstract>();
     [SerializeField] private ButtonGameController buttonGameController = default;
+    [SerializeField] private TextWriteOn systemDisplayText = default;
 
     public UnityEvent OnSystemDisable;
     public UnityEvent OnSystemRepair;
 
+    [ContextMenu("Disable random system")]
     public async void DisableRandomSystem()
     {
         ShipSystemAbstract chosenSystem = GetRandomShipSystem();
         chosenSystem.DisableSystem();
+        string offlineText = $"{chosenSystem.GetShipSystemName} offline!\nPress the buttons to repair.";
+        Debug.Log(offlineText);
+        systemDisplayText.WriteOnText(offlineText);
         OnSystemDisable.Invoke();
 
         await buttonGameController.RequireRandomNumberOfButtonsPressed();
 
         chosenSystem.RepairSystem();
+        systemDisplayText.WriteOffText();
         OnSystemRepair.Invoke();
     }
 
