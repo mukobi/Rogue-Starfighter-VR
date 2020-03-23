@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForwardEngine : MonoBehaviour
+public class ForwardEngine : BasicShipSystemAbstract
 {
     [SerializeField] private float baseCruiseSpeed;
     public float BaseCruiseSpeed { get { return baseCruiseSpeed; } set { baseCruiseSpeed = value; } }
 
-    public float SpeedAtInstantiation;
+    [SerializeField] private float SpeedAtInstantiation;
+    [SerializeField] private float systemDisabledSpeed = default;
     public float SpeedBoost { get; set; }
     public float TurnSpeedReduction { get; set; }
     [SerializeField] private float maxPositiveAcceleration = 1;
@@ -26,6 +27,9 @@ public class ForwardEngine : MonoBehaviour
     {
         // calculate internalTargetSpeed
         internalTargetSpeed = baseCruiseSpeed + SpeedBoost - TurnSpeedReduction;
+
+        // account for ship system offline
+        if (shipSystemIsDisabled) internalTargetSpeed = systemDisabledSpeed;
 
         // update my CurrentSpeed
         float speedDifference = internalTargetSpeed - CurrentSpeed;
