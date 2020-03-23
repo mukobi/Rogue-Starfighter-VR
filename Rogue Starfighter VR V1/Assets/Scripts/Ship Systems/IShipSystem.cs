@@ -1,4 +1,5 @@
-﻿public interface IShipSystem
+﻿
+public interface IShipSystem
 {
     void DisableSystem();
     void RepairSystem();
