@@ -9,13 +9,11 @@ public class OnVisibilityEvent : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        Debug.Log("Visible");
         OnVisible.Invoke();
     }
 
     private void OnBecameInvisible()
     {
-        Debug.Log("Invisible");
         OnInvisible.Invoke();
     }
 }
