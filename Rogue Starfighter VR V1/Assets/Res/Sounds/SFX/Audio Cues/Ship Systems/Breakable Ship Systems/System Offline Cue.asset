@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
   m_Name: System Offline Cue
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 90efffdd1f8ac7c4eb0e55fe878ddb2f, type: 3}
+  - {fileID: 8300000, guid: 5ce31caa69bba484f8eed8cb15fc3f2e, type: 3}
+  - {fileID: 8300000, guid: 48a9f3d38bd601345b3ded3ce8ce0d78, type: 3}
+  - {fileID: 8300000, guid: d3d266962a861e444a7ae2d07bed5908, type: 3}
+  - {fileID: 8300000, guid: 63f9d4832568e764aa146133d11b3fca, type: 3}
+  - {fileID: 8300000, guid: c1544151f87b07644a305b09fd063eba, type: 3}
+  - {fileID: 8300000, guid: 608b4957bdaa18f4f8610d2580f0ae6d, type: 3}
+  - {fileID: 8300000, guid: e6d30185d69aa8943801fa1e4cad72ea, type: 3}
+  - {fileID: 8300000, guid: 2f2dc92301ae8fa4e94c336731e05f04, type: 3}
+  - {fileID: 8300000, guid: 75b365c0fc081bd4caab539b4c36bafc, type: 3}
+  - {fileID: 8300000, guid: 8105513102f6d5c4f9fc83bef97b70e1, type: 3}
+  - {fileID: 8300000, guid: 8affd8f82208f934082d7cbd8969434c, type: 3}
   audioMixerGroup: {fileID: 6558304506358134854, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
     type: 2}
   minVolume: 1
@@ -21,4 +33,4 @@ MonoBehaviour:
   minPitch: 0.9
   maxPitch: 1.1
   maxDistance: 15
-  rolloffMode: 0
+  rolloffMode: 1
