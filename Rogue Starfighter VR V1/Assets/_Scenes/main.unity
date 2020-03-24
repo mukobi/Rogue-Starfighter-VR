@@ -7386,6 +7386,7 @@ Transform:
   m_Children:
   - {fileID: 1669447989}
   - {fileID: 1407463067}
+  - {fileID: 1589811910}
   m_Father: {fileID: 401232377}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7804,7 +7805,7 @@ GameObject:
   - component: {fileID: 1407463069}
   - component: {fileID: 1407463068}
   m_Layer: 10
-  m_Name: HUD Text Write On
+  m_Name: HUD Text Write On SFX.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13475,6 +13476,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e46367401bbc44b93aff686916bddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1589811909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1302708472}
+    m_Modifications:
+    - target: {fileID: 1550910863946331232, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_Name
+      value: System Offline SFX.XW
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991933857026184393, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991933857026184393, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034036798585384464, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: audioCue
+      value: 
+      objectReference: {fileID: 11400000, guid: 56a2af781a05f444c98bcbfabaa13e22,
+        type: 2}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1bb29192683a354a95f7e04f0ddcb06, type: 3}
+--- !u!4 &1589811910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+    type: 3}
+  m_PrefabInstance: {fileID: 1589811909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1596099384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4448613840775417584, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -13783,7 +13875,7 @@ GameObject:
   - component: {fileID: 1669447990}
   - component: {fileID: 1669447991}
   m_Layer: 10
-  m_Name: S-Foil Sound
+  m_Name: S-Foil SFX.XW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

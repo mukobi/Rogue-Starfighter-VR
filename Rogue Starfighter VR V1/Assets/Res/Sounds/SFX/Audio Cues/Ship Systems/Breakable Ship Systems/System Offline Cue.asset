@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: System Offline Cue
   m_EditorClassIdentifier: 
   clips: []
-  audioMixerGroup: {fileID: 0}
-  minVolume: 0
-  maxVolume: 0
+  audioMixerGroup: {fileID: 6558304506358134854, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
   spatialBlend: 1
-  minPitch: 0
-  maxPitch: 0
-  maxDistance: 500
+  minPitch: 0.9
+  maxPitch: 1.1
+  maxDistance: 15
   rolloffMode: 0
