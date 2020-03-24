@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 3323520390063696425, guid: f811d24ef58515843a43060996091c69,
         type: 3}
       propertyPath: m_Name
-      value: Local Looped Audio Source
+      value: Engine SFX.ISD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457985538328798436, guid: f811d24ef58515843a43060996091c69,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4502954062753572135, guid: f811d24ef58515843a43060996091c69,
         type: 3}
