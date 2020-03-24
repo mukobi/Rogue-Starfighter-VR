@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2345677064158959190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1550910863946331232, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: m_Name
+      value: Chatter SFX.R2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671046476137756858, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: minIntervalSeconds
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671046476137756858, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: maxIntervalSeconds
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991933857026184393, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2461436398893711895, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+        type: 2}
+    - target: {fileID: 2991933857026184393, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034036798585384464, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: audioCue
+      value: 
+      objectReference: {fileID: 11400000, guid: 34cce57dac19ceb4f8140832c9324144,
+        type: 2}
+    - target: {fileID: 3422713090276019999, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: 2b68609306d75a746b16e65f010e143f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b68609306d75a746b16e65f010e143f, type: 3}

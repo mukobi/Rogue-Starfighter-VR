@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.XR;
 using System.Threading.Tasks;
 
 public class GameSequencer : MonoBehaviour
 {
+    [Header("Config")]
+    [Range(1, 2)] [SerializeField] private float supersamplingRatio = 1;
+
     [Header("SFX")]
     public AudioSource GlobalSFX;
     public AudioCuePlayer HyperspaceExitCue;
@@ -14,14 +18,26 @@ public class GameSequencer : MonoBehaviour
 
     private async Task MainGameTask()
     {
-        Debug.Log("Start main game sequence");
+        /*** Initialization ***/
+        Debug.Log("Start: Initialization.");
+        EnableSupersampling();
+        Debug.Log("End: Initialization.");
 
-        /*** SECTION: Load Star Destroyer ***/
+
+        /*** Main Game Sequence ***/
+        Debug.Log("Start: Main game sequence");
+
+        /* Load Star Destroyer */
         await Task.Delay(2500);
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
         await Task.Delay(1850); // 3 sec from start of hspace exit to boom
         await GameSceneManager.AddSceneIfNotLoaded(1); // scene with Star Destroyer
 
-        Debug.Log("End main game sequence");
+        Debug.Log("End: Main game sequence");
+    }
+
+    private void EnableSupersampling()
+    {
+        XRSettings.eyeTextureResolutionScale = supersamplingRatio;
     }
 }

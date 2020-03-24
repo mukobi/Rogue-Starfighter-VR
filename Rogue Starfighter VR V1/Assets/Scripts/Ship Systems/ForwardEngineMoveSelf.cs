@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForwardEngineMoveSelf : ForwardEngineAbstract
+public class ForwardEngineMoveSelf : ForwardEngine
 {
     private Rigidbody rb;
 

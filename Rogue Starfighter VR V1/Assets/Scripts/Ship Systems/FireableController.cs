@@ -1,7 +1,7 @@
 ﻿using UnityEngine.Events;
 using UnityEngine;
 
-public class FireableController : MonoBehaviour
+public class FireableController : BreakableShipSystemAbstract
 {
     public Fireable[] fireables;
 
@@ -10,6 +10,8 @@ public class FireableController : MonoBehaviour
 
     [SerializeField] private bool isAbleToFire = true;
     public bool IsAbleToFire { get { return isAbleToFire; } set { isAbleToFire = value; } }
+
+    public override string GetShipSystemName => "Weapon Systems";
 
     public UnityEvent OnStoppedFiring;
 
@@ -20,7 +22,7 @@ public class FireableController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isTryingToFire && isAbleToFire)
+        if(isTryingToFire && isAbleToFire && !shipSystemIsDisabled)
         {
             if(Time.time - lastFireTime > fireInterval)
             {

@@ -8,7 +8,7 @@ public class PlayerGlobalReference : MonoBehaviour
 
     public Transform shipRotationRoot;
 
-    public ForwardEnginePlayerRef forwardEnginePlayerRef;
+    public ForwardEngine forwardEnginePlayerRef;
 
     public static PlayerGlobalReference I;
 

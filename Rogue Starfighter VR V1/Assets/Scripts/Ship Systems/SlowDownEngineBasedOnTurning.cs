@@ -7,7 +7,7 @@ public class SlowDownEngineBasedOnTurning : MonoBehaviour
     [Tooltip("Steering system with delta rotation to read.")]
     [SerializeField] private GenericSteeringSystem steeringSystem = default;
     [Tooltip("Engine with turning slowdown to write.")]
-    [SerializeField] private ForwardEngineAbstract forwardEngine = default;
+    [SerializeField] private ForwardEngine forwardEngine = default;
 
     [SerializeField] private float maxSpeedSlowdown = default;
     [SerializeField] private float angleOfMaxSlowdownDegrees = default;

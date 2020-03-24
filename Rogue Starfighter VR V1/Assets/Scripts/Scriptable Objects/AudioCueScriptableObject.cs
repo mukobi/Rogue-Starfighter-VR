@@ -54,8 +54,11 @@ public class AudioCueScriptableObject : ScriptableObject
         audioSource.PlayOneShot(clip, volume);
     }
 
-    public void PlayOnExistingAudioSourceAtPosition(AudioSource audioSource)
+    public void PlayOnExistingAudioSourceAtPosition(AudioSource audioSource, bool waitIfAlreadyPlaying)
     {
+        if (waitIfAlreadyPlaying && audioSource.isPlaying)
+            return; // don't play over existing clip
+
         // choose random variables
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         float volume = Random.Range(minVolume, maxVolume);
