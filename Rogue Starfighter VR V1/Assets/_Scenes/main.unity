@@ -965,6 +965,52 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 183328990}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &183328992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8359416540765890801, guid: 0a89f0512e2f6664eb0a3927ab9375e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 183328990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &183328993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183328992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9749b43c573004bb009247c28d3a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2100000, guid: 0d20e2097659efb40b7b1e8c4976667e, type: 2}
+  source: {fileID: 2100000, guid: 174bf255fb9d65b4481dfaa1151881c2, type: 2}
+--- !u!114 &183328994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183328992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a89323535114dcf4b95c08e3898e82a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 912878239}
+        m_MethodName: CopyProperties
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &192208733
 PrefabInstance:
   m_ObjectHideFlags: 0
