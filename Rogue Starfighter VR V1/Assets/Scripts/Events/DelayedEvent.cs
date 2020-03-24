@@ -6,7 +6,7 @@ public class DelayedEvent : MonoBehaviour
 {
     [SerializeField] private float delaySeconds = default;
 
-    [SerializeField] UnityEvent OnEvent;
+    [SerializeField] UnityEvent OnEvent = default;
 
     public void TriggerEventAfterDelay()
     {
