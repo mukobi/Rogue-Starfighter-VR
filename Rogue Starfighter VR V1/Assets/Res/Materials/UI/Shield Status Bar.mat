@@ -54,7 +54,7 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 1
-    - _Opacity: 0
+    - _Opacity: 1
     - _ReceivesSSR: 0
     - _RenderQueueType: 5
     - _RequireSplitLighting: 0
