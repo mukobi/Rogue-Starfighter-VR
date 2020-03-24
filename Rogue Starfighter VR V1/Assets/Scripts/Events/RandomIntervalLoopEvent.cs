@@ -6,7 +6,7 @@ public class RandomIntervalLoopEvent : MonoBehaviour
 {
     [SerializeField] private float minIntervalSeconds = 1;
     [SerializeField] private float maxIntervalSeconds = 1;
-    [SerializeField] private UnityEvent OnEvent;
+    [SerializeField] private UnityEvent OnEvent = default;
 
     private void Start()
     {
