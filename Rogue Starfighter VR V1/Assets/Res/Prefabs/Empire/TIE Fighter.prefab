@@ -556,7 +556,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8011381783736810527}
-        m_MethodName: InstantiatePrefabAtMyTransform
+        m_MethodName: InstantiatePrefabAtMyPositionWithRandomRotation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

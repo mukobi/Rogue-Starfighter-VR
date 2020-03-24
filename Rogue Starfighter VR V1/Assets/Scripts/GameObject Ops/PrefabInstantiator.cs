@@ -12,14 +12,25 @@ public class PrefabInstantiator : MonoBehaviour
     [ContextMenu("InstantiatePrefabAtMyTransform")]
     public void InstantiatePrefabAtMyTransform()
     {
+        InstantiateIt(transform.position, transform.rotation);
+    }
+
+    [ContextMenu("InstantiatePrefabAtMyPositionWithRandomRotation")]
+    public void InstantiatePrefabAtMyPositionWithRandomRotation()
+    {
+        InstantiateIt(transform.position, Random.rotation);
+    }
+
+    private void InstantiateIt(Vector3 position, Quaternion rotation)
+    {
         if (childOfDesiredParent != null)
         {
-            Instantiate(prefab, transform.position, transform.rotation, childOfDesiredParent.parent);
+            Instantiate(prefab, position, rotation, childOfDesiredParent.parent);
         }
         else
         {
             // set my parent as its parent
-            Instantiate(prefab, transform.position, transform.rotation, transform.parent);
+            Instantiate(prefab, position, rotation, transform.parent);
         }
     }
 }
