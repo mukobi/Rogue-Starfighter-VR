@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 1671046476137756858, guid: 2b68609306d75a746b16e65f010e143f,
         type: 3}
       propertyPath: minIntervalSeconds
-      value: 4
+      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 1671046476137756858, guid: 2b68609306d75a746b16e65f010e143f,
         type: 3}
