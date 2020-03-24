@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: Astromech Damage Cue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 533ae8bc89fcdb940bcf2d07ff6510af, type: 3}
+  - {fileID: 8300000, guid: aa9ac326cd212904b981af3e116ff09a, type: 3}
+  - {fileID: 8300000, guid: 740637fa3c788e6488a0b7156dc86013, type: 3}
+  - {fileID: 8300000, guid: c05e3f0e9d92b634eb7c56c3c1bfc694, type: 3}
+  - {fileID: 8300000, guid: 4045c7f6f64601d48b92320b0a4eda8d, type: 3}
+  - {fileID: 8300000, guid: b68fe7ed6fc9f184aa937a47e713d994, type: 3}
+  - {fileID: 8300000, guid: ccdd17ee65f57bf4780d89d58c142fb5, type: 3}
+  - {fileID: 8300000, guid: ca76ff2c1cfa63f43858da5a9c878246, type: 3}
+  - {fileID: 8300000, guid: 60c29ecb62ff4a349a5373a4a9f3aaee, type: 3}
+  - {fileID: 8300000, guid: db3de870e240f5c42b61525e4655ddb0, type: 3}
+  - {fileID: 8300000, guid: 6fd5b6d1adf687b4dad5283acf0454bc, type: 3}
+  - {fileID: 8300000, guid: 244ab176b08c51042b543e3fd6992d64, type: 3}
+  - {fileID: 8300000, guid: c58b8a9cfcf62974abb0534ea1075ad8, type: 3}
+  - {fileID: 8300000, guid: a68dbc4d89edfa24e9ab78bc2c8f3a55, type: 3}
+  - {fileID: 8300000, guid: 2adffec5a49d6134e90818e5adc6567b, type: 3}
+  audioMixerGroup: {fileID: 0}
+  minVolume: 1
+  maxVolume: 1
+  spatialBlend: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  maxDistance: 66
+  rolloffMode: 1
