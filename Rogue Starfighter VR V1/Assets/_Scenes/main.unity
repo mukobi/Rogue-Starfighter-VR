@@ -2197,6 +2197,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1208037586}
+  - {fileID: 919200252}
   m_Father: {fileID: 420426611}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5080,6 +5081,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opacityMaterialID: _Opacity
+--- !u!1001 &919200251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 424287032}
+    m_Modifications:
+    - target: {fileID: 1550910863946331232, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_Name
+      value: Damage SFX.R2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991933857026184393, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2461436398893711895, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+        type: 2}
+    - target: {fileID: 2991933857026184393, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991933857026184393, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034036798585384464, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: audioCue
+      value: 
+      objectReference: {fileID: 11400000, guid: 01218e7443c05ea4981a23373da24c11,
+        type: 2}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1bb29192683a354a95f7e04f0ddcb06, type: 3}
+--- !u!4 &919200252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3422713090276019999, guid: f1bb29192683a354a95f7e04f0ddcb06,
+    type: 3}
+  m_PrefabInstance: {fileID: 919200251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &938818657
 GameObject:
   m_ObjectHideFlags: 0
