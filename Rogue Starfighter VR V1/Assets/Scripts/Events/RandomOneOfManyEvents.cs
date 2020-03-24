@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomOneOfManyEvents : MonoBehaviour
+public class RandomOneOfManyEvents : ActionableAbstract
 {
     [SerializeField] private BaseEvent[] events = default;
 
-    public void InvokeSingleRandomEvent()
+    [ContextMenu("Trigger Random Event")]
+    public override void DoAction()
     {
         events[Random.Range(0, events.Length)].OnEvent.Invoke();
     }

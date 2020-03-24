@@ -724,7 +724,7 @@ Transform:
   m_Children:
   - {fileID: 863024837}
   m_Father: {fileID: 622654082}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &156316977 stripped
 Transform:
@@ -1982,7 +1982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: adbf39948178a8a4ea19c198754567c1, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 512093162}
+  m_SkySettings: {fileID: 1046452206}
   m_SkySettingsFromProfile: {fileID: 7488742677745068149, guid: adbf39948178a8a4ea19c198754567c1,
     type: 2}
 --- !u!4 &313761475
@@ -3346,107 +3346,6 @@ MonoBehaviour:
     actionPath: /actions/default/in/InteractUI
     needsReinit: 0
   buttonHoldDownTimeSeconds: 0.66
---- !u!114 &512093162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 10
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 0.004353666
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0.49280256, y: 0.5, z: 0.49280256}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: e40263a8b2ef57f41b423dbeb2173f65, type: 3}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1001 &518456943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4289,8 +4188,8 @@ Transform:
   - {fileID: 1998049690}
   - {fileID: 852591431}
   - {fileID: 1362365057}
-  - {fileID: 5006512736237521089}
   - {fileID: 155376988}
+  - {fileID: 5006512736237521089}
   m_Father: {fileID: 1505385797}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4695,6 +4594,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &676134501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1375474326125256280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &676134504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1375474325449170992, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1375474326125256280}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6be8b584adadb47a2d9eb9b3b725f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &702802664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5538,6 +5455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 863024837}
+  - component: {fileID: 863024838}
   m_Layer: 10
   m_Name: Cockpit Sparks
   m_TagString: Untagged
@@ -5555,10 +5473,27 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1538177023}
   m_Father: {fileID: 155376988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &863024838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863024836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efc55216b5c980e4281ea60788482ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events:
+  - {fileID: 676134504}
+  - {fileID: 1524703489}
+  - {fileID: 1268193250}
 --- !u!1001 &879133511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6455,6 +6390,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046452206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 10
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 0.004353666
+    min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0.49280256, y: 0.5, z: 0.49280256}
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: e40263a8b2ef57f41b423dbeb2173f65, type: 3}
+  enableBackplate:
+    m_OverrideState: 0
+    m_Value: 0
+  backplateType:
+    m_OverrideState: 0
+    m_Value: 0
+  groundLevel:
+    m_OverrideState: 0
+    m_Value: 0
+  scale:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32}
+  projectionDistance:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 0.0000001
+  plateRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+  blendAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
+  shadowTint:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  pointLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  dirLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  rectLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!4 &1062698658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4080812962550168364, guid: 5cc92bf86dfff724e8374d9ac5755201,
@@ -7894,6 +7930,98 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1467065307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1268193248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1538177023}
+    m_Modifications:
+    - target: {fileID: 1375474325449171004, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Sparks Cockpit High (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171006, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df448a64a71fe0e40b1ad5e27ae2bd1b, type: 3}
+--- !u!4 &1268193249 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1268193248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1268193250 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1375474325449170992, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1268193248}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6be8b584adadb47a2d9eb9b3b725f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1295872427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13837,6 +13965,131 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1467065307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1524703487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1538177023}
+    m_Modifications:
+    - target: {fileID: 1375474325449171004, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Sparks Cockpit High (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.942
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.35836798
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.93358046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171006, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df448a64a71fe0e40b1ad5e27ae2bd1b, type: 3}
+--- !u!4 &1524703488 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1524703487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524703489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1375474325449170992, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1524703487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6be8b584adadb47a2d9eb9b3b725f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1538177022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1538177023}
+  m_Layer: 10
+  m_Name: Cockpit Sparks High Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1538177023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538177022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 676134501}
+  - {fileID: 1524703488}
+  - {fileID: 1268193249}
+  m_Father: {fileID: 863024837}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557427233
 GameObject:
   m_ObjectHideFlags: 0
@@ -18300,6 +18553,80 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &1375474326125256280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1538177023}
+    m_Modifications:
+    - target: {fileID: 1375474325449171004, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Sparks Cockpit High
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.942
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.35836798
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.93358046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171005, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375474325449171006, guid: df448a64a71fe0e40b1ad5e27ae2bd1b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df448a64a71fe0e40b1ad5e27ae2bd1b, type: 3}
 --- !u!1 &1391679876782920718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7831692161295501355, guid: 5cc92bf86dfff724e8374d9ac5755201,
