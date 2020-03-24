@@ -27,7 +27,7 @@ Material:
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
     RenderType: Transparent
@@ -54,10 +54,11 @@ Material:
     - _DoubleSidedEnable: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 1
-    - _Opacity: 1
+    - _Opacity: 0
     - _ReceivesSSR: 0
     - _RenderQueueType: 5
     - _RequireSplitLighting: 0
+    - _ShadowMatteFilter: 1.8e-43
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 32
@@ -81,6 +82,7 @@ Material:
     m_Colors:
     - Vector2_A3AB3194: {r: 0.5, g: 1, b: 0, a: 0}
     - Vector2_B0512897: {r: 0.1, g: 1, b: 0, a: 0}
+    - Vector2_B224AEF2: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _MainColor: {r: 0, g: 2.9006653, b: 9.082411, a: 1}

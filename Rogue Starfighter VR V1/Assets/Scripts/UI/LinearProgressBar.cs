@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class LinearProgressBar : MonoBehaviour
 {
-    public float MinValue = 0;
-    public float MaxValue = 100;
+    [SerializeField] private float MinValue = 0;
+    [SerializeField] private float MaxValue = 100;
     //[SerializeField] private float defaultValue = 100;
 
     [SerializeField] private RectTransform fill = default;
