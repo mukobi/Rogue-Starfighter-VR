@@ -35,7 +35,7 @@ public class MasterSystemController : MonoBehaviour
         OnSystemRepair.Invoke();
     }
 
-
+    [ContextMenu("Repair all systems silently (no events invoked)")]
     public void RepairAllSystemsSilently()
     {
         // TODO handle fixing the button game since it will probably still be flashing.
@@ -47,6 +47,7 @@ public class MasterSystemController : MonoBehaviour
                 breakableShipSystems[i].RepairSystem();
             }
         }
+        aSystemIsDisabled = false;
     }
 
     private BreakableShipSystemAbstract GetRandomShipSystem()
