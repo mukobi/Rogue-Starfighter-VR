@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SetProgressBarBasedOnEngineSpeed : MonoBehaviour
 {
-    [SerializeField] private LinearProgressBar linearProgressBar;
-    [SerializeField] private ForwardEngine engine;
+    [SerializeField] private LinearProgressBar linearProgressBar = default;
+    [SerializeField] private ForwardEngine engine = default;
 
     private void Update()
     {
