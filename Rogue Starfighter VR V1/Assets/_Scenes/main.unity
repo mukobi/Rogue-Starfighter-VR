@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 1.295283, g: 1.3061557, b: 1.295283, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -910,7 +910,7 @@ PrefabInstance:
     - target: {fileID: 8117074074039248536, guid: 0a89f0512e2f6664eb0a3927ab9375e0,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1.9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8117074074039248536, guid: 0a89f0512e2f6664eb0a3927ab9375e0,
         type: 3}
@@ -956,6 +956,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Speedometer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359416540765890801, guid: 0a89f0512e2f6664eb0a3927ab9375e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Fill.Speedometer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a89f0512e2f6664eb0a3927ab9375e0, type: 3}
@@ -1011,6 +1016,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &183328995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183328992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57bb08d98e21fc44ac02f1089a2275b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opacityMaterialID: _Opacity
 --- !u!1001 &192208733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1177,7 +1195,7 @@ GameObject:
   - component: {fileID: 237979225}
   - component: {fileID: 237979226}
   m_Layer: 0
-  m_Name: Label
+  m_Name: Label.Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5088,6 +5106,7 @@ MonoBehaviour:
   - {fileID: 7342079522391050646}
   - {fileID: 912878240}
   - {fileID: 237979226}
+  - {fileID: 183328995}
   currentFlickerValue: 1
   animationName: Flicker
   animationDurationFrames: 90
@@ -17987,6 +18006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359416540765890801, guid: 0a89f0512e2f6664eb0a3927ab9375e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Fill.Shield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a89f0512e2f6664eb0a3927ab9375e0, type: 3}
