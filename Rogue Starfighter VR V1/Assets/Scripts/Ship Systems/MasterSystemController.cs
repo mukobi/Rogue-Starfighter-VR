@@ -12,11 +12,16 @@ public class MasterSystemController : MonoBehaviour
     public UnityEvent OnSystemDisable;
     public UnityEvent OnSystemRepair;
 
+    private bool aSystemIsDisabled = false;
+
     [ContextMenu("Disable random system")]
     public async void DisableRandomSystem()
     {
+        if (aSystemIsDisabled)
+            return; // only 1 system can be disabled at a time
         BreakableShipSystemAbstract chosenSystem = GetRandomShipSystem();
         chosenSystem.DisableSystem();
+        aSystemIsDisabled = true;
         string offlineText = $"{chosenSystem.GetShipSystemName} offline!\nPress the buttons to repair.";
         Debug.Log(offlineText);
         systemDisplayText.WriteOnText(offlineText);
@@ -25,19 +30,11 @@ public class MasterSystemController : MonoBehaviour
         await buttonGameController.RequireRandomNumberOfButtonsPressed();
 
         chosenSystem.RepairSystem();
+        aSystemIsDisabled = false;
         systemDisplayText.WriteOffText();
         OnSystemRepair.Invoke();
     }
 
-    //public async void DisableRandomSystem(int numberButtonsRequiredToPress)
-    //{
-    //    IShipSystem chosenSystem = GetRandomShipSystem();
-    //    chosenSystem.DisableSystem();
-
-    //    await buttonGameController.RequireButtonsPressed(numberButtonsRequiredToPress);
-
-    //    chosenSystem.RepairSystem();
-    //}
 
     public void RepairAllSystemsSilently()
     {
