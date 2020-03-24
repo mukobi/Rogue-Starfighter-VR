@@ -37,12 +37,17 @@ public class AudioCuePlayer : MonoBehaviour
 
     public void PlayOnPassedInAudioSource(AudioSource passedInAudioSource)
     {
-        audioCue.PlayOnExistingAudioSourceAtPosition(passedInAudioSource);
+        audioCue.PlayOnExistingAudioSourceAtPosition(passedInAudioSource, false);
     }
 
     public void PlayOnExistingAudioSource()
     {
-        audioCue.PlayOnExistingAudioSourceAtPosition(audioSource);
+        audioCue.PlayOnExistingAudioSourceAtPosition(audioSource, false);
+    }
+
+    public void PlayOnExistingAudioSourceWaitIfIsPlaying()
+    {
+        audioCue.PlayOnExistingAudioSourceAtPosition(audioSource, true);
     }
 
     public void PlayOneShotOnExistingAudioSource()
