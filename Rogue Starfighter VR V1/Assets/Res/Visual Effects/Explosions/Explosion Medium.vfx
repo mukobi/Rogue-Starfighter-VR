@@ -24,52 +24,16 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614657}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614659}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614631}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614823}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614815}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614645}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614854}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614654}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614598}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614725}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614698}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661614821}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661614679}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614683}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614685}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614687}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614723}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661614856}
@@ -100,10 +64,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 1131
+    x: -0
     y: -2311
-    width: 2192
-    height: 3455
+    width: 3298
+    height: 5293
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2699,7 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -6638,7 +6602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
