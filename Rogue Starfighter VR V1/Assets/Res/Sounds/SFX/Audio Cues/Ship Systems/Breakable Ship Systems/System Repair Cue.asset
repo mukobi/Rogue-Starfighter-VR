@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: System Repair Cue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 1188a15ca08e0aa419514caf1bd1bbf1, type: 3}
+  - {fileID: 8300000, guid: 44265a8a9767e8c4d81abd767a0220a4, type: 3}
+  - {fileID: 8300000, guid: 0612f2f5f91fe4444b28b2b75981f7a5, type: 3}
+  - {fileID: 8300000, guid: c2812b8b702afe949a3822648cfb31ab, type: 3}
+  - {fileID: 8300000, guid: e9b40cd67d7f4d04fa8171c19fdd2251, type: 3}
+  - {fileID: 8300000, guid: 7aca402577531094bbec705c74267492, type: 3}
+  - {fileID: 8300000, guid: 4dda96cafca560c408b473e0f015b618, type: 3}
+  - {fileID: 8300000, guid: a6996887f19123b46b60ff77e10a48e8, type: 3}
+  - {fileID: 8300000, guid: d8c976b384b20984e92a0bf1224b61df, type: 3}
+  - {fileID: 8300000, guid: ce0588fe67eac184cb6dc4a33ac14ca7, type: 3}
+  - {fileID: 8300000, guid: b361cfadcf54d87438f033111c803359, type: 3}
+  audioMixerGroup: {fileID: 6558304506358134854, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  spatialBlend: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  maxDistance: 15
+  rolloffMode: 1
