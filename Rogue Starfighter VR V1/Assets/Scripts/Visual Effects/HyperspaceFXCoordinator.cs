@@ -3,12 +3,15 @@ using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine.VFX;
 
-public class HyperspaceVFXCoordinator : MonoBehaviour
+public class HyperspaceFXCoordinator : MonoBehaviour
 {
     [Header("Dependencies")]
     [SerializeField] private VisualEffect hyperspaceJumpVfx = default;
     [SerializeField] private VisualEffect hyperspaceExitVfx = default;
     [SerializeField] private GameObject HyperSpaceTunnel = default;
+
+    [SerializeField] private AudioCuePlayer jumpXWAudioCue = default;
+    [SerializeField] private AudioCuePlayer exitXWAudioCue = default;
 
     [Header("Config")]
     //[SerializeField] private float jumpFlashDurationSeconds = default;
@@ -19,8 +22,9 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     [ContextMenu("Jump to Hyperspace VFX")]
     public async Task JumpToHyperspace()
     {
-        float lifetime = hyperspaceJumpVfx.GetFloat("lifetime");
+        jumpXWAudioCue.PlayOnExistingAudioSource();
 
+        float lifetime = hyperspaceJumpVfx.GetFloat("lifetime");
         hyperspaceJumpVfx.Play();
         await Task.Delay((int)(lifetime * 1000));
         HyperSpaceTunnel.SetActive(true); // TODO: add optional bool param to not set tunnel active
@@ -31,6 +35,8 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     [ContextMenu("Exit Hyperspace VFX")]
     public async Task ExitHyperspace()
     {
+        exitXWAudioCue.PlayOnExistingAudioSource();
+
         hyperspaceExitVfx.Play();
 
         //Task VRFadeTask = VRFadeController.FadeThenFlashTransparent(Color.white, jumpFadeDurationSeconds, jumpFlashDurationSeconds);
