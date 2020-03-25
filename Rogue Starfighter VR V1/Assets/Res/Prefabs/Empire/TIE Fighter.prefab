@@ -340,9 +340,83 @@ Transform:
   - {fileID: 104561645196462048}
   - {fileID: 1708621089163663692}
   - {fileID: 718247350703458968}
+  - {fileID: 941084752835981780}
   m_Father: {fileID: 8934575496407826913}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6017845061346362116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941084752835981780}
+  - component: {fileID: 8246058324894856369}
+  - component: {fileID: 5529558877693262657}
+  m_Layer: 12
+  m_Name: Pilot Scream SFX.TIE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &941084752835981780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017845061346362116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3698889583621802379}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8246058324894856369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017845061346362116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e90e564fd395ae4db591af80a490b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioCue: {fileID: 11400000, guid: 0b21a31d66980b042baef06ab2ff4907, type: 2}
+  playOnAwake: 0
+--- !u!114 &5529558877693262657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6017845061346362116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6898e30f4dd4f44b9c8ceb5d5b045b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  probability: 0.2
+  OnLuckyRoll:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8246058324894856369}
+        m_MethodName: PlayAtMyPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7949258945482639559
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +643,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2533539755866292248}
         m_MethodName: PlayAtMyPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5529558877693262657}
+        m_MethodName: AttemptProbabilisticEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -906,12 +991,6 @@ PrefabInstance:
       objectReference: {fileID: 8934575496407826913}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd871bfd4875350459a3bfa2b297bcfb, type: 3}
---- !u!4 &7733060991599776268 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 7943991586705489257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7733060991599776275 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 391778267867754362, guid: bd871bfd4875350459a3bfa2b297bcfb,
@@ -924,6 +1003,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa3fa419e552e249b4dbd5eda50c434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &7733060991599776268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 391778267867754341, guid: bd871bfd4875350459a3bfa2b297bcfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7943991586705489257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8934575497648892956
 PrefabInstance:
   m_ObjectHideFlags: 0
