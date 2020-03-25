@@ -10,10 +10,11 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     [SerializeField] private VisualEffect hyperspaceExitVfx = default;
     [SerializeField] private GameObject HyperSpaceTunnel = default;
 
-    [Header("Jump config")]
+    [Header("Config")]
     [SerializeField] private float jumpFlashDurationSeconds = default;
     [SerializeField] private float jumpFadeDurationSeconds = default;
     [SerializeField] private float tunnelActiveDuration = default;
+    [SerializeField] private float intervalBetweenExitStartAndTunnelDissapearSeconds = default;
 
     [ContextMenu("Jump to Hyperspace VFX")]
     public async Task JumpToHyperspace()
@@ -30,17 +31,13 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     [ContextMenu("Exit Hyperspace VFX")]
     public async Task ExitHyperspace()
     {
+        hyperspaceExitVfx.Play();
+
         Task VRFadeTask = VRFadeController.FadeThenFlashTransparent(Color.white, jumpFadeDurationSeconds, jumpFlashDurationSeconds);
 
-        await Task.Delay((int)(jumpFadeDurationSeconds * 1000));
+        await Task.Delay((int)(intervalBetweenExitStartAndTunnelDissapearSeconds * 1000));
 
         HyperSpaceTunnel.SetActive(false);
-
-        float lifetime = hyperspaceJumpVfx.GetFloat("lifetime");
-
-        //hyperspaceExitVfx.Play();
-
-        await Task.Delay((int)(lifetime * 1000));
 
         await VRFadeTask;
     }
