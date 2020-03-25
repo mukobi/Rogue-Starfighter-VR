@@ -5,8 +5,11 @@ public class DamageableShipPartWithHealth : DamageableShipPart
 {
     [SerializeField] private float minHealth = default;
     [SerializeField] private float maxHealth = default;
+    public float MaxHealth { get { return maxHealth; } }
     [SerializeField] private float initialHealth = default;
+
     private float currentHealth;
+    public float CurrentHealth { get { return currentHealth; } }
     //[SerializeField] private float maxHealth;
 
     public UnityEventFloat OnHealthChange;
