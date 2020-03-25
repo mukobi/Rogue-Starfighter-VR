@@ -9,6 +9,7 @@ public class RandomFloatEvent : MonoBehaviour
 
     public UnityEventFloat FloatEvent;
 
+    [ContextMenu("Do it!")]
     public void InvokeEventWithRandomizedFloat()
     {
         FloatEvent.Invoke(Random.Range(min, max));

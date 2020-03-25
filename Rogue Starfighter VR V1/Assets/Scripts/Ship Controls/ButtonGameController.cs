@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
@@ -12,15 +13,15 @@ public class ButtonGameController : MonoBehaviour
     public List<ButtonSmall> buttons;
 
     [ContextMenu("Require Random Number Of Buttons Pressed")]
-    public async Task RequireRandomNumberOfButtonsPressed()
+    public async Task RequireRandomNumberOfButtonsPressed(CancellationToken ct)
     {
-        await RequireButtonsPressed(Random.Range(buttonsToPressMin, buttonsToPressMax));
+        await RequireButtonsPressed(ct, Random.Range(buttonsToPressMin, buttonsToPressMax));
     }
 
-    public async Task RequireButtonsPressed(int numButtons)
+    public async Task RequireButtonsPressed(CancellationToken ct, int numButtons)
     {
         List<ButtonSmall> randomButtons = ChooseRandomButtons(numButtons);
-        var buttonTasks = randomButtons.Select(button => button.RequireButtonPress());
+        var buttonTasks = randomButtons.Select(button => button.RequireButtonPress(ct));
         await Task.WhenAll(buttonTasks);
     }
 
