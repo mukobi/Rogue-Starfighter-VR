@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826fdd7d1626cb44b85bbb0f9c904276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimerDurationMilliseconds: 150
+  TimerDurationMilliseconds: 10
   OnTimerFinished:
     m_PersistentCalls:
       m_Calls:
