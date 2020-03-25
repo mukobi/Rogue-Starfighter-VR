@@ -8981,7 +8981,10 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0.1
+        m_Name: light linger bias
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -17425,8 +17428,8 @@ MonoBehaviour:
   HyperSpaceTunnel: {fileID: 1846839481}
   jumpFlashDurationSeconds: 0.25
   jumpFadeDurationSeconds: 1
-  tunnelActiveDuration: 2
-  intervalBetweenExitStartAndTunnelDissapearSeconds: 0.1
+  tunnelActiveDuration: 8
+  intervalBetweenExitStartAndTunnelDissapearSeconds: 0.2
 --- !u!4 &1987077702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1502188840749986483, guid: 5cc92bf86dfff724e8374d9ac5755201,
