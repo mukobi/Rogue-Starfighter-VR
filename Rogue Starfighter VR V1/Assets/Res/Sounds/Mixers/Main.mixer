@@ -20,7 +20,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Laser Impacts
+  m_Name: Impact/Explosion
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 1144ccfb859f34746ad8439221f2ce81
   m_Children: []
@@ -209,7 +209,7 @@ AudioMixerSnapshotController:
     08e4c3765cfbaff49bf40aa17b6f7afb: -2.8722944
     862bc2d69ec9aa14da5d28ba71c6d1c7: -24.162655
     809db8d67331313458d14e535f16cc6d: -6.6
-    828ab427651fde742aa034c885048c34: -9.833291
+    828ab427651fde742aa034c885048c34: -2
     233607f7acccb9043a9d117428ac8f1c: -12.5
     14aa1f2a145519046ade9da921593486: -9
     d07096deb7c54ed418202664be693b45: -4.560346
