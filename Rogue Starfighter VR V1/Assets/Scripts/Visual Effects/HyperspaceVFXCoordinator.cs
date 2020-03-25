@@ -22,7 +22,7 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
 
         hyperspaceJumpVfx.Play();
         await Task.Delay((int)(lifetime * 1000));
-        HyperSpaceTunnel.SetActive(true);
+        HyperSpaceTunnel.SetActive(true); // TODO: add optional bool param to not set tunnel active
         Task VRFadeTask = VRFadeController.FlashThenFadeTransparent(Color.white, jumpFlashDurationSeconds, jumpFadeDurationSeconds);
         await VRFadeTask;
     }

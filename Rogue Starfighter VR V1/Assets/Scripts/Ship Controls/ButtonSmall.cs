@@ -14,12 +14,22 @@ public class ButtonSmall : MonoBehaviour
     [ContextMenu("Require button pressed")]
     public async Task RequireButtonPress()
     {
-        ButtonIsPressedMarker = false;
-        OnRequireButtonPress.Invoke();
+        MarkButtonRequired();
         while (!ButtonIsPressedMarker)
         {
             await Task.Delay(buttonCheckIntervalMilliseconds);
         }
+        MarkButtonSatisfied();
+    }
+
+    private void MarkButtonRequired()
+    {
+        ButtonIsPressedMarker = false;
+        OnRequireButtonPress.Invoke();
+    }
+
+    private void MarkButtonSatisfied()
+    {
         ButtonIsPressedMarker = false;
         OnSatisfyButtonPress.Invoke();
     }
