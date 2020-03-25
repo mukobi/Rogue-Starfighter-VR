@@ -19,8 +19,6 @@ public class HyperdriveSwitchController : MonoBehaviour
 
     public bool SwitchHasBeenThrowMarker { get; set; } = false;
 
-    private bool isLocked = true;
-
     public async Task RequireSwitchThrown(CancellationToken ct)
     {
         FreeSwitch();
@@ -40,7 +38,6 @@ public class HyperdriveSwitchController : MonoBehaviour
     
     public void LockSwitchInInitialPosition()
     {
-        isLocked = true;
         switchRotator.minAngle = lockedInitialMinMaxAngles.x;
         switchRotator.maxAngle = lockedInitialMinMaxAngles.y;
         RotateSwitchToPosition(lockedInitialMinMaxAngles.x);
@@ -48,7 +45,6 @@ public class HyperdriveSwitchController : MonoBehaviour
 
     public void LockSwitchInForwardPosition()
     {
-        isLocked = true;
         switchRotator.minAngle = lockedForwardMinMaxAngles.x;
         switchRotator.maxAngle = lockedForwardMinMaxAngles.y;
         RotateSwitchToPosition(lockedForwardMinMaxAngles.x);
@@ -56,7 +52,6 @@ public class HyperdriveSwitchController : MonoBehaviour
 
     public void FreeSwitch()
     {
-        isLocked = true;
         switchRotator.minAngle = freeMinMaxAngles.x;
         switchRotator.maxAngle = freeMinMaxAngles.y;
     }
