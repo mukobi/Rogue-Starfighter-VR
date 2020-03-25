@@ -692,8 +692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipSystemIsDisabled: 0
-  baseCruiseSpeed: 110
-  SpeedAtInstantiation: 0
+  baseCruiseSpeed: 115
+  SpeedAtInstantiation: 66
   systemDisabledSpeed: 0
   maxPositiveAcceleration: 1
 --- !u!114 &4797425003185304133
