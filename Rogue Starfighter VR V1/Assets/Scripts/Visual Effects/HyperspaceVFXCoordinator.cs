@@ -24,8 +24,8 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
         hyperspaceJumpVfx.Play();
         await Task.Delay((int)(lifetime * 1000));
         HyperSpaceTunnel.SetActive(true); // TODO: add optional bool param to not set tunnel active
-        Task VRFadeTask = VRFadeController.FlashThenFadeTransparent(Color.white, jumpFlashDurationSeconds, jumpFadeDurationSeconds);
-        await VRFadeTask;
+        //Task VRFadeTask = VRFadeController.FlashThenFadeTransparent(Color.white, jumpFlashDurationSeconds, jumpFadeDurationSeconds);
+        //await VRFadeTask;
     }
     
     [ContextMenu("Exit Hyperspace VFX")]
@@ -33,13 +33,13 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     {
         hyperspaceExitVfx.Play();
 
-        Task VRFadeTask = VRFadeController.FadeThenFlashTransparent(Color.white, jumpFadeDurationSeconds, jumpFlashDurationSeconds);
+        //Task VRFadeTask = VRFadeController.FadeThenFlashTransparent(Color.white, jumpFadeDurationSeconds, jumpFlashDurationSeconds);
 
         await Task.Delay((int)(intervalBetweenExitStartAndTunnelDissapearSeconds * 1000));
 
         HyperSpaceTunnel.SetActive(false);
 
-        await VRFadeTask;
+        //await VRFadeTask;
     }
 
     [ContextMenu("Full Jump and Exit")]
