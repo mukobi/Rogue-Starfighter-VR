@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.Events;
 
 public class SingleAxisLocalConstantRotation : MonoBehaviour
 {
@@ -40,18 +40,34 @@ public class SingleAxisLocalConstantRotation : MonoBehaviour
 	[SerializeField] private float snapAngle = default;
 	[SerializeField] private float rotationSpeed = default;
 
+	private bool wasSnappingLastFrame = true;
+
+	public UnityEvent OnStartRotating;
+	public UnityEvent OnStopRotating;
+
+
 	private void Update()
 	{
-		Debug.Log(CurrentRotation);
 		if (Mathf.Abs(CurrentRotation - TargetRotation) < snapAngle)
 		{
+			if (!wasSnappingLastFrame)
+			{
+				OnStopRotating.Invoke();
+				wasSnappingLastFrame = true;
+			}
+
 			CurrentRotation = TargetRotation;
 		}
 		else
 		{
+			if(wasSnappingLastFrame)
+			{
+				OnStartRotating.Invoke();
+				wasSnappingLastFrame = false;
+			}
 			float delta = rotationSpeed * Time.deltaTime;
 			if (TargetRotation < CurrentRotation) delta = -delta;
-			CurrentRotation = CurrentRotation + delta;
+			CurrentRotation += delta;
 		}
 	}
 

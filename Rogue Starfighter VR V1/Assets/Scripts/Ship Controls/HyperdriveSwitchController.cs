@@ -16,19 +16,19 @@ public class HyperdriveSwitchController : MonoBehaviour
     [SerializeField] private Vector2 freeMinMaxAngles = default;
 
 
-    public bool SwitchHasBeenThrown { get; set; } = false;
+    public bool SwitchHasBeenThrowMarker { get; set; } = false;
 
     private bool isLocked = true;
 
     public async Task RequireSwitchThrown(CancellationToken ct)
     {
         FreeSwitch();
-        SwitchHasBeenThrown = false;
-        while (!ct.IsCancellationRequested && !SwitchHasBeenThrown)
+        SwitchHasBeenThrowMarker = false;
+        while (!ct.IsCancellationRequested && !SwitchHasBeenThrowMarker)
         {
             await Task.Delay(50);
         }
-        SwitchHasBeenThrown = false;
+        SwitchHasBeenThrowMarker = false;
     }
 
     public void RotateSwitchToPosition(float rotation)
