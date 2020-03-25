@@ -289,6 +289,20 @@ namespace Valve.VR.InteractionSystem
 				UpdateAll();
 			}
 		}
+		protected virtual void HandAttachedUpdate(Hand hand)
+		{
+			if (hand.IsGrabEnding(gameObject))
+			{
+				// just let go
+				hand.DetachObject(gameObject);
+			}
+			else
+			{
+				// still holding on
+				// TODO: compute angle here using relative rotation or position like
+				// JoystickDrive instead of Valve's janky thing
+			}
+		}
 
 
 		//-------------------------------------------------
