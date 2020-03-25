@@ -11,8 +11,8 @@ public class HyperspaceVFXCoordinator : MonoBehaviour
     [SerializeField] private GameObject HyperSpaceTunnel = default;
 
     [Header("Config")]
-    [SerializeField] private float jumpFlashDurationSeconds = default;
-    [SerializeField] private float jumpFadeDurationSeconds = default;
+    //[SerializeField] private float jumpFlashDurationSeconds = default;
+    //[SerializeField] private float jumpFadeDurationSeconds = default;
     [SerializeField] private float tunnelActiveDuration = default;
     [SerializeField] private float intervalBetweenExitStartAndTunnelDissapearSeconds = default;
 
