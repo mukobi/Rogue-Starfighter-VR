@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 public class HyperdriveSwitchController : MonoBehaviour
 {
     [Header("Dependencies")]
-    public CircularDrive switchCircularDrive;
+    public ThrowSwitch switchRotator;
+    public SingleAxisLocalConstantRotation singleAxisLocalConstantRotation;
 
     [Header("Config")]
     [SerializeField] private Vector2 lockedInitialMinMaxAngles = default;
@@ -23,6 +24,7 @@ public class HyperdriveSwitchController : MonoBehaviour
     public async Task RequireSwitchThrown(CancellationToken ct)
     {
         FreeSwitch();
+        RotateSwitchToPosition(freeMinMaxAngles.x);
         SwitchHasBeenThrowMarker = false;
         while (!ct.IsCancellationRequested && !SwitchHasBeenThrowMarker)
         {
@@ -33,29 +35,29 @@ public class HyperdriveSwitchController : MonoBehaviour
 
     public void RotateSwitchToPosition(float rotation)
     {
-
+        singleAxisLocalConstantRotation.TargetRotation = rotation;
     }
     
-    private void LockSwitchInInitialPosition()
+    public void LockSwitchInInitialPosition()
     {
         isLocked = true;
-        switchCircularDrive.minAngle = lockedInitialMinMaxAngles.x;
-        switchCircularDrive.maxAngle = lockedInitialMinMaxAngles.y;
+        switchRotator.minAngle = lockedInitialMinMaxAngles.x;
+        switchRotator.maxAngle = lockedInitialMinMaxAngles.y;
         RotateSwitchToPosition(lockedInitialMinMaxAngles.x);
     }
 
-    private void LockSwitchInForwardPosition()
+    public void LockSwitchInForwardPosition()
     {
         isLocked = true;
-        switchCircularDrive.minAngle = lockedForwardMinMaxAngles.x;
-        switchCircularDrive.maxAngle = lockedForwardMinMaxAngles.y;
+        switchRotator.minAngle = lockedForwardMinMaxAngles.x;
+        switchRotator.maxAngle = lockedForwardMinMaxAngles.y;
         RotateSwitchToPosition(lockedForwardMinMaxAngles.x);
     }
 
-    private void FreeSwitch()
+    public void FreeSwitch()
     {
         isLocked = true;
-        switchCircularDrive.minAngle = freeMinMaxAngles.x;
-        switchCircularDrive.maxAngle = freeMinMaxAngles.y;
+        switchRotator.minAngle = freeMinMaxAngles.x;
+        switchRotator.maxAngle = freeMinMaxAngles.y;
     }
 }
