@@ -14,8 +14,10 @@ public class RegenerateShipHealth : MonoBehaviour
 
     public void ResetWaiting()
     {
-        StopCoroutine(regenCoroutine);
-        StopCoroutine(waitingCoroutine);
+        if(regenCoroutine != null)
+            StopCoroutine(regenCoroutine);
+        if (waitingCoroutine != null)
+            StopCoroutine(waitingCoroutine);
 
         waitingCoroutine = StartWaitingCoroutine();
         StartCoroutine(waitingCoroutine);
