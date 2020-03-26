@@ -20,12 +20,12 @@ PrefabInstance:
     - target: {fileID: 1264190429091763035, guid: 3719854cc7ee8cf47bffdfcb4564009c,
         type: 3}
       propertyPath: min
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1264190429091763035, guid: 3719854cc7ee8cf47bffdfcb4564009c,
         type: 3}
       propertyPath: max
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1294439706563347089, guid: 3719854cc7ee8cf47bffdfcb4564009c,
         type: 3}
