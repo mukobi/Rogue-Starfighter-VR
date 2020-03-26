@@ -46,7 +46,7 @@ public class GameSequencer : MonoBehaviour
         /*** Main Game Sequence ***/
         Debug.Log("Start: Main game sequence");
 
-        await Task.Delay(5000);
+        await Task.Delay(15000);
 
         /* Make jump to hyperspace */
         await HyperspaceSequence1();
@@ -54,7 +54,11 @@ public class GameSequencer : MonoBehaviour
         /* Emerge in new location with rebel ship */
         await Task.Delay(5000);
 
-        /* Tutorial */
+        /** Tutorial **/
+
+        /* Tutorial initialization */
+        masterSystemController.CanDisableASystem = true;
+
         // TODO: use linked token stuff
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
@@ -90,7 +94,7 @@ public class GameSequencer : MonoBehaviour
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
 
-        holoHUDWriteOn.WriteOnText("Make the calculations then throw the hyperdrive switch");
+        holoHUDWriteOn.WriteOnText("Make the calculations with the buttons then throw the hyperdrive switch to make the jump");
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
         holoHUDWriteOn.WriteOffText();
@@ -103,7 +107,7 @@ public class GameSequencer : MonoBehaviour
 
     private async Task EnterStarDestroyerSequence()
     {
-        holoHUDWriteOn.WriteOnText("Detecting a large object emerging from hyperspace");
+        holoHUDWriteOn.WriteOnText("Warning: Detecting a large object emerging from hyperspace!");
         musicManager.PlayClip("The Asteroid Field");
         await Task.Delay(2500);
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
@@ -118,7 +122,8 @@ public class GameSequencer : MonoBehaviour
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
 
-        holoHUDWriteOn.WriteOnText("Make the calculations then throw the hyperdrive switch");
+        holoHUDWriteOn.WriteOnText("Make the calculations with the buttons then throw the hyperdrive switch to make the jump");
+        masterSystemController.CanDisableASystem = false;
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
         holoHUDWriteOn.WriteOffText();

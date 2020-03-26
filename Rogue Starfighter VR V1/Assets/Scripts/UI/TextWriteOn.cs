@@ -20,6 +20,7 @@ public class TextWriteOn : MonoBehaviour
 
     public void WriteOnText(string text)
     {
+        // TODO: support passing in optional colours
         StartCoroutine(WriteOnTextCoroutine(text));
     }
 
