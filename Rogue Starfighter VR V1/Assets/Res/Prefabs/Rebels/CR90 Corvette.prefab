@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633645711861291694}
+  - component: {fileID: 3573882360931656828}
+  - component: {fileID: 3902440704833835016}
   m_Layer: 0
   m_Name: CR90 Corvette
   m_TagString: Untagged
@@ -31,6 +33,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3573882360931656828
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129156794507925891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.4
+  m_Height: 88.04
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &3902440704833835016
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129156794507925891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 26.7, y: 15.7, z: 27.6}
+  m_Center: {x: 0, y: 0, z: -31.4}
 --- !u!1001 &6176227957597280798
 PrefabInstance:
   m_ObjectHideFlags: 0
