@@ -38,8 +38,10 @@ public class GameSequencer : MonoBehaviour
     {
         /*** Initialization ***/
         Debug.Log("Start: Initialization.");
+        /* graphics */
         EnableSupersampling();
 
+        /* initialize entities */
         StarDestroyer.SetActive(false);
         Debug.Log("End: Initialization.");
 
