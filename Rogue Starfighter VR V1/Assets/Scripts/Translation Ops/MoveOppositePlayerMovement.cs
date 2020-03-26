@@ -14,4 +14,14 @@ public class MoveOppositePlayerMovement : MonoBehaviour
 
         transform.position = targetPosition;
     }
+
+    public void RecenterPreserveChildrenWorldPosition()
+    {
+        Vector3 parentPosition = transform.position;
+        foreach (Transform child in transform)
+        {
+            child.position += parentPosition;
+        }
+        transform.position = Vector3.zero;
+    }
 }
