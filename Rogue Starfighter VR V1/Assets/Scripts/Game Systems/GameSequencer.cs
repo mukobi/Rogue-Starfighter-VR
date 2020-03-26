@@ -52,31 +52,56 @@ public class GameSequencer : MonoBehaviour
         /*** Main Game Sequence ***/
         Debug.Log("Start: Main game sequence");
 
-        await Task.Delay(15000);
+        await Task.Delay(20000);
+
+        /* Incoming transmission */
+        holoHUDWriteOn.WriteOnText("Incoming transmission...");
+        await Task.Delay(2000);
+        holoHUDWriteOn.WriteOnText("\"Hello, this is the rebel CR90 cruiser Kryze calling on all rebel channels.\"");
+        await Task.Delay(2000);
+        holoHUDWriteOn.WriteOnText("\"We have been damaged and require an escort while we make repairs.\"");
+        await Task.Delay(2000);
+        holoHUDWriteOn.WriteOnText("\"If you are hearing this, please send help. And may the Force be with you.\"");
+        await Task.Delay(2000);
+        holoHUDWriteOn.WriteOffText();
+        await Task.Delay(1000);
 
         /* Make jump to hyperspace */
         await HyperspaceSequence1();
 
         /* Emerge in new location with rebel ship */
-        await Task.Delay(5000);
+        await Task.Delay(2000);
 
         /** Tutorial **/
 
-        /* Tutorial initialization */
+        /* Tutorial proper */
         masterSystemController.CanDisableASystem = true;
 
-        // TODO: use linked token stuff
-        cts = new CancellationTokenSource();
-        CancellationToken ct = cts.Token;
-        await RequireButtonGameRandomButtonsPressed(ct);
-
-        await Task.Delay(3000);
+        holoHUDWriteOn.WriteOnText("\"Thank you for helping, pilot! It says here you're a rookie, so why don't you review your controls.\"");
+        await Task.Delay(4000);
+        holoHUDWriteOn.WriteOnText("\"Grab the joystick and use it to steer. Try spinning - that's a good trick!\"");
+        await Task.Delay(6000);
+        holoHUDWriteOn.WriteOnText("\"Wait, something isn't right...\"");
+        await Task.Delay(2000);
 
         /* Enter Star Destroyer sequence */
         await EnterStarDestroyerSequence();
 
+        holoHUDWriteOn.WriteOnText("\"Looks like you'll have to learn quick! Lock s-foils in attack position and hold of the enemy!\"");
+        await Task.Delay(4000);
+
+        //holoHUDWriteOn.WriteOnText("\"\"");
+
+
+        // TODO: use linked token stuff
+        //await RequireButtonGameRandomButtonsPressed(ct);
+
+
         /* Fight Imperials sequence */
-        await Task.Delay(80000);
+        await Task.Delay(60000);
+
+        holoHUDWriteOn.WriteOnText("\"Nice work! We've fixed our hyperdrive, so let's get out of here!\"");
+        await Task.Delay(3000);
 
         /* Exit into hyperspace sequence */
         await HyperspaceSequence2();
@@ -106,7 +131,6 @@ public class GameSequencer : MonoBehaviour
         holoHUDWriteOn.WriteOffText();
 
         await HyperspaceJump1();
-
     }
 
     [ContextMenu("Hyperspace Jump 1")]
@@ -125,7 +149,7 @@ public class GameSequencer : MonoBehaviour
 
         await hyperspaceFXCoordinator.ExitHyperspace();
 
-        playerEngine.BaseCruiseSpeed = 30;
+        playerEngine.BaseCruiseSpeed = 50;
         musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
     }
