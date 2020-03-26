@@ -67,9 +67,14 @@ public class HyperspaceFXCoordinator : MonoBehaviour
         await JumpToHyperspace();
 
         // wait in the tunnel
-        await Task.Delay((int)(tunnelActiveDuration * 1000));
+        await TunnelDelay();
 
         // exit the jump, taking us out of the tunnel
         await ExitHyperspace();
+    }
+
+    public async Task TunnelDelay()
+    {
+        await Task.Delay((int)(tunnelActiveDuration * 1000));
     }
 }

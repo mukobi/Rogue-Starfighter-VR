@@ -15,6 +15,7 @@ public class GameSequencer : MonoBehaviour
     [Header("Entity Dependencies")]
     public MoveOppositePlayerMovement MoveOppositePlayerPositionRoot;
     public GameObject StarDestroyer;
+    public GameObject CR90;
 
     [Header("VFX")]
     public HyperspaceFXCoordinator hyperspaceFXCoordinator;
@@ -101,9 +102,26 @@ public class GameSequencer : MonoBehaviour
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
         holoHUDWriteOn.WriteOffText();
+
+        await HyperspaceJump1();
+
+    }
+
+    [ContextMenu("Hyperspace Jump 1")]
+    private async Task HyperspaceJump1()
+    {
         hyperdriveSwitchController.LockSwitchInForwardPosition();
         musicManager.VolumeFader.LinearFade(0, 2);
-        await hyperspaceFXCoordinator.FullJump();
+
+        await hyperspaceFXCoordinator.JumpToHyperspace();
+        // in the tunnel now
+        await hyperspaceFXCoordinator.TunnelDelay();
+        // done with the tunnel, set up the new scene
+        MoveOppositePlayerPositionRoot.RecenterPreserveChildrenWorldPosition();
+        CR90.SetActive(true);
+
+        await hyperspaceFXCoordinator.ExitHyperspace();
+
         musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
     }
