@@ -26,7 +26,7 @@ public class TextWriteOn : MonoBehaviour
     private IEnumerator WriteOnTextCoroutine(string text)
     {
         textMesh.text = text;
-        for (int i = 0; i < text.Length; i++)
+        for (int i = 0; i <= text.Length; i++)
         {
             textMesh.maxVisibleCharacters = i;
             OnCharacterWritten.Invoke();
