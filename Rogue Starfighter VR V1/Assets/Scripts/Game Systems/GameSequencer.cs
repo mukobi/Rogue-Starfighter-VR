@@ -82,8 +82,8 @@ public class GameSequencer : MonoBehaviour
         holoHUDWriteOn.WriteOnText("\"Thank you for helping, pilot! It says here you're a rookie, so why don't you review your controls.\"");
         await Task.Delay(5000);
         holoHUDWriteOn.WriteOnText("\"Grab the joystick and use it to steer. Try spinning - that's a good trick!\"");
-        await Task.Delay(6000);
-        holoHUDWriteOn.WriteOnText("\"Wait, something isn't right...\"");
+        await Task.Delay(8000);
+        holoHUDWriteOn.WriteOnText("\"Wait, why do I have a bad feeling about this...\"");
         await Task.Delay(3000);
 
         /* Enter Star Destroyer sequence */
@@ -132,6 +132,7 @@ public class GameSequencer : MonoBehaviour
         holoHUDWriteOn.WriteOnText("Make the calculations with the buttons then throw the hyperdrive switch to make the jump");
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
+        holoHUDWriteOn.WriteOnText("");
         holoHUDWriteOn.WriteOffText();
 
         await HyperspaceJump1();
@@ -156,7 +157,7 @@ public class GameSequencer : MonoBehaviour
         // out of hyperspace
         ambientSpaceParticles.SetActive(true);
 
-        playerEngine.BaseCruiseSpeed = 30;
+        playerEngine.BaseCruiseSpeed = 35;
         musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
     }
@@ -192,6 +193,7 @@ public class GameSequencer : MonoBehaviour
         masterSystemController.CanDisableASystem = false;
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
+        holoHUDWriteOn.WriteOnText("");
 
         musicManager.VolumeFader.LinearFade(0, 2);
         holoHUDWriteOn.WriteOffText();
