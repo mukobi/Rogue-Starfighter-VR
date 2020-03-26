@@ -13,7 +13,7 @@ public class GameSequencer : MonoBehaviour
     public TextWriteOn holoHUDWriteOn;
 
     [Header("Entity Dependencies")]
-    public Transform MoveOppositePlayerPosition;
+    public MoveOppositePlayerMovement MoveOppositePlayerPositionRoot;
     public GameObject StarDestroyer;
 
     [Header("VFX")]
@@ -116,7 +116,7 @@ public class GameSequencer : MonoBehaviour
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
         holoHUDWriteOn.WriteOffText();
         await Task.Delay(1850);
-        MoveOppositePlayerPosition.position = Vector3.zero; // reset position so ISD spawns in front of player
+        MoveOppositePlayerPositionRoot.RecenterPreserveChildrenWorldPosition();
         StarDestroyer.SetActive(true);
     }
 
