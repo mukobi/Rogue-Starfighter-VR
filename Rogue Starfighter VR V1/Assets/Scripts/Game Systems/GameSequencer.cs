@@ -56,15 +56,13 @@ public class GameSequencer : MonoBehaviour
 
         /* Incoming transmission */
         holoHUDWriteOn.WriteOnText("Incoming transmission...");
-        await Task.Delay(2000);
+        await Task.Delay(3000);
         holoHUDWriteOn.WriteOnText("\"Hello, this is the rebel CR90 cruiser Kryze calling on all rebel channels.\"");
-        await Task.Delay(2000);
+        await Task.Delay(4000);
         holoHUDWriteOn.WriteOnText("\"We have been damaged and require an escort while we make repairs.\"");
-        await Task.Delay(2000);
-        holoHUDWriteOn.WriteOnText("\"If you are hearing this, please send help. And may the Force be with you.\"");
-        await Task.Delay(2000);
-        holoHUDWriteOn.WriteOffText();
-        await Task.Delay(1000);
+        await Task.Delay(4000);
+        holoHUDWriteOn.WriteOnText("\"If you are hearing this, please send help. and may the Force be with you.\"");
+        await Task.Delay(4000);
 
         /* Make jump to hyperspace */
         await HyperspaceSequence1();
@@ -78,7 +76,7 @@ public class GameSequencer : MonoBehaviour
         masterSystemController.CanDisableASystem = true;
 
         holoHUDWriteOn.WriteOnText("\"Thank you for helping, pilot! It says here you're a rookie, so why don't you review your controls.\"");
-        await Task.Delay(4000);
+        await Task.Delay(6000);
         holoHUDWriteOn.WriteOnText("\"Grab the joystick and use it to steer. Try spinning - that's a good trick!\"");
         await Task.Delay(6000);
         holoHUDWriteOn.WriteOnText("\"Wait, something isn't right...\"");
@@ -185,8 +183,11 @@ public class GameSequencer : MonoBehaviour
         masterSystemController.CanDisableASystem = false;
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
+
+        musicManager.VolumeFader.LinearFade(0, 2);
         holoHUDWriteOn.WriteOffText();
         hyperdriveSwitchController.LockSwitchInForwardPosition();
+
         Task jumpTask = hyperspaceFXCoordinator.JumpToHyperspace();
 
         await Task.Delay(2000);
