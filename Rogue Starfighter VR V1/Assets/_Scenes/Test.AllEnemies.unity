@@ -3490,6 +3490,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3760985645271960952, guid: 95a0dee430d9ae1428567bc63623efc5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252958197592347451, guid: 95a0dee430d9ae1428567bc63623efc5,
         type: 3}
       propertyPath: m_Name
@@ -3499,6 +3504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283103772103205718, guid: 95a0dee430d9ae1428567bc63623efc5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8556604861335204366, guid: 95a0dee430d9ae1428567bc63623efc5,
         type: 3}
@@ -5707,54 +5717,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1829009289}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1792366916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1792366917}
-  - component: {fileID: 1792366918}
-  m_Layer: 0
-  m_Name: TIE Boid Flock
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1792366917
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792366916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.01313}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 712703372}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1792366918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792366916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6038e70bf02a7c04ba59da5653ce86c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agents: []
-  behavior: {fileID: 11400000, guid: e27984bf5cc69344d9510aa75e9ac34d, type: 2}
-  neighborRadius: 160
-  avoidanceRadiusMultiplier: 0.5
-  updateFrameInterval: 3
 --- !u!4 &1794907906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8934575496407826913, guid: 0a6df03505d822842ba36a3c2a731bb0,

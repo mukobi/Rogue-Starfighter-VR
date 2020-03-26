@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: Pilot Scream Cue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 210f6c2773d30904e923553a35eff38d, type: 3}
+  - {fileID: 8300000, guid: 82772e75796888f4c94be3e3759ba5f0, type: 3}
+  - {fileID: 8300000, guid: caf28a9d60ee8554e973d04091afa5ee, type: 3}
+  - {fileID: 8300000, guid: fcef2dc677165504b9429b480a8282ca, type: 3}
+  - {fileID: 8300000, guid: 4f8307772e291ac4e8a57dad3147392d, type: 3}
+  - {fileID: 8300000, guid: 9b3a0ef3d188c664f8f33b5191a3b95d, type: 3}
+  - {fileID: 8300000, guid: d721873cbe5903d45b14d95b0d35f68c, type: 3}
+  - {fileID: 8300000, guid: 58fcc803b90fcb74db1629cf483cc58d, type: 3}
+  audioMixerGroup: {fileID: -4073916607830739709, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  spatialBlend: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  maxDistance: 999
+  rolloffMode: 1

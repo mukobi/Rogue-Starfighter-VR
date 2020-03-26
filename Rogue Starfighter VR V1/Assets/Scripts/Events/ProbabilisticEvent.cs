@@ -7,6 +7,7 @@ public class ProbabilisticEvent : MonoBehaviour
 
     public UnityEvent OnLuckyRoll;
 
+    [ContextMenu("Attempt Probabilistic Event")]
     public void AttemptProbabilisticEvent()
     {
         if (Random.value <= probability)

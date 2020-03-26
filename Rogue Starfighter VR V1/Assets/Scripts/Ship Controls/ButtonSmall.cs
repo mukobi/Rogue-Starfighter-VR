@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,14 +13,25 @@ public class ButtonSmall : MonoBehaviour
     public UnityEvent OnSatisfyButtonPress;
 
     [ContextMenu("Require button pressed")]
-    public async Task RequireButtonPress()
+    public async Task RequireButtonPress(CancellationToken ct)
     {
-        ButtonIsPressedMarker = false;
-        OnRequireButtonPress.Invoke();
-        while (!ButtonIsPressedMarker)
+        MarkButtonRequired();
+        while (!ButtonIsPressedMarker
+            && !ct.IsCancellationRequested)
         {
             await Task.Delay(buttonCheckIntervalMilliseconds);
         }
+        MarkButtonSatisfied();
+    }
+
+    private void MarkButtonRequired()
+    {
+        ButtonIsPressedMarker = false;
+        OnRequireButtonPress.Invoke();
+    }
+
+    private void MarkButtonSatisfied()
+    {
         ButtonIsPressedMarker = false;
         OnSatisfyButtonPress.Invoke();
     }

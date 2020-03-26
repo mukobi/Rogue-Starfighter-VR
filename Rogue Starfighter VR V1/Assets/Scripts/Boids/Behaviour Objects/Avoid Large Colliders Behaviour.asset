@@ -16,4 +16,4 @@ MonoBehaviour:
   LayerMask:
     serializedVersion: 2
     m_Bits: 0
-  MaxAngleFromForward: 30
+  MaxAngleFromForward: 45

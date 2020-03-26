@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fada3f72823ff4f8be674b746b7629, type: 3}
+  m_Name: TIE Explosion Cue
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 90e6ddc93b98438468cc9b21350ffb90, type: 3}
+  - {fileID: 8300000, guid: 2c53522f74052e74eabc57020a5f151d, type: 3}
+  - {fileID: 8300000, guid: cd28304c21c1a4443add619f59960c34, type: 3}
+  - {fileID: 8300000, guid: e6f7aebb66a20e04ca9753b45cc5786c, type: 3}
+  - {fileID: 8300000, guid: 82809e388dfe0b24fa8869396fcc29af, type: 3}
+  - {fileID: 8300000, guid: 2b70cafc1c344434dbb995dcd5be84a9, type: 3}
+  - {fileID: 8300000, guid: c34d574b5dec48941b857ba03b022e04, type: 3}
+  - {fileID: 8300000, guid: 2385df6144f5dc84b94dc908e61e18e8, type: 3}
+  - {fileID: 8300000, guid: 8dba1ed28b64fb449af5090016db67bf, type: 3}
+  - {fileID: 8300000, guid: 72800ba150b31464899f7cbb0b2a06f7, type: 3}
+  - {fileID: 8300000, guid: 833fd41365e4ba2418afa0923e4c505e, type: 3}
+  - {fileID: 8300000, guid: 3001afabd10d6a14db0a2211207fb70b, type: 3}
+  - {fileID: 8300000, guid: 623eed15b8ef27c48980ff090fb3b300, type: 3}
+  - {fileID: 8300000, guid: d16de13608e4dd649a804419d8564ee9, type: 3}
+  - {fileID: 8300000, guid: f8580f8ab3a4ce24dbe864efbb53d04a, type: 3}
+  - {fileID: 8300000, guid: 54110458214edc7428e4ddc927bfd68c, type: 3}
+  - {fileID: 8300000, guid: 8d3af2acb79c3f5499852124f21f43a9, type: 3}
+  - {fileID: 8300000, guid: 8245ca7918a628b4e9a8b266a5d4b9d3, type: 3}
+  - {fileID: 8300000, guid: c83db90e64a711d4d9e657b4045fc5ef, type: 3}
+  - {fileID: 8300000, guid: 73c6e45eb4607444ebe2a95401a5fc8e, type: 3}
+  - {fileID: 8300000, guid: e7c490b3bd750144e92991da3d5dbfed, type: 3}
+  - {fileID: 8300000, guid: a257e1db0a5c92845b81803dcc7ac0ce, type: 3}
+  - {fileID: 8300000, guid: f5163aeeb624bad45a6fd1309043d41e, type: 3}
+  - {fileID: 8300000, guid: ae68515b6f289a24e85f5da5578aaf7e, type: 3}
+  - {fileID: 8300000, guid: 89e9d6d4e3284f94da9f8002f010a37d, type: 3}
+  - {fileID: 8300000, guid: 6c36068979d8ecd4c8b6f2b8a056293b, type: 3}
+  - {fileID: 8300000, guid: 3b5b0294aac6e8a45b0fd46349eee7f4, type: 3}
+  audioMixerGroup: {fileID: -8704083180788236103, guid: f972f37bca69b0f4bb6e2c6f82d75c3f,
+    type: 2}
+  minVolume: 1
+  maxVolume: 1
+  spatialBlend: 1
+  minPitch: 0.9
+  maxPitch: 1.1
+  maxDistance: 1313
+  rolloffMode: 1
