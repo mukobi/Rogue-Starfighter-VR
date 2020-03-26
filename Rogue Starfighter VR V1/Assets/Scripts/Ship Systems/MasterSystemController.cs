@@ -20,12 +20,13 @@ public class MasterSystemController : MonoBehaviour
     public UnityEvent OnSystemRepair;
 
     private bool aSystemIsDisabled = false;
+    public bool CanDisableASystem { get; set; } = true;
     private CancellationTokenSource cts;
 
     [ContextMenu("Disable random system")]
     public async void DisableRandomSystem()
     {
-        if (aSystemIsDisabled)
+        if (aSystemIsDisabled || !CanDisableASystem)
             return; // only 1 system can be disabled at a time
 
         cts = new CancellationTokenSource();

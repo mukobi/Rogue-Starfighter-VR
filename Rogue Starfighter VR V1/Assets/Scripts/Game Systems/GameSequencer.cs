@@ -9,6 +9,10 @@ public class GameSequencer : MonoBehaviour
     public ButtonGameController buttonGameController;
     public MasterSystemController masterSystemController;
     public HyperdriveSwitchController hyperdriveSwitchController;
+    public MusicManager musicManager;
+
+    [Header("Entity Dependencies")]
+    public GameObject StarDestroyer;
 
     [Header("VFX")]
     public HyperspaceFXCoordinator hyperspaceFXCoordinator;
@@ -33,26 +37,46 @@ public class GameSequencer : MonoBehaviour
         /*** Initialization ***/
         Debug.Log("Start: Initialization.");
         EnableSupersampling();
+
+        StarDestroyer.SetActive(false);
         Debug.Log("End: Initialization.");
 
 
         /*** Main Game Sequence ***/
         Debug.Log("Start: Main game sequence");
 
+        await Task.Delay(5000);
+
         /* Make jump to hyperspace */
         await HyperspaceSequence1();
 
-        /* Load Star Destroyer */
-        await Task.Delay(2500);
-        HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
-        await Task.Delay(1850); // 3 sec from start of hspace exit to boom
-        //await GameSceneManager.AddSceneIfNotLoaded(1); // scene with Star Destroyer
+        /* Emerge in new location with rebel ship */
+        await Task.Delay(5000);
+
+        // TODO: use linked token stuff
+        cts = new CancellationTokenSource();
+        CancellationToken ct = cts.Token;
+        await RequireButtonGameRandomButtonsPressed(ct);
+
+        await Task.Delay(3000);
+
+        /* Enter Star Destroyer sequence */
+        await EnterStarDestroyerSequence();
+
+
+        await Task.Delay(80000);
+
+        await HyperspaceSequence2();
 
         Debug.Log("End: Main game sequence");
     }
-    private void EnableSupersampling()
+
+
+    private async Task RequireButtonGameRandomButtonsPressed(CancellationToken ct)
     {
-        XRSettings.eyeTextureResolutionScale = supersamplingRatio;
+        masterSystemController.CanDisableASystem = false;
+        await buttonGameController.RequireRandomNumberOfButtonsPressed(ct);
+        masterSystemController.CanDisableASystem = true;
     }
 
     private async Task HyperspaceSequence1()
@@ -60,10 +84,44 @@ public class GameSequencer : MonoBehaviour
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
 
-        await buttonGameController.RequireRandomNumberOfButtonsPressed(ct);
+        await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
         hyperdriveSwitchController.LockSwitchInForwardPosition();
+        musicManager.VolumeFader.LinearFade(0, 2);
         await hyperspaceFXCoordinator.FullJump();
+        musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
+    }
+
+    private async Task EnterStarDestroyerSequence()
+    {
+        musicManager.PlayClip("The Asteroid Field");
+        await Task.Delay(2500);
+        HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
+        await Task.Delay(1850);
+        StarDestroyer.SetActive(true);
+    }
+
+    private async Task HyperspaceSequence2()
+    {
+        // TODO: use linked token stuff
+        cts = new CancellationTokenSource();
+        CancellationToken ct = cts.Token;
+
+        await RequireButtonGameRandomButtonsPressed(ct);
+        await hyperdriveSwitchController.RequireSwitchThrown(ct);
+        hyperdriveSwitchController.LockSwitchInForwardPosition();
+        Task jumpTask = hyperspaceFXCoordinator.JumpToHyperspace();
+
+        await Task.Delay(2000);
+        StarDestroyer.SetActive(false);
+
+        await jumpTask;
+        hyperdriveSwitchController.LockSwitchInInitialPosition();
+    }
+
+    private void EnableSupersampling()
+    {
+        XRSettings.eyeTextureResolutionScale = supersamplingRatio;
     }
 }
