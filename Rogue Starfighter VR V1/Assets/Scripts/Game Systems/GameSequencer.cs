@@ -17,11 +17,14 @@ public class GameSequencer : MonoBehaviour
     public MoveOppositePlayerMovement MoveOppositePlayerPositionRoot;
     public GameObject StarDestroyer;
     public GameObject CR90;
-    public Transform StarDestroyerTransformTarget;
     public Transform CR90TransformTarget;
+
+    //TODO: Don't do this. This is a hack.
+    public GameObject CollidersXW;
 
     [Header("VFX")]
     public HyperspaceFXCoordinator hyperspaceFXCoordinator;
+    public GameObject ambientSpaceParticles;
 
     [Header("SFX")]
     public AudioSource GlobalSFX;
@@ -45,6 +48,7 @@ public class GameSequencer : MonoBehaviour
         EnableSupersampling();
 
         /* initialize entities */
+        CollidersXW.SetActive(true);
         StarDestroyer.SetActive(false);
         Debug.Log("End: Initialization.");
 
@@ -57,7 +61,7 @@ public class GameSequencer : MonoBehaviour
         /* Incoming transmission */
         holoHUDWriteOn.WriteOnText("Incoming transmission...");
         await Task.Delay(3000);
-        holoHUDWriteOn.WriteOnText("\"Hello, this is the rebel CR90 cruiser Kryze calling on all rebel channels.\"");
+        holoHUDWriteOn.WriteOnText("\"Hello, this is the CR90 cruiser Kryze calling on all rebel channels.\"");
         await Task.Delay(4000);
         holoHUDWriteOn.WriteOnText("\"We have been damaged and require an escort while we make repairs.\"");
         await Task.Delay(4000);
@@ -76,17 +80,18 @@ public class GameSequencer : MonoBehaviour
         masterSystemController.CanDisableASystem = true;
 
         holoHUDWriteOn.WriteOnText("\"Thank you for helping, pilot! It says here you're a rookie, so why don't you review your controls.\"");
-        await Task.Delay(6000);
+        await Task.Delay(5000);
         holoHUDWriteOn.WriteOnText("\"Grab the joystick and use it to steer. Try spinning - that's a good trick!\"");
         await Task.Delay(6000);
         holoHUDWriteOn.WriteOnText("\"Wait, something isn't right...\"");
-        await Task.Delay(2000);
+        await Task.Delay(3000);
 
         /* Enter Star Destroyer sequence */
         await EnterStarDestroyerSequence();
 
         holoHUDWriteOn.WriteOnText("\"Looks like you'll have to learn quick! Lock s-foils in attack position and hold of the enemy!\"");
-        await Task.Delay(4000);
+        await Task.Delay(5000);
+        holoHUDWriteOn.WriteOffText();
 
         //holoHUDWriteOn.WriteOnText("\"\"");
 
@@ -99,6 +104,7 @@ public class GameSequencer : MonoBehaviour
         await Task.Delay(60000);
 
         holoHUDWriteOn.WriteOnText("\"Nice work! We've fixed our hyperdrive, so let's get out of here!\"");
+        CollidersXW.SetActive(false); // TODO: Not this, this is a hack to not get shot at the end.
         await Task.Delay(3000);
 
         /* Exit into hyperspace sequence */
@@ -140,14 +146,17 @@ public class GameSequencer : MonoBehaviour
 
         await hyperspaceFXCoordinator.JumpToHyperspace();
         // in the tunnel now
+        ambientSpaceParticles.SetActive(false);
         await hyperspaceFXCoordinator.TunnelDelay();
         // done with the tunnel, set up the new scene
         MoveOppositePlayerPositionRoot.RecenterIgnoreChildren();
         EnterCR90();
 
         await hyperspaceFXCoordinator.ExitHyperspace();
+        // out of hyperspace
+        ambientSpaceParticles.SetActive(true);
 
-        playerEngine.BaseCruiseSpeed = 50;
+        playerEngine.BaseCruiseSpeed = 30;
         musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
     }
@@ -162,14 +171,14 @@ public class GameSequencer : MonoBehaviour
     private async Task EnterStarDestroyerSequence()
     {
         holoHUDWriteOn.WriteOnText("Warning: Detecting a large object emerging from hyperspace!");
-        musicManager.PlayClip("The Asteroid Field");
+        //musicManager.PlayClip("The Asteroid Field"); // TODO uncomment for later version with built-in music
         await Task.Delay(2500);
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
         holoHUDWriteOn.WriteOffText();
         await Task.Delay(1850);
         MoveOppositePlayerPositionRoot.RecenterPreserveChildrenWorldPosition();
-        StarDestroyer.transform.position = StarDestroyerTransformTarget.position;
-        StarDestroyer.transform.rotation = StarDestroyerTransformTarget.rotation;
+        StarDestroyer.transform.rotation = CR90.transform.rotation;
+        StarDestroyer.transform.position = CR90.transform.position - 1500 * CR90.transform.forward;
         StarDestroyer.SetActive(true);
     }
 
@@ -194,6 +203,8 @@ public class GameSequencer : MonoBehaviour
         StarDestroyer.SetActive(false);
 
         await jumpTask;
+        // in the tunnel
+        ambientSpaceParticles.SetActive(false);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
     }
 
