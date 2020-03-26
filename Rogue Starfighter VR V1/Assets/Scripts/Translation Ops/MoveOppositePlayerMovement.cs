@@ -24,4 +24,9 @@ public class MoveOppositePlayerMovement : MonoBehaviour
         }
         transform.position = Vector3.zero;
     }
+
+    public void RecenterIgnoreChildren()
+    {
+        transform.position = Vector3.zero;
+    }
 }

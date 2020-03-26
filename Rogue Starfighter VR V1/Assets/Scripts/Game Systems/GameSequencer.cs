@@ -11,11 +11,14 @@ public class GameSequencer : MonoBehaviour
     public HyperdriveSwitchController hyperdriveSwitchController;
     public MusicManager musicManager;
     public TextWriteOn holoHUDWriteOn;
+    public ForwardEngine playerEngine;
 
     [Header("Entity Dependencies")]
     public MoveOppositePlayerMovement MoveOppositePlayerPositionRoot;
     public GameObject StarDestroyer;
     public GameObject CR90;
+    public Transform StarDestroyerTransformTarget;
+    public Transform CR90TransformTarget;
 
     [Header("VFX")]
     public HyperspaceFXCoordinator hyperspaceFXCoordinator;
@@ -23,7 +26,6 @@ public class GameSequencer : MonoBehaviour
     [Header("SFX")]
     public AudioSource GlobalSFX;
     public AudioCuePlayer HyperspaceExitCue;
-
 
     [Header("Config")]
     [Range(1, 2)] [SerializeField] private float supersamplingRatio = 1;
@@ -110,6 +112,7 @@ public class GameSequencer : MonoBehaviour
     [ContextMenu("Hyperspace Jump 1")]
     private async Task HyperspaceJump1()
     {
+        playerEngine.BaseCruiseSpeed = 0;
         hyperdriveSwitchController.LockSwitchInForwardPosition();
         musicManager.VolumeFader.LinearFade(0, 2);
 
@@ -117,13 +120,21 @@ public class GameSequencer : MonoBehaviour
         // in the tunnel now
         await hyperspaceFXCoordinator.TunnelDelay();
         // done with the tunnel, set up the new scene
-        MoveOppositePlayerPositionRoot.RecenterPreserveChildrenWorldPosition();
-        CR90.SetActive(true);
+        MoveOppositePlayerPositionRoot.RecenterIgnoreChildren();
+        EnterCR90();
 
         await hyperspaceFXCoordinator.ExitHyperspace();
 
+        playerEngine.BaseCruiseSpeed = 30;
         musicManager.VolumeFader.LinearFade(1, 2);
         hyperdriveSwitchController.LockSwitchInInitialPosition();
+    }
+
+    private void EnterCR90()
+    {
+        CR90.transform.position = CR90TransformTarget.position;
+        CR90.transform.rotation = CR90TransformTarget.rotation;
+        CR90.SetActive(true);
     }
 
     private async Task EnterStarDestroyerSequence()
@@ -135,6 +146,8 @@ public class GameSequencer : MonoBehaviour
         holoHUDWriteOn.WriteOffText();
         await Task.Delay(1850);
         MoveOppositePlayerPositionRoot.RecenterPreserveChildrenWorldPosition();
+        StarDestroyer.transform.position = StarDestroyerTransformTarget.position;
+        StarDestroyer.transform.rotation = StarDestroyerTransformTarget.rotation;
         StarDestroyer.SetActive(true);
     }
 
