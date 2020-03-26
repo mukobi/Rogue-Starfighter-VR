@@ -10,6 +10,7 @@ public class GameSequencer : MonoBehaviour
     public MasterSystemController masterSystemController;
     public HyperdriveSwitchController hyperdriveSwitchController;
     public MusicManager musicManager;
+    public TextWriteOn holoHUDWriteOn;
 
     [Header("Entity Dependencies")]
     public GameObject StarDestroyer;
@@ -53,6 +54,7 @@ public class GameSequencer : MonoBehaviour
         /* Emerge in new location with rebel ship */
         await Task.Delay(5000);
 
+        /* Tutorial */
         // TODO: use linked token stuff
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
@@ -63,10 +65,14 @@ public class GameSequencer : MonoBehaviour
         /* Enter Star Destroyer sequence */
         await EnterStarDestroyerSequence();
 
-
+        /* Fight Imperials sequence */
         await Task.Delay(80000);
 
+        /* Exit into hyperspace sequence */
         await HyperspaceSequence2();
+
+        /* Credits */
+        holoHUDWriteOn.WriteOnText("Thank you for playing!");
 
         Debug.Log("End: Main game sequence");
     }
@@ -84,8 +90,10 @@ public class GameSequencer : MonoBehaviour
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
 
+        holoHUDWriteOn.WriteOnText("Make the calculations then throw the hyperdrive switch");
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
+        holoHUDWriteOn.WriteOffText();
         hyperdriveSwitchController.LockSwitchInForwardPosition();
         musicManager.VolumeFader.LinearFade(0, 2);
         await hyperspaceFXCoordinator.FullJump();
@@ -95,9 +103,11 @@ public class GameSequencer : MonoBehaviour
 
     private async Task EnterStarDestroyerSequence()
     {
+        holoHUDWriteOn.WriteOnText("Detecting a large object emerging from hyperspace");
         musicManager.PlayClip("The Asteroid Field");
         await Task.Delay(2500);
         HyperspaceExitCue.PlayOnPassedInAudioSource(GlobalSFX);
+        holoHUDWriteOn.WriteOffText();
         await Task.Delay(1850);
         StarDestroyer.SetActive(true);
     }
@@ -108,8 +118,10 @@ public class GameSequencer : MonoBehaviour
         cts = new CancellationTokenSource();
         CancellationToken ct = cts.Token;
 
+        holoHUDWriteOn.WriteOnText("Make the calculations then throw the hyperdrive switch");
         await RequireButtonGameRandomButtonsPressed(ct);
         await hyperdriveSwitchController.RequireSwitchThrown(ct);
+        holoHUDWriteOn.WriteOffText();
         hyperdriveSwitchController.LockSwitchInForwardPosition();
         Task jumpTask = hyperspaceFXCoordinator.JumpToHyperspace();
 
