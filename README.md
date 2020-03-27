@@ -19,3 +19,16 @@ Click the thumbnail below to view a video showing RSVR's gameplay.
 ## Documents
 
 [Project writeup](https://docs.google.com/document/d/1d3HAZtOs09qrlUvAOOsfze-8jzn8sy5-XKjQbjRX5KQ/edit?usp=sharing)
+
+## FAQ
+
+Coming soon...
+
+## Attribution
+
+Coming soon...
+
+## Disclaimer
+
+This is a non-profit unofficial fan-game that is not intended for commercial use. It was made solely for fun. Properties are owned by Lucasfilm/Disney and this fan-game is not connected in any way to said companies.
+
